@@ -25,8 +25,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| devToken | 字符串 | 是 | 在touch上登录的用户的accessToken |
-| uuid | 字符串 | 是 | touch的sn，不是cube的sn |
+| devToken | 字符串&lt;32&gt; | 是 | 在touch上登录的用户的accessToken |
+| uuid | 字符串\(64\) | 是 | touch的sn，不是cube的sn |
 
 * #### HTTP 请求示例
 

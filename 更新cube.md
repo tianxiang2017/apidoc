@@ -1,5 +1,3 @@
-
-
 ## 更新cube
 
 #### 功能说明
@@ -20,10 +18,10 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| sn | String | 是 | cube的sn |
-| uuid | String | 是 | cube的uuid，旧版本是固定值 |
-| p2pUid | String | 是 | cube的p2pUid |
-| name | String | 是 | cube的name |
+| sn | 字符串\(64\) | 是 | cube的sn |
+| uuid | 字符串\(64\) | 是 | cube的uuid，旧版本是固定值 |
+| p2pUid | 字符串\(64\) | 是 | cube的p2pUid |
+| name | 字符串\(255\) | 是 | cube的name |
 
 * #### HTTP 请求示例
 

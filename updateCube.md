@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-更新cube 更新cube的uuid、名称和p2pUid， 由于旧版本（2.0.3）cube的uuid固定的。cube的sn和p2pUid又不会变化，所有这个接口现在只更新name
+更新cube 更新cube的uuid、名称， 由于旧版本（2.0.3）cube的uuid固定的。这个接口现在只更新name
 
 #### 调用接口说明
 

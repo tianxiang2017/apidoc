@@ -36,20 +36,20 @@
 | uuid | String\(64\) | 是 | uuid。废弃 |
 | name | String\(32\) | 否 | 设备名称 |
 | type | String\(E\) | 是 | 设备类型。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
-| acfCode | 字符串\(64\) | 否 | acfCode |
-| randomCode | 字符串\(32\) | 否 | RandomCode |
-| imei | 字符串\(255\) | 否 | IMEI |
-| imsi | 字符串\(255\) | 否 | IMSI |
-| manufacturer | 字符串\(255\) | 是 | 制造商 |
-| model | 字符串\(255\) | 是 | model |
-| systemType | 字符串\(E\) | 是 | 客户端系统。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
-| systemVersion | 字符串\(32\) | 是 | 固件版本号 |
-| hardwareVersion | 字符串\(32\) | 否 | 硬件版本号 |
-| applicationVersion | 字符串\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号 |
-| psn | 字符串\(64\) | 否 | cube的psn |
-| zwaveVersion | 字符串\(100\) | 否 | zwave版本。cube才有的参数 |
-| irVersion | 字符串\(100\) | 否 | ir版本。cube才有的参数 |
-| stm8Version | 字符串\(100\) | 否 | stm8编程。cube才有的参数 |
+| acfCode | String\(64\) | 否 | acfCode |
+| randomCode | String\(32\) | 否 | RandomCode |
+| imei | String\(255\) | 否 | IMEI |
+| imsi | String\(255\) | 否 | IMSI |
+| manufacturer | String\(255\) | 是 | 制造商 |
+| model | String\(255\) | 是 | model |
+| systemType | String\(E\) | 是 | 客户端系统。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
+| systemVersion | String\(32\) | 是 | 固件版本号 |
+| hardwareVersion | String\(32\) | 否 | 硬件版本号 |
+| applicationVersion | String\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号 |
+| psn | String\(64\) | 否 | cube的psn |
+| zwaveVersion | String\(100\) | 否 | zwave版本。cube才有的参数 |
+| irVersion | String\(100\) | 否 | ir版本。cube才有的参数 |
+| stm8Version | String\(100\) | 否 | stm8编程。cube才有的参数 |
 
 * #### HTTP 请求示例
 
@@ -116,10 +116,10 @@
 
 | 名称 | 类型 | 是否必选 | 描述 |
 | :--- | :---: | :---: | :--- |
-| guid | 字符串&lt;32&gt; | 是 | 注册成功后的guid，32长度字符串 |
-| field1 | 字符串 | 否 | 预留的返回值，暂时不返回内容 |
-| field2 | 字符串 | 否 | 预留的返回值，暂时不返回内容 |
-| field3 | 字符串 | 否 | 预留的返回值，暂时不返回内容 |
+| guid | String&lt;32&gt; | 是 | 注册成功后的guid，32长度字符串 |
+| field1 | String | 否 | 预留的返回值，暂时不返回内容 |
+| field2 | String | 否 | 预留的返回值，暂时不返回内容 |
+| field3 | String | 否 | 预留的返回值，暂时不返回内容 |
 
 * #### 响应示例：
 

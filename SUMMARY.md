@@ -4,7 +4,7 @@
 * [设备管理](she-bei-guan-li.md)
   * [鉴权申请](authApply.md)
   * [鉴权确认](authConfirim.md)
-  * [注册cube旧](cubeRegisterOld.md)
+  * [注册cube\(旧\)](cubeRegisterOld.md)
   * [设备注册](clientRegister.md)
   * [更新Client状态](updateClientStatu.md)
   * [更新cube](updateCube.md)

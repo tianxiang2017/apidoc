@@ -36,8 +36,8 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| guid | String&lt;32&gt; | 是 |  | 请求的guid |
-| ptopUid | String\(64\) |  |  | cube的p2p uid |
+| guid | String&lt;32&gt; | 是 | D3F6A83723D84E96A7BB5C2B3CDCF057 | 请求的guid |
+| ptopUid | String\(64\) |  | TFRXEHJXDMPEEC3X111A | cube的p2p uid |
 | ptopConnectMethod | String&lt;E&gt; | 是 | v2 | p2p的连接方式，v1或者v2 |
 | type | String\(10\) | 是 | oomi\_cube | 固定值oomi\_cube |
 

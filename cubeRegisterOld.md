@@ -25,9 +25,9 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| sn | 字符串\(64\) | 是 | cube的sn |
-| uuid | 字符串\(64\) | 是 | cube的uuid |
-| p2pUid | 字符串\(64\) | 是 | cube的p2pUid |
+| sn | String\(64\) | 是 | cube的sn |
+| uuid | String\(64\) | 是 | cube的uuid |
+| p2pUid | String\(64\) | 是 | cube的p2pUid |
 
 * #### HTTP 请求示例
 

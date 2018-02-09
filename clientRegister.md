@@ -35,14 +35,14 @@
 | bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
 | uuid | String\(64\) | 是 | uuid。废弃 |
 | name | String\(32\) | 否 | 设备名称 |
-| type | String\(E\) | 是 | 设备类型。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
+| type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
 | acfCode | String\(64\) | 否 | acfCode |
 | randomCode | String\(32\) | 否 | RandomCode |
 | imei | String\(255\) | 否 | IMEI |
 | imsi | String\(255\) | 否 | IMSI |
 | manufacturer | String\(255\) | 是 | 制造商 |
 | model | String\(255\) | 是 | model |
-| systemType | String\(E\) | 是 | 客户端系统。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
+| systemType | String&lt;E&gt; | 是 | 客户端系统。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
 | systemVersion | String\(32\) | 是 | 固件版本号 |
 | hardwareVersion | String\(32\) | 否 | 硬件版本号 |
 | applicationVersion | String\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号 |

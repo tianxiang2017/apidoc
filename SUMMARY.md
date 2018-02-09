@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [设备管理](she-bei-guan-li.md)
-  * [授权申请](authApply.md)
+  * [鉴权申请](authApply.md)
   * [鉴权确认](authConfirim.md)
   * [注册cube旧](cubeRegisterOld.md)
   * [设备注册](clientRegister.md)

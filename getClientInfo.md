@@ -38,7 +38,7 @@
 | :--- | :---: | :---: | :--- |
 | guid | String&lt;32&gt; | 是 | 请求的guid |
 | ptopUid | String\(64\) | 是 | cube的p2p uid |
-| ptopConnectMethod | String\(E\) | 是 | p2p的连接方式，v1或者v2 |
+| ptopConnectMethod | String&lt;E&gt; | 是 | p2p的连接方式，v1或者v2 |
 | type | String\(10\) | 是 | 固定值oomi\_cube |
 
 * #### 响应示例：

@@ -18,9 +18,9 @@
 
 | 名称 | 类型 | 是否必须 | 描述 |
 | :--- | :---: | :---: | :--- |
-| guid | 字符串\(32\) | 是 | 已注册的cube的guid |
-| dat | 字符串\(32\) | 是 | 设备鉴权接口返回的token |
-| aat | 字符串\(32\) | 是 | 用户登录后产生的token |
+| guid | String\(32\) | 是 | 已注册的cube的guid |
+| dat | String\(32\) | 是 | 设备鉴权接口返回的token |
+| aat | String\(32\) | 是 | 用户登录后产生的token |
 
 * #### HTTP 请求示例
 
@@ -36,10 +36,10 @@
 
 | 名称 | 类型 | 是否必选 | 描述 |
 | :--- | :---: | :---: | :--- |
-| guid | 字符串&lt;32&gt; | 是 | 请求的guid |
-| ptopUid | 字符串\(64\) | 是 | cube的p2p uid |
-| ptopConnectMethod | 字符串&lt;E&gt; | 是 | p2p的连接方式，v1或者v2 |
-| type | 字符串\(10\) | 是 | 固定值oomi\_cube |
+| guid | String&lt;32&gt; | 是 | 请求的guid |
+| ptopUid | String\(64\) | 是 | cube的p2p uid |
+| ptopConnectMethod | String\(E\) | 是 | p2p的连接方式，v1或者v2 |
+| type | String\(10\) | 是 | 固定值oomi\_cube |
 
 * #### 响应示例：
 

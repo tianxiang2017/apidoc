@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [介绍](README.md)
 * [设备管理](she-bei-guan-li.md)
   * [鉴权申请](authApply.md)
   * [鉴权确认](authConfirim.md)

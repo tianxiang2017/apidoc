@@ -16,17 +16,17 @@ cube会调用此接口上传文件。文件大小限制为60M
 
 * #### 输入参数说明
 
-|  | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | String\(E\) | 是 | log或者db | 类型。取值：log或者db |
-| guid | String&lt;32&gt; | 是 | 32长度 | cube注册成功后获得的guid |
-| accountId | Integer\(10\) | 否 |  | 用户的ID |
-| version | String\(255\) | 否 |  | 所属版本 |
-| remark | String\(1024\) | 否 | 1024个字符以内 | 描述 |
-| uploadTime | Long&lt;13&gt; | 否 | 时间戳 | 上传时间，时间戳，1970年1月1日00:00:00 GMT以来的毫秒数。没有传递此参数时，默认为系统时间，例如1510196926278。 |
-| md5 | String&lt;16&gt; | 是 |  | 文件的MD5摘要 |
-| file | File | 是 |  | 上传的文件 |
-| mode | String&lt;E&gt; | 是 |  | 上传文件的方式："1":静默上传，"2":手动上传，"3":崩溃上传 |
+| 参数**名称** | 参数类型 | 是否必须 | 参数描述 |
+| :--- | :--- | :--- | :--- |
+| type | String\(E\) | 是 | 类型。取值：log或者db |
+| guid | String&lt;32&gt; | 是 | cube注册成功后获得的guid |
+| accountId | Integer\(10\) | 否 | 用户的ID |
+| version | String\(255\) | 否 | 所属版本 |
+| remark | String\(1024\) | 否 | 描述 |
+| uploadTime | Long&lt;13&gt; | 否 | 上传时间，时间戳，1970年1月1日00:00:00 GMT以来的毫秒数。没有传递此参数时，默认为系统时间，例如1510196926278。 |
+| md5 | String&lt;16&gt; | 是 | 文件的MD5摘要 |
+| file | File | 是 | 上传的文件 |
+| mode | String&lt;E&gt; | 是 | 上传文件的方式："1":静默上传，"2":手动上传，"3":崩溃上传 |
 
 * #### HTTP 请求示例
 

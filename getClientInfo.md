@@ -36,10 +36,10 @@
 
 | 名称 | 类型 | 是否必选 | 描述 |
 | :--- | :---: | :---: | :--- |
-| guid | 字符串 | 是 | 请求的guid |
-| ptopUid | 字符串 | 是 | cube的p2p uid |
-| ptopConnectMethod | 字符串 | 是 | p2p的连接方式，v1或者v2 |
-| type | 字符串 | 是 | 固定值oomi\_cube |
+| guid | 字符串&lt;32&gt; | 是 | 请求的guid |
+| ptopUid | 字符串\(64\) | 是 | cube的p2p uid |
+| ptopConnectMethod | 字符串&lt;E&gt; | 是 | p2p的连接方式，v1或者v2 |
+| type | 字符串\(10\) | 是 | 固定值oomi\_cube |
 
 * #### 响应示例：
 

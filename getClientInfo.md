@@ -34,12 +34,12 @@
 
 * #### 返回参数
 
-| 参数名称 | 参数类型 | 是否必选 | 描述 |
-| :--- | :---: | :---: | :--- |
-| guid | String&lt;32&gt; | 是 | 请求的guid |
-| ptopUid | String\(64\) | 是 | cube的p2p uid |
-| ptopConnectMethod | String&lt;E&gt; | 是 | p2p的连接方式，v1或者v2 |
-| type | String\(10\) | 是 | 固定值oomi\_cube |
+| 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
+| :--- | :--- | :--- | :--- | :--- |
+| guid | String&lt;32&gt; | 是 |  | 请求的guid |
+| ptopUid | String\(64\) |  |  | cube的p2p uid |
+| ptopConnectMethod | String&lt;E&gt; | 是 | v2 | p2p的连接方式，v1或者v2 |
+| type | String\(10\) | 是 | oomi\_cube | 固定值oomi\_cube |
 
 * #### 响应示例：
 

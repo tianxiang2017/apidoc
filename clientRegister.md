@@ -28,14 +28,14 @@
 
 | 名称 | 类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| guid | 字符串\(32\) | 否 | 初始注册时为空，重复注册时携带guid |
-| sn | 字符串\(64\) | 是 | 设备的sn。cube的sn不能重复。重复时返回162。 |
-| ptopUid | 字符串\(64\) | 否 | p2p的uid，cube必填，app不填 |
-| wifiMac | 字符串\(32\) | 是 | wifi mac地址。cube要求唯一，app没要求 |
-| bluetoothMac | 字符串\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
-| uuid | 字符串\(64\) | 是 | uuid。废弃 |
-| name | 字符串\(32\) | 否 | 设备名称 |
-| type | 字符串\(E\) | 是 | 设备类型。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
+| guid | String\(32\) | 否 | 初始注册时为空，重复注册时携带guid |
+| sn | String\(64\) | 是 | 设备的sn。cube的sn不能重复。重复时返回162。 |
+| ptopUid | String\(64\) | 否 | p2p的uid，cube必填，app不填 |
+| wifiMac | String\(32\) | 是 | wifi mac地址。cube要求唯一，app没要求 |
+| bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
+| uuid | String\(64\) | 是 | uuid。废弃 |
+| name | String\(32\) | 否 | 设备名称 |
+| type | String\(E\) | 是 | 设备类型。长度为\(E\)表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
 | acfCode | 字符串\(64\) | 否 | acfCode |
 | randomCode | 字符串\(32\) | 否 | RandomCode |
 | imei | 字符串\(255\) | 否 | IMEI |

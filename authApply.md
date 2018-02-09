@@ -18,9 +18,9 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| uuid | 字符串\(64\) | 是 | 设备的sn。圆括号内数字是最大程度。下同 |
-| devType | 字符串\(10\) | 是 | 设备类型。保留参数。默认值为null |
-| supportAlgs | 字符串\(1\) | 是 | 鉴权协议。保留参数。默认使用MD5加密。默认值为null |
+| uuid | String\(64\) | 是 | 设备的sn。圆括号内数字是最大程度。下同 |
+| devType | String\(10\) | 是 | 设备类型。保留参数。默认值为null |
+| supportAlgs | String\(1\) | 是 | 鉴权协议。保留参数。默认使用MD5加密。默认值为null |
 
 * #### HTTP 请求示例
 
@@ -33,9 +33,9 @@ curl -X GET \
 
 | 名称 | 类型 | 是否必须 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| data | 字符串&lt;16&gt; | 是 | m60vyG04VVVmY1ZS | 鉴权种子，调用鉴权确认接口（/authen/confirm）前需要使用这个值。方括号内是固定长度。 |
-| algorithmId | 整型&lt;1&gt; | 是 | 1 | 服务器选择的协议。目前服务器只支持使用MD5进行加密，所有固定返回1 |
-| secretKeyId | 整型&lt;1&gt; | 是 | 0 | 固定返回0 |
+| data | String&lt;16&gt; | 是 | m60vyG04VVVmY1ZS | 鉴权种子，调用鉴权确认接口（/authen/confirm）前需要使用这个值。方括号内是固定长度。 |
+| algorithmId | Integer&lt;1&gt; | 是 | 1 | 服务器选择的协议。目前服务器只支持使用MD5进行加密，所有固定返回1 |
+| secretKeyId | Integer&lt;1&gt; | 是 | 0 | 固定返回0 |
 
 响应示例：
 

@@ -39,9 +39,9 @@ curl -X POST \
 | :--- | :--- | :--- | :--- | :--- |
 | devToken | String&lt;32&gt; | 是 | 4d724a24bae458fce5a17167458cdddf | 设备token，32长度的字符串，设备鉴权后生成的访问凭证，如果某个接口需要鉴权后才能访问，那么，访问这个接口时需要携带这个token |
 | expireTime | Long&lt;13&gt; | 是 | 1517559894690 | 过期时间，时间戳，1970年1月1日00:00:00 GMT以来的毫秒数。取值范围2的-63次方到2的63次方减一 |
-| validPeriod | String&lt;7&gt; | 是 | 2592000 | 固定值2592000 |
+| validPeriod | String\(10\) | 是 | 2592000 | 固定值2592000 |
 | authorityLevel | String&lt;1&gt; | 是 | 1 | 固定值1 |
-| authorityScope | String&lt;0&gt; | 是 |  | 固定值空字符串 |
+| authorityScope | String\(1\) | 是 |  | 固定值空字符串 |
 | requestNumber | Integer&lt;1&gt; | 是 | 1 | 固定值1 |
 
 * #### 响应示例：

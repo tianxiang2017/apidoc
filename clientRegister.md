@@ -33,15 +33,15 @@
 | ptopUid | String\(64\) | 否 | p2p的uid，cube必填，app不填 |
 | wifiMac | String\(32\) | 是 | wifi mac地址。cube要求唯一，app没要求 |
 | bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
-| uuid | String\(64\) | 是 | uuid。废弃 |
+| uuid | String\(64\) | 是 | uuid。保留参数，不为空，默认值为0。 |
 | name | String\(32\) | 否 | 设备名称 |
 | type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
 | acfCode | String\(64\) | 否 | acfCode |
 | randomCode | String\(32\) | 否 | RandomCode，cube必须有值 |
 | imei | String\(255\) | 否 | IMEI |
 | imsi | String\(255\) | 否 | IMSI |
-| manufacturer | String\(255\) | 是 | 制造商 |
-| model | String\(255\) | 是 | model |
+| manufacturer | String\(255\) | 是 | 制造商，取值不为空 |
+| model | String\(255\) | 是 | 设备型号，取值不为空 |
 | systemType | String&lt;E&gt; | 是 | 客户端系统。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
 | systemVersion | String\(32\) | 是 | 固件版本号 |
 | hardwareVersion | String\(32\) | 否 | 硬件版本号 |

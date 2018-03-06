@@ -28,7 +28,7 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| guid | String\(32\) | 否 | 初始注册时为空，重复注册时携带guid |
+| guid | String&lt;32&gt; | 否 | 初始注册时为空，重复注册时携带guid |
 | sn | String\(64\) | 是 | 设备的sn。cube的sn不能重复。重复时返回162。 |
 | ptopUid | String\(64\) | 否 | p2p的uid，cube必填，app不填 |
 | wifiMac | String\(32\) | 是 | wifi mac地址。cube要求唯一，app没要求 |

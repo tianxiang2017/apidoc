@@ -57,7 +57,7 @@ curl -X GET \
 
 | 错误码 | 提示信息 | 备注 |
 | --- | --- | --- |
-| 3 | 必填参数为空 | uuid、algorithmId或者secretKeyId为空都会返回这个值.注意区分为不传和传空字符串情况 |
+| 3 | 必填参数为空 | uuid、devType或者supportAlgs为空都会返回这个值.注意区分为不传和传空字符串情况 |
 
 
 

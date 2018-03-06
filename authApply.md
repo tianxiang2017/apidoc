@@ -21,8 +21,8 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
 | uuid | String\(64\) | 是 | 设备的sn。圆括号内数字是最大程度。下同 |
-| devType | String\(10\) | 是 | 设备类型。保留参数。默认值为null |
-| supportAlgs | String\(1\) | 是 | 鉴权协议。保留参数。默认使用MD5加密。默认值为null |
+| devType | String\(10\) | 是 | 设备类型。保留参数。默认值为空（null） |
+| supportAlgs | String\(1\) | 是 | 鉴权协议。保留参数。默认使用MD5加密。默认值为空（null） |
 
 * #### HTTP 请求示例
 

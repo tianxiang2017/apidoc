@@ -37,7 +37,7 @@
 | name | String\(32\) | 否 | 设备名称 |
 | type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone" |
 | acfCode | String\(64\) | 否 | acfCode |
-| randomCode | String\(32\) | 否 | RandomCode |
+| randomCode | String\(32\) | 否 | RandomCode，cube必须有值 |
 | imei | String\(255\) | 否 | IMEI |
 | imsi | String\(255\) | 否 | IMSI |
 | manufacturer | String\(255\) | 是 | 制造商 |

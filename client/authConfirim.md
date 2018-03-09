@@ -20,7 +20,7 @@
 | --- | --- | --- | --- |
 | uuid | String\(64\) | 是 | 设备的sn。圆括号类的长度是最大长度，下同 |
 | supportAlg | String&lt;32&gt; | 是 | 鉴权签名。 根据服务器返回的鉴权种子（/authen/apply接口返回的data参数），通过特殊算法（MD5加密）生成的。即supportAlg=MD5\(data\)。结果是32长度的字符串。这个参数和鉴权申请接口的supportAlgs参数没有任何关系 |
-| devType | String\(10\) | 是 | 设备类型。保留参数。传空字符串即可 |
+| devType | String\(10\) | 是 | 设备类型。保留参数。默认值为空。 |
 
 * #### HTTP 请求示例
 

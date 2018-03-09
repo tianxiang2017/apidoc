@@ -13,5 +13,5 @@
   * [上传文件](uploadFile.md)
   * [心跳包](heart.md)
 * [用户管理](Account.md)
-  * [注册账号](Account/RegisterAccount.md)
+  * [注册账号](Account/registerAccount.md)
 

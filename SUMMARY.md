@@ -12,4 +12,6 @@
   * [请求cube的p2pUid\(旧](getCubeP2pUidOld.md)
   * [上传文件](uploadFile.md)
   * [心跳包](heart.md)
+* [用户管理](yong-hu-guan-li.md)
+  * [注册账号](yong-hu-guan-li/zhu-ce-zhang-hao.md)
 

@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [设备管理](client.md)
-  * [鉴权申请](authApply.md)
+  * [鉴权申请](client/authApply.md)
   * [鉴权确认](authConfirim.md)
   * [注册cube\(旧\)](cubeRegisterOld.md)
   * [设备注册](clientRegister.md)

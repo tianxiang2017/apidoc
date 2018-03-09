@@ -12,6 +12,6 @@
   * [请求cube的p2pUid\(旧](getCubeP2pUidOld.md)
   * [上传文件](client/uploadFile.md)
   * [心跳包](client/heart.md)
-* [用户管理](Account.md)
-  * [注册账号](Account/registerAccount.md)
+* [用户管理](account.md)
+  * [注册账号](account/registerAccount.md)
 

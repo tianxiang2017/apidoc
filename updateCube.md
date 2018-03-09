@@ -19,7 +19,7 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
 | sn | String\(64\) | 是 | cube的sn |
-| uuid | String\(64\) | 是 | 保留。cube的uuid，旧版本是固定值dev01\_ld\_1。 cube2.0.4以后是一个随机值。 |
+| uuid | String\(64\) | 是 | 保留参数，由cube生成。 |
 | name | String\(255\) | 是 | cube的name |
 
 * #### HTTP 请求示例

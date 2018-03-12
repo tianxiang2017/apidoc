@@ -47,8 +47,8 @@ curl -X POST \
 | accountId | Integer\(11\) | 是 | 1 | 用户ID。ft\_account.id |
 | username | String\(255\) | 是 |  | 用户名 |
 | displayName | String\(255\) | 否 |  | 用户昵称 |
-| email | String\(255\) | 否 |  | 邮件 |
-| emailStatus | Integer\(4\) | 否 |  | 邮件状态 |
+| email | String\(255\) | 否 | 598206408@qq.com | 邮件 |
+| emailStatus | Integer\(4\) | 否 | 2 | 邮件状态 |
 | phone | String\(255\) | 否 |  | 电话号码 |
 | phoneStatus | String\(4\) | 否 |  | 电话号码状态 |
 | birthday | String（10） | 否 |  | 生日 |

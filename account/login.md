@@ -48,7 +48,7 @@ curl -X POST \
 | username | String\(255\) | 是 |  | 用户名 |
 | displayName | String\(255\) | 否 |  | 用户昵称 |
 | email | String\(255\) | 否 | 598206408@qq.com | 邮件 |
-| emailStatus | Integer\(4\) | 否 | 2 | 邮件状态 |
+| emailStatus | Integer\(E\) | 否 | 2 | 邮件状态,， 1：未验证邮箱；2：已验证邮箱；3：超时未验证邮箱 |
 | phone | String\(255\) | 否 |  | 电话号码 |
 | phoneStatus | String\(4\) | 否 |  | 电话号码状态 |
 | birthday | String（10） | 否 |  | 生日 |

@@ -18,9 +18,9 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| accountId     | Integer   | 是      |  用户ID |
-| uuid          | String    | 是      |  app的uuid，唯一标识app登录所使用的客户端 |
-| accountToken  | String    | 是      |  accessToken，用户登录凭证，标识accountId对应的用户在uuid对应的设备上登录|
+| accountId | Integer\(11\) | 是 | 用户ID |
+| uuid | String\(64\) | 是 | app的sn，唯一标识app登录所使用的客户端 |
+| accountToken | String&lt;32&gt; | 是 | accessToken，用户登录凭证，标识accountId对应的用户在uuid对应的设备上登录 |
 
 * #### HTTP 请求示例
 
@@ -51,7 +51,6 @@ curl -X POST \
 | --- | --- | --- |
 | 3 | 必填参数为空。 | 必填参数为空，或者参数错误 |
 | 151 | 设备未注册 | touch或者手机没有注册 |
-
 
 
 

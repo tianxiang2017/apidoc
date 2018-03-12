@@ -16,4 +16,5 @@
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)
   * [登出](account/logout.md)
+  * [修改密码](account/updatePassword.md)
 

@@ -25,7 +25,7 @@
 | username | String\(255\) | 是 | 登录名，可以是用户名、手机号或者邮箱 |
 | countryCode | String\(16\) | 否 | 手机号所属国家的国家码。它 和手机号一起，唯一标识全球的手机号。使用手机号时，需要传。由加号和数字组成，最多16个字符。以+开头，例如：+86 |
 | password | String&lt;32&gt; | 是 | 用户密码，调用接口时，需要先对密码进行一次md5加密。否则无法登录。32长度的小写 |
-| cubeSn | String\(64\) | 否 | cube的sn，传入这个参数时，用户在登录时可以没有绑定cube。这时，服务器自动将这个sn对应的cube和用户绑定。用于touch登录时需要传。 |
+| cubeSn | String\(64\) | 否 | cube的sn，传入这个参数时，用户在登录时可以没有绑定cube。这时，服务器自动将这个sn对应的cube和用户绑定。用于touch登录时传这个参数。 |
 | devToken | String&lt;32&gt; | 否 | 保留参数。设备访问凭证。 |
 | expireTime | String\(64\) | 否 | 保留参数。设备访问凭证过期时间。 |
 
@@ -51,12 +51,12 @@ curl -X POST \
 | emailStatus | Integer\(4\) | 否 |  | 邮件状态 |
 | phone | String\(255\) | 否 |  | 电话号码 |
 | phoneStatus | String\(4\) | 否 |  | 电话号码状态 |
-| birthday | String | 否 |  | 生日 |
+| birthday | String（10） | 否 |  | 生日 |
 | address | String\(255\) | 否 |  | 地址 |
-| registerTime | String | 否 |  | 注册时间 |
+| registerTime | String\(32\) | 否 |  | 注册时间 |
 | country | String\(11\) | 否 |  | 国家 |
-| creditCard | String | 否 |  | creditCard |
-| accountRank | String | 否 | BETA\_TEST或者ALPHA\_TEST | 用户组，多个值用&分割 |
+| creditCard | String\(30\) | 否 |  | creditCard |
+| accountRank | String\(500\) | 否 |  | 用户组，多个值用&分割 |
 
 响应示例：
 

@@ -27,7 +27,7 @@
 | password | String&lt;32&gt; | 是 | 用户密码，调用接口时，需要先对密码进行一次md5加密。否则无法登录。32长度的小写 |
 | cubeSn | String\(64\) | 否 | cube的sn，传入这个参数时，用户在登录时可以没有绑定cube。这时，服务器自动将这个sn对应的cube和用户绑定。用于touch登录时需要传。 |
 | devToken | String&lt;32&gt; | 否 | 保留参数。设备访问凭证。 |
-| expireTime | String\(64\) | 否 | 保留参数。时间戳。设备访问凭证过期时间。 |
+| expireTime | String\(64\) | 否 | 保留参数。设备访问凭证过期时间。 |
 
 * #### HTTP 请求示例
 
@@ -42,21 +42,21 @@ curl -X POST \
 
 | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| accountToken  | String    | 是      | 32个字符 |  登录的accessToken，用户登录信息凭证。此token存在有效期。过期后需要使用refreshToken刷新token，或者重新登录。|
-| flushToken    | String    | 是      | 32个字符 |  登录的refreshToken，用来生产新的accessToken和refreshToken。refreshToken也存在有效期，过期后需要重新登录。|
-| accountId     | Integer   | 是     | 正整数 | 用户ID。ft_account.id|
-| username      | String   | 是      | | 用户名 |
-| displayName   | String   | 否      | | 用户昵称 |
-| email         | String   | 否      | | 邮件 |
-| emailStatus   | String   | 否      | | 邮件状态 |
-| phone         | String   | 否      | | 电话号码 |
-| phoneStatus   | String   | 否      | | 电话号码状态 |
-| birthday      | String   | 否      | |生日 |
-| address       | String   | 否      | | 地址 |
-| registerTime  | String   | 否      | | 注册时间 |
-| country       | String   | 否      | | 国家 |
-| creditCard    | String   | 否      | | creditCard |
-| accountRank   | String   | 否      | BETA_TEST或者ALPHA_TEST| 用户组，多个值用&分割 |
+| accountToken | String&lt;32&gt; | 是 | 9556003c2c7db7da3b9e5396dac46670 | 登录的accessToken，用户登录信息凭证。此token存在有效期。过期后需要使用refreshToken刷新token，或者重新登录。 |
+| flushToken | String&lt;32&gt; | 是 | de89376b27596ace5034a133958b5a34 | 登录的refreshToken，用来生产新的accessToken和refreshToken。refreshToken也存在有效期，过期后需要重新登录。 |
+| accountId | Integer\(11\) | 是 | 1 | 用户ID。ft\_account.id |
+| username | String\(255\) | 是 |  | 用户名 |
+| displayName | String\(255\) | 否 |  | 用户昵称 |
+| email | String\(255\) | 否 |  | 邮件 |
+| emailStatus | Integer\(4\) | 否 |  | 邮件状态 |
+| phone | String\(255\) | 否 |  | 电话号码 |
+| phoneStatus | String\(4\) | 否 |  | 电话号码状态 |
+| birthday | String | 否 |  | 生日 |
+| address | String\(255\) | 否 |  | 地址 |
+| registerTime | String | 否 |  | 注册时间 |
+| country | String\(11\) | 否 |  | 国家 |
+| creditCard | String | 否 |  | creditCard |
+| accountRank | String | 否 | BETA\_TEST或者ALPHA\_TEST | 用户组，多个值用&分割 |
 
 响应示例：
 
@@ -91,7 +91,7 @@ curl -X POST \
 | 3 |  |  |
 | 40 |  |  |
 | 156 |  |  |
-| 4012 |   |  |
+| 4012 |  |  |
 
 
 

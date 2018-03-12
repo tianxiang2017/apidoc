@@ -14,4 +14,6 @@
   * [心跳包](client/heart.md)
 * [用户管理](account.md)
   * [注册账号](account/registerAccount.md)
+  * [登录](account/login.md)
+  * [登出](account/logout.md)
 

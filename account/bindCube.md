@@ -14,9 +14,7 @@
 
 6. 一次请求只能绑定一个cube，绑定多个cube需要多次绑定
 
-7. 绑定cube时，需要用户已登录，在请求cookie中转入aat（用户的accessToken）
-
-
+7. 绑定cube时，需要用户已登录，在请求cookie中转入aat（用户的accessToken，从touch/手机获得）
 
 #### 调用接口说明
 
@@ -24,15 +22,15 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/cube/updatepw |
-| 请求头部 | application/x-www-form-urlencoded |
+| URL | \[域名\]/cube/bindCube |
+| 请求头部 | application/json |
 | HTTP方式 | POST |
 
 * #### 输入参数说明
 
 |  | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| email | String&lt;255&gt; | 是 |  | 用户邮箱，用户在做用户注册时填写的邮箱 |
+| guid | String&lt;32&gt; | 是 |  | 用户邮箱，用户在做用户注册时填写的邮箱 |
 | password | String&lt;32&gt; | 是 |  | 用户新密码，MD5加密后的 |
 
 * #### HTTP 请求示例

@@ -19,11 +19,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| sn | String | 是 | cube的sn |
-| uuid | String | 否 | cube的uuid，保留参数 |
-| accountId | Integer | 否 | 用户的id |
-| touchToken | String | 否 | 在touch上登录的用户的accessToken |
-| touchUuid | String | 是 | 在touch的sn， 用户在此touch上登录，并发起绑定 |
+| sn | String\(64\) | 是 | cube的sn |
+| uuid | String\(64\) | 否 | cube的uuid，保留参数 |
+| accountId | Integer\(11\) | 否 | 用户的id |
+| touchToken | String\(32\) | 否 | 在touch上登录的用户的accessToken |
+| touchUuid | String\(64\) | 是 | 在touch的sn， 用户在此touch上登录，并发起绑定 |
 
 * #### HTTP 请求示例
 
@@ -38,7 +38,7 @@ curl -X POST \
 
 | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| code | String | 是 |  | 绑定结果 |
+| code | String\(6\) | 是 |  | 绑定结果 |
 
 响应示例：
 

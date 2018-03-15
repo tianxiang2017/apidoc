@@ -15,6 +15,7 @@
   * [绑定cube](account/bindCube.md)
   * [解绑cube](client/unbindCube.md)
   * [绑定cube（旧）](client/bindCubeOld.md)
+  * [解绑cube（旧）](client/unbindCubeOld.md)
 * [用户管理](account.md)
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)

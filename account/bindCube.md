@@ -2,19 +2,15 @@
 
 #### 功能说明
 
-1. 一个用户支持绑定多个cube。请求参数包括用户id和cube的guid。
+一个用户支持绑定多个cube。请求参数包括用户id和cube的guid。
 
-2. 用户和cube都没有被绑定，绑定，并返回成功
+一个cube只能绑定一个用户
 
-3. 用户已经绑定了别的cube，增加一个绑定关系，返回成功
+如果用户和cube已经是绑定关系，不能重复绑定
 
-4. 如果用户和cube已经是绑定关系，返回错误用户和cube已经是绑定关系，不能重复绑定4061
+一次请求只能绑定一个cube，绑定多个cube需要多次绑定
 
-5. 如果cube和其它用户已经绑定，绑定失败。返回4059
-
-6. 一次请求只能绑定一个cube，绑定多个cube需要多次绑定
-
-7. 绑定cube时，需要用户已登录，在请求cookie中转入aat（用户的accessToken，从touch/手机获得）
+绑定cube时，需要用户已登录，在请求cookie中转入aat（用户的accessToken，从touch/手机获得）
 
 #### 调用接口说明
 
@@ -23,7 +19,7 @@
 | 配置项 | 取值 |
 | --- | --- |
 | URL | \[域名\]/cube/bindCube |
-| 请求头部 | application/json |
+| 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 
 * #### 输入参数说明

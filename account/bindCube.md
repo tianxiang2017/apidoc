@@ -63,7 +63,7 @@
 | 4061 | 用户和cube已经是绑定关系 |  |
 | 2010 | email状态异常 | 邮件未激活或者邮件激活链接已超时 |
 | 2000 | 缺少accessToken | 用户登录生成的accessToken，同touch或者手机处获得 |
-| 2001 | accessToken过期（或未找到） | a |
+| 2001 | accessToken过期（或未找到） | 目前没人accessToken过期机制，只有accessToken未找到才会返回 |
 | 2022 | 用户I\|D无效 | accessToken的用户id和参数中accountId不是同一个值 |
 
 

@@ -27,7 +27,8 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | guid | String&lt;32&gt; | 是 | 已注册的cube的guid |
-| accountId | Integer\(11\) | 是 | 用户id |
+| accountId | Integer\(11\) | 否 | 用户id |
+|  | String&lt;32&gt; | 否 | 为用户生成的唯一代码 |
 
 * #### HTTP 请求示例
 
@@ -39,7 +40,8 @@
   ```
 * #### 返回参数
 
-无  
+无
+
 * #### 响应示例：
 
 ```json
@@ -60,6 +62,9 @@
 | 4059 | cube已被绑定 |  |
 | 4061 | 用户和cube已经是绑定关系 |  |
 | 2010 | email状态异常 | 邮件未激活或者邮件激活链接已超时 |
+| 2000 | 缺少accessToken | 用户登录生成的accessToken，同touch或者手机处获得 |
+| 2001 |  accessToken过期（或未找到） |  |
+| 2022 | 用户I\|D无效 | accessToken的用户id和参数中accountId不是同一个值 |
 
 
 

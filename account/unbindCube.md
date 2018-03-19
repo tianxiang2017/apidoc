@@ -26,8 +26,6 @@
 | accountId | Integer\(11\) | 否 | 用户id。accountId和auid两个参数中，必须传一个参数，且只能传一个参数。 |
 | auid | String&lt;32&gt; | 否 | 为用户生成的唯一代码.accountId和auid两个参数中，必须传一个参数，且只能传一个参数。 |
 
-
-
 * #### HTTP 请求示例
 
   ```json
@@ -60,6 +58,10 @@
 | 114 | 用户未绑定cube |  |
 | 4059 | cube已被绑定 | cube绑定了一个用户，但是这个用户不是我们要绑定的 |
 | 4062 | 用户和cube不是绑定关系 | cube未绑定 |
+| 2000 | 缺少accessToken | 用户登录生成的accessToken，同touch或者手机处获得 |
+| 2001 | accessToken过期（或未找到） | 目前没人accessToken过期机制，只有accessToken未找到才会返回 |
+| 2022 | 用户I\|D无效 | accessToken的用户id和参数中accountId不是同一个值 |
+
 
 
 

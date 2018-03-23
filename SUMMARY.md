@@ -18,8 +18,10 @@
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)
   * [登出](account/logout.md)
+  * [忘记密码](account/wang-ji-mi-ma.md)
   * [修改邮箱的密码](account/updatePassword.md)
+  * [重发邮件](account/zhong-fa-you-jian.md)
+  * 心跳包（旧）
   * [绑定cube——暂未实现](account/bindCube.md)
   * [解绑cube——暂未实现](account/unbindCube.md)
-  * 忘记密码
 

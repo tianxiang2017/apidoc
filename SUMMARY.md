@@ -22,6 +22,11 @@
   * [修改邮箱的密码](account/updatePassword.md)
   * [重发邮件](account/zhong-fa-you-jian.md)
   * 心跳包（旧）
-  * [绑定cube——暂未实现](account/bindCube.md)
+  * 使用手机号注册用户
+  * 使用邮箱注册用户
+  * 验证手机验证码
+  * 通过手机重置密码
+  * 通过邮件重置密码
   * [解绑cube——暂未实现](account/unbindCube.md)
+  * [绑定cube——暂未实现](account/bindCube.md)
 

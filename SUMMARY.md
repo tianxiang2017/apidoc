@@ -29,7 +29,7 @@
   * 通过邮件重置密码
   * [解绑cube——暂未实现](account/unbindCube.md)
   * [绑定cube——暂未实现](account/bindCube.md)
-* [系统服务器管理](xi-tong-fu-wu-qi-guan-li.md)
+* [系统服务器管理](system.md)
   * [发送邮箱验证码](xi-tong-fu-wu-qi-guan-li/fa-song-you-xiang-yan-zheng-ma.md)
   * 发送短信验证码 
   * 获得语言代码

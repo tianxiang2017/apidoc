@@ -19,6 +19,7 @@
   * [登录](account/login.md)
   * [登出](account/logout.md)
   * [修改邮箱的密码](account/updatePassword.md)
-  * [绑定cube](account/bindCube.md)
-  * [解绑cube](account/unbindCube.md)
+  * [绑定cube——暂未实现](account/bindCube.md)
+  * [解绑cube——暂未实现](account/unbindCube.md)
+  * 忘记密码
 

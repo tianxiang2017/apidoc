@@ -40,8 +40,8 @@
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
 | guid | String&lt;32&gt; | 是 |  | 注册成功后的guid，32长度字符串 |
-| name | String | 否 |  | cube名称 |
-| sn | String\(64\) | 是 |  | 设备的sn。cube的sn不能重复。重复时返回162。 |
+| name | String | 否 |  | 设备名称 |
+| sn | String\(64\) | 是 |  | 设备的sn。 |
 | p2pUid | String\(64\) | 否 |  | p2p的uid |
 | p2pConnectMethod | String&lt;E&gt; | 否 | v2 | p2p连接方式。如果有值，只可能是v1或者v2 |
 

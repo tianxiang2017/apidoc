@@ -27,9 +27,10 @@
   * 使用邮箱注册用户
   * 验证手机验证码
   * 通过手机重置密码
-  * 通过邮件重置密码
+  * [通过邮件重置密码](account/tong-guo-you-jian-zhong-zhi-mi-ma.md)
   * [解绑cube——暂未实现](account/unbindCube.md)
   * [绑定cube——暂未实现](account/bindCube.md)
+  * [用户绑定的cube列表](account/huo-qu-yong-hu-bang-ding-de-cube.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](xi-tong-fu-wu-qi-guan-li/fa-song-you-xiang-yan-zheng-ma.md)
   * 发送短信验证码 

@@ -4,7 +4,7 @@
 
 获取用户绑定的cube。每个cube返回名字、p2pUid等。
 
-此接口**必须**在请求cookie传入用户的accessToken。
+此接口**必须**在请求cookie传入用户的accessToken。（Cookie中的aat）
 
 #### 调用接口说明
 
@@ -12,7 +12,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/accountCubeList|
+| URL | \[域名\]/accounts/accountCubeList |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

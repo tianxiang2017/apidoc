@@ -52,7 +52,7 @@
     "code": "1",
     "note": "操作成功",
     "data": {
-        "cube": [
+        "gateway": [
             {
                 "p2pUid": "TFRXEHJXDMPEEC3X111A",
                 "p2pConnectMethod": "v2",

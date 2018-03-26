@@ -24,7 +24,7 @@
   * [修改邮箱的密码](account/updatePassword.md)
   * [重发邮件](account/resendEmail.md)
   * 心跳包（旧）
-  * 使用手机号注册用户
+  * [使用手机号注册用户](account/shi-yong-shou-ji-hao-zhu-ce-yong-hu.md)
   * 使用邮箱注册用户
   * 验证手机验证码
   * 通过手机重置密码

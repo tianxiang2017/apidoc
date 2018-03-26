@@ -18,7 +18,7 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| sn | String\(64\) | 否 | cube的sn |
+| sn | String\(64\) | 是 | cube的sn |
 | uuid | String\(64\) | 是 | 保留参数，由cube生成。 |
 | name | String\(255\) | 是 | cube的name |
 

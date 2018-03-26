@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-获取用户绑定的cube。每个cube返回名字、p2pUid等。
+获取用户绑定的网关。返回内容包括每个网关的名字、p2pUid等。
 
 此接口**必须**在请求cookie传入用户的accessToken。（Cookie中的aat）
 
@@ -33,7 +33,7 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| cube | List&lt;Client&gt; | 是 |  | 元素为Client的数组。如果没有数据，返回空数组 |
+| gateway | List&lt;Client&gt; | 是 |  | 元素为Client的数组。如果没有数据，返回空数组 |
 
 ##### Client
 

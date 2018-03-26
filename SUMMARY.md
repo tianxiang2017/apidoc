@@ -15,6 +15,7 @@
   * [心跳包](client/heart.md)
   * [绑定cube（旧）](client/bindCubeOld.md)
   * [解绑cube（旧）](client/unbindCubeOld.md)
+  * [用户绑定的cube列表](client/accountCubeList.md)
 * [用户管理](account.md)
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)
@@ -30,7 +31,7 @@
   * [通过邮件重置密码](account/tong-guo-you-jian-zhong-zhi-mi-ma.md)
   * [解绑cube——暂未实现](account/unbindCube.md)
   * [绑定cube——暂未实现](account/bindCube.md)
-  * [用户绑定的cube列表](client/accountCubeList.md)
+
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](xi-tong-fu-wu-qi-guan-li/fa-song-you-xiang-yan-zheng-ma.md)
   * 发送短信验证码 

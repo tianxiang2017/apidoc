@@ -18,7 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| sn | String\(64\) | 否 | cube的sn |
+| guid | String\(32\) | 否 | cube的guid。guid和sn必须传一个，且只能传一个。 |
+| sn | String\(64\) | 否 | cube的sn. cube的sn。guid和sn必须传一个，且只能传一个。|
 | uuid | String\(64\) | 是 | 保留参数，由cube生成。 |
 | name | String\(255\) | 是 | cube的name |
 

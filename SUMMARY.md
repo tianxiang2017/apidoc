@@ -20,20 +20,20 @@
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)
   * [登出](account/logout.md)
-  * [忘记密码](account/wang-ji-mi-ma.md)
+  * [忘记密码](account/forgotPassword.md)
   * [修改邮箱的密码](account/updatePassword.md)
-  * [重发邮件](account/zhong-fa-you-jian.md)
+  * [重发邮件](account/resendEmail.md)
   * 心跳包（旧）
   * 使用手机号注册用户
   * 使用邮箱注册用户
   * 验证手机验证码
   * 通过手机重置密码
-  * [通过邮件重置密码](account/tong-guo-you-jian-zhong-zhi-mi-ma.md)
+  * [通过邮件重置密码](account/registerByEmail.md)
   * [解绑cube——暂未实现](account/unbindCube.md)
   * [绑定cube——暂未实现](account/bindCube.md)
 * [系统服务器管理](system.md)
-  * [发送邮箱验证码](xi-tong-fu-wu-qi-guan-li/fa-song-you-xiang-yan-zheng-ma.md)
-  * 发送短信验证码 
-  * 获得语言代码
-  * 获取区域信息
+  * [发送邮箱验证码](system/emailCode.md)
+  * [发送短信验证码 ](system/smsCode.md)
+  * [获得语言代码](system/regionLanguageCode.md)
+  * [获取区域信息](system/regionList.md)
 

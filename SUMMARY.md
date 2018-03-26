@@ -8,7 +8,7 @@
   * [设备注册](client/clientRegister.md)
   * [更新设备状态](client/updateClientStatu.md)
   * [修改cube的名称](client/updateCube.md)
-  * [修改设备名称](client/updateClient.md)
+  * [修改设备名称——开发中](client/updateClient.md)
   * [获取Client信息](client/getClientInfo.md)
   * [请求cube的p2pUid\(旧](client/getCubeP2pUidOld.md)
   * [上传文件](client/uploadFile.md)

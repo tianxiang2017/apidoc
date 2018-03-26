@@ -50,7 +50,39 @@
 ```json
 {
     "code": "1",
-    "note": "操作成功"
+    "note": "操作成功",
+    "data": {
+        "cube": [
+            {
+                "p2pUid": "TFRXEHJXDMPEEC3X111A",
+                "p2pConnectMethod": "v2",
+                "name": "Room Cube",
+                "guid": "49BBA033658C4B9FA21068FDE17E19B0",
+                "sn": "A01011725020927"
+            },
+            {
+                "p2pUid": "T1U2WYNX32MPBRSG111A",
+                "p2pConnectMethod": "v2",
+                "name": "Cube",
+                "guid": "4F54F4248304498EA913548BE954611B",
+                "sn": "A01011604010000"
+            },
+            {
+                "p2pUid": "TMFH9V79DB7GWVY1111A",
+                "p2pConnectMethod": "v1",
+                "name": "Cube",
+                "guid": "B174EE025A4A4EB6B53B6948C76BEF42",
+                "sn": "A01011736000001"
+            },
+            {
+                "p2pUid": "XE3CH4XHSNDF3C5C111A",
+                "p2pConnectMethod": "v1",
+                "name": "Cube",
+                "guid": "CD41EEF836644EE8ABE7756FE7206992",
+                "sn": "A01011646000121"
+            }
+        ]
+    }
 }
 ```
 
@@ -59,6 +91,8 @@
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
 | 1002 | 必填参数为空 |  |
+| 2000 | accessToken为空 |  |
+| 20001 | accessToken不存在或者已过期 |  |
 | 2022 | 用户ID无效 | accessToken的用户id和参数中accountId不是同一个值 |
 
 

@@ -12,7 +12,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/accountCubeList |
+| URL | \[域名\]/accounts/accountGatewayList |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

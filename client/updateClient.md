@@ -18,14 +18,18 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| guid | String&lt;32&gt; | 是 | cube的guid |
-| name | String\(255\) | 是 | cube的name |
+| guid | String&lt;32&gt; | 是 | 设备的guid |
+| name | String\(255\) | 是 | 设备的名字 |
 
 * #### HTTP 请求示例
 
 ```
-curl -X POST \
-  'http://openapi.fantem-gateway.com/cube/updateInfo?sn=A01011725020927&uuid=dsdfsfdsdf&p2pUid=TFRXEHJXDMPEEC3X111A&name=mycube'
+
+{
+	"guid":"49BBA033658C4B9FA21068FDE17E19B0",
+	"name":"Cube1"
+	
+}
 ```
 
 * #### 返回参数

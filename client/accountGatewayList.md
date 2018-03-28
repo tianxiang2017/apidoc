@@ -55,32 +55,36 @@
     "data": {
         "gateway": [
             {
-                "p2pUid": "TFRXEHJXDMPEEC3X111A",
-                "p2pConnectMethod": "v2",
-                "name": "Room Cube",
-                "guid": "49BBA033658C4B9FA21068FDE17E19B0",
-                "sn": "A01011725020927"
-            },
-            {
                 "p2pUid": "T1U2WYNX32MPBRSG111A",
                 "p2pConnectMethod": "v2",
                 "name": "Cube",
                 "guid": "4F54F4248304498EA913548BE954611B",
-                "sn": "A01011604010000"
+                "sn": "A01011604010000",
+                "type": 4
             },
             {
                 "p2pUid": "TMFH9V79DB7GWVY1111A",
                 "p2pConnectMethod": "v1",
                 "name": "Cube",
                 "guid": "B174EE025A4A4EB6B53B6948C76BEF42",
-                "sn": "A01011736000001"
+                "sn": "A01011736000001",
+                "type": 4
             },
             {
                 "p2pUid": "XE3CH4XHSNDF3C5C111A",
                 "p2pConnectMethod": "v1",
                 "name": "Cube",
                 "guid": "CD41EEF836644EE8ABE7756FE7206992",
-                "sn": "A01011646000121"
+                "sn": "A01011646000121",
+                "type": 4
+            },
+            {
+                "p2pUid": "4M1FUDU7HGECU5V8111A",
+                "p2pConnectMethod": "v2",
+                "name": "ROOMCube",
+                "guid": "DB4AF7BE50FE4CD685F73F1B16127A00",
+                "sn": "A01011749010002",
+                "type": 4
             }
         ]
     }

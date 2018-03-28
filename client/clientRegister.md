@@ -6,7 +6,7 @@
 
 * 设备注册处理考虑正常的注册功能外，需要支持重置、升级、多次注册（携带guid）等功能。
 
-* cube、touch和手机都需要注册。
+* cube、hub、touch和手机都需要注册。
 
 设备注册时，怎么区分不同的设备？  
 1. cube用sn，p2puid，wifi mac地址，蓝牙mac地址和randomCode唯一标识一个cube。注册时不能用sn区分一个cube，因为sn可能重复  
@@ -35,21 +35,21 @@
 | bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
 | uuid | String\(64\) | 是 | uuid。保留参数，不为空，默认值为0。 |
 | name | String\(32\) | 否 | 设备名称 |
-| type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone，hub" |
+| type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone，oomi\_hub" |
 | acfCode | String\(64\) | 否 | acfCode |
 | randomCode | String\(32\) | 否 | RandomCode，cube必须有值 |
 | imei | String\(255\) | 否 | IMEI |
 | imsi | String\(255\) | 否 | IMSI |
 | manufacturer | String\(255\) | 是 | 制造商，取值不为空 |
-| model | String\(255\) | 是 | 设备型号，取值不为空 |
+| model | String\(255\) | 是 | 设备型号，取值不为空。例如oomi\_cube\_1，oomi\_hub\_1等 |
 | systemType | String&lt;E&gt; | 是 | 客户端系统。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
 | systemVersion | String\(32\) | 是 | 固件版本号 |
 | hardwareVersion | String\(32\) | 否 | 硬件版本号 |
-| applicationVersion | String\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号 |
+| applicationVersion | String\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号，或者hub的apk版本号 |
 | psn | String\(64\) | 否 | cube的psn |
-| zwaveVersion | String\(100\) | 否 | zwave版本。cube才有的参数 |
-| irVersion | String\(100\) | 否 | ir版本。cube才有的参数 |
-| stm8Version | String\(100\) | 否 | stm8编程。cube才有的参数 |
+| zwaveVersion | String\(100\) | 否 | zwave版本。cube/hub才有的参数 |
+| irVersion | String\(100\) | 否 | ir版本。cube/hub才有的参数 |
+| stm8Version | String\(100\) | 否 | stm8编程。cube/hub才有的参数 |
 
 * #### HTTP 请求示例
 * ##### 初始注册

@@ -44,7 +44,7 @@
 | sn | String\(64\) | 是 |  | 设备的sn。 |
 | p2pUid | String\(64\) | 否 |  | p2p的uid |
 | p2pConnectMethod | String&lt;E&gt; | 否 | v2 | p2p连接方式。如果有值，只可能是v1或者v2 |
-| type | Integer&lt;E&gt; |  | 4 | 设备类型。4：cube；6：hub |
+| type | Integer&lt;E&gt; | 是 | 4 | 设备类型。4：cube；6：hub |
 
 * #### 响应示例：
 

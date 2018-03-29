@@ -1,10 +1,10 @@
-# 绑定cube
+# 绑定网关
 
 #### 功能说明
 
-一个用户支持绑定多个cube。请求参数包括用户id和cube的guid。
+一个用户支持绑定多个cube/hub。请求参数包括用户id和cube/hub的guid。
 
-一个cube只能绑定一个用户
+一个cube/hub只能绑定一个用户
 
 如果用户和cube已经是绑定关系，不能重复绑定
 
@@ -18,7 +18,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/bindCube |
+| URL | \[域名\]/accounts/bindGateway |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

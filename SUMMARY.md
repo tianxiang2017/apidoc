@@ -29,8 +29,8 @@
   * 验证手机验证码
   * 通过手机重置密码
   * [通过邮件重置密码](account/registerByEmail.md)
-  * [解绑cube——开发中](account/unbindCube.md)
-  * [绑定cube——开发中](account/bindCube.md)
+  * [解绑网关——开发中](account/unbindCube.md)
+  * [绑定网关——开发中](account/bindCube.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](system/emailCode.md)
   * [发送短信验证码 ](system/smsCode.md)

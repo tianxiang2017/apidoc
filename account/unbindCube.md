@@ -14,7 +14,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/unbindCube |
+| URL | \[域名\]/accounts/unbindGateway |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

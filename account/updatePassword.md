@@ -17,15 +17,15 @@
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
-| :--- | :--- | :--- | :--- | :--- |
-| email | String&lt;255&gt; | 是  | 用户邮箱，用户在做用户注册时填写的邮箱 |
-| password | String&lt;32&gt; | 是  | 用户新密码，MD5加密后的 |
+| :--- | :--- | :--- | :--- |
+| email | String&lt;255&gt; | 是 | 用户邮箱，用户在做用户注册时填写的邮箱 |
+| password | String&lt;32&gt; | 是 | 用户新密码，MD5加密后的 |
 
 * #### HTTP 请求示例
 
 ```
 curl -X POST \
-  http://openapi.fantem-gateway.com/accounts/login \
+  http://openapi.fantem-gateway.com/accounts/updatepw \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'email=598206408@qq.com&password=e10adc3949ba59abbe56e057f20f883e'
 ```
@@ -47,7 +47,4 @@ curl -X POST \
 * #### 异常返回值
 
 无
-
-
-
 

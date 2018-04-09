@@ -24,16 +24,27 @@
 * #### HTTP 请求示例
 
 ```
-curl -X GET \
-  'http://openapi.fantem-gateway.com/accounts/forgetPw?email=598206408@qq.com&language=zh_TW'
+{
+    "username": "598206408@qq.com"
+}
 ```
+
+* #### HTTP 请求示例2
+
+```json
+{
+    "username": "apilogin"
+}
+```
+
+
 
 * #### 返回参数
 
   | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
   | :--- | :--- | :--- | :--- | :--- |
   | email | String | 是 |  | 用户的邮箱 |
-  | language | String | 是 | zh\_CN或者en | 同请求参数。默认使用英文（en） |
+  | language | String | 是 | zh_CN或者en | 同请求参数。默认使用英文（en） |
 
 * #### 响应示例：
 
@@ -50,6 +61,7 @@ curl -X GET \
     }
   }
 ```
+
 
 * #### 异常返回值
 

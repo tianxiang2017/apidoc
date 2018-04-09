@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-用户使用手机号注册时，输入手机号后，调用获取验证码接口（/sms/code）获取验证码，输入验证码后，调用验证手机验证码接口（/accounts/validatePhoneCode）验证手机验证码，然后用户输入密码，最后调用注册接口（/accounts/registerByPhone）完成注册（同时设置密码）
+用户使用手机号注册时，输入手机号后，调用获取验证码接口（/sms/code）获取验证码，输入验证码后，调用验证手机验证码接口（/accounts/validatePhoneCode）验证手机验证码，然后用户输入密码，最后调用此接口（/accounts/registerByPhone）完成注册（同时设置密码）
 
 #### 调用接口说明
 
@@ -18,11 +18,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| phone     | String    | 是  |  手机号。不包括国家码。数字，最多20个字符。例如：18812345678 |
-| countryCode| String   | 是  |手机号所属国家的国家码， 和手机号唯一标识全球的手机号，已+开头。加号和数字，最多20个字符。例如：+86 |
-| code      | String    | 是  |  手机验证码，6位数字
-| password  | String    | 是  |   用户新密码，需要先进行MD5加密|
-| confirmPassword  | String  | 是  |  用户新密码确认，需要先进行MD5加密。和password一样  |
+| phone | String | 是 | 手机号。不包括国家码。数字，最多20个字符。例如：18812345678 |
+| countryCode | String | 是 | 手机号所属国家的国家码， 和手机号唯一标识全球的手机号，已+开头。加号和数字，最多20个字符。例如：+86 |
+| code | String | 是 | 手机验证码，6位数字 |
+| password | String | 是 | 用户新密码，需要先进行MD5加密 |
+| confirmPassword | String | 是 | 用户新密码确认，需要先进行MD5加密。和password一样 |
 
 * #### HTTP 请求示例
 

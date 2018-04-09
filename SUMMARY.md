@@ -36,4 +36,5 @@
   * [发送短信验证码 ](system/smsCode.md)
   * [获得语言代码](system/regionLanguageCode.md)
   * [获取区域信息](system/regionList.md)
+  * [发送nest邮件](system/sendNestEmail.md)
 

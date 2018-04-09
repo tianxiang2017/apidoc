@@ -10,7 +10,7 @@
 | 配置项 | 取值 |
 | --- | --- |
 | URL | \[域名\]/region/list|
-| 请求头部 | application/json;charset=utf-8 |
+| 请求头部 |   |
 | HTTP方式 | GET |
 
 * #### 输入参数说明

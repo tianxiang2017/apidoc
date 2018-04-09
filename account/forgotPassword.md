@@ -24,9 +24,8 @@
 * #### HTTP 请求示例
 
 ```
-curl -X POST \
-  http://openapi.fantem-gateway.com/accounts/forgetPw \
-  -d 'email=598206408@qq.com'
+curl -X GET \
+  'http://openapi.fantem-gateway.com/accounts/forgetPw?email=598206408@qq.com&language=zh_TW'
 ```
 
 * #### 返回参数

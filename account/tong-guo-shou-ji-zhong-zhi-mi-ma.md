@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/resetPasswordByPhone|
+| URL | \[域名\]/accounts/resetPasswordByPhone |
 | 请求头部 | application/json;charset=utf-8 |
 | HTTP方式 | POST |
 
@@ -23,8 +23,6 @@
 | code | String&lt;6&gt; | 是 | 手机验证码，6位数字 |
 | password | String\(32\) | 是 | 用户密码，需要先进行MD5加密 |
 | confirmPassword | String\(32\) | 是 | 用户密码确认，需要先进行MD5加密。值和password一样 |
-
-
 
 * #### HTTP 请求示例
 
@@ -63,7 +61,7 @@
 | 8001 | 验证码不正确 |  |
 | 8002 | 验证码已被使用 |  |
 | 8003 | 验证码过期 |  |
-| 101 | 邮件已被注册 |  |
+| 4055 | 手机未注册 |  |
 
 
 

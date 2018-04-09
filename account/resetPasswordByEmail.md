@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/resetPasswordByEmail|
+| URL | \[域名\]/accounts/resetPasswordByEmail |
 | 请求头部 | application/json;charset=utf-8 |
 | HTTP方式 | POST |
 
@@ -60,7 +60,7 @@
 | 8001 | 验证码不正确 |  |
 | 8002 | 验证码已被使用 |  |
 | 8003 | 验证码过期 |  |
-| 101 | 邮件已被注册 |  |
+| 4023 | 邮件未注册或未激活 |  |
 
 
 

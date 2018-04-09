@@ -1,8 +1,8 @@
-# 使用邮箱注册用户
+# 通过手机重置密码
 
 #### 功能说明
 
-用户使用邮箱注册时，输入邮箱后，调用获取验证码接口（/email/code）获取验证码，输入验证码后，调用此接口（/accounts/registerByEmail）完成注册（同时设置密码）
+通过手机号重置密码时，首先用户输入手机号，调用发送手机验证码接口（/sms/code）发送验证码给用户，用户输入验证码后，调用验证验证接口（/accounts/validatePhoneCode）验证手机验证码，最后用户输入密码，调用此接口（/accounts/resetPasswordByPhone）完成重置密码
 
 #### 调用接口说明
 
@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/registerByEmail |
+| URL | \[域名\]/accounts/resetPasswordByPhone|
 | 请求头部 | application/json;charset=utf-8 |
 | HTTP方式 | POST |
 
@@ -18,10 +18,13 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| email | String | 是 | 未注册的邮箱，可使用字母、数字、下划线、横线，需以字母开头。正则表达式：^\[a-zA-Z0-9_-\]+@\[a-zA-Z0-9_-\]+\(.\[a-zA-Z0-9\_-\]+\)+$。邮箱唯一，同一个邮箱只能注册一次 |
+| phone | String\(15\) | 是 | 手机号。不包括国家码。数字。例如：18812345678 |
+| countryCode | String\(16\) | 是 | 手机号所属国家的国家码， 和手机号唯一标识全球的手机号，已+开头。加号和数字，最多16个字符。例如：+86 |
 | code | String&lt;6&gt; | 是 | 手机验证码，6位数字 |
 | password | String\(32\) | 是 | 用户密码，需要先进行MD5加密 |
 | confirmPassword | String\(32\) | 是 | 用户密码确认，需要先进行MD5加密。值和password一样 |
+
+
 
 * #### HTTP 请求示例
 

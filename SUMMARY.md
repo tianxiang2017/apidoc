@@ -26,7 +26,7 @@
   * [心跳包（旧）](account/oldAppHeart.md)
   * [使用手机号注册用户](account/registerByPhone.md)
   * [使用邮箱注册用户](account/registerByEmail.md)
-  * 验证手机验证码
+  * [验证手机验证码](account/yan-zheng-shou-ji-yan-zheng-ma.md)
   * 通过手机重置密码
   * [通过邮件重置密码](account/registerByEmail.md)
   * [解绑网关——开发中](account/unbindCube.md)

@@ -23,7 +23,7 @@
   * [忘记密码](account/forgotPassword.md)
   * [修改邮箱的密码](account/updatePassword.md)
   * [重发邮件](account/resendEmail.md)
-  * 心跳包（旧）
+  * [心跳包（旧）](account/oldAppHeart.md)
   * [使用手机号注册用户](account/registerByPhone.md)
   * [使用邮箱注册用户](account/registerByEmail.md)
   * 验证手机验证码

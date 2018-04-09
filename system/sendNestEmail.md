@@ -20,6 +20,9 @@
 |context |String  |是 | 一个URL，nest连接   |
 |email |String  |是| 用户的邮箱    |
 |uuid     |String  |是| Cube的sn    |
+| language | String&lt;E&gt; | 否 | 邮件使用的语言，默认值en。可以使用的值有zh\_CN，en，zh\_TW，es和pt。其中，es和pt是保留值 |
+
+
 
 
 * #### HTTP 请求示例
@@ -27,8 +30,6 @@
 ```
 curl -X POST \
   http://openapi.fantem-gateway.com/sendEmail/nest \
-  -H 'Cache-Control: no-cache' \
-  -H 'Postman-Token: 48595569-c6c9-a0d3-4ac8-53694c1a54cd' \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
   -F email=598206408qq.com \
   -F context=https://nest.com/choose-your-country/ \

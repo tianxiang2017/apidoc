@@ -10,17 +10,17 @@ touch和手机调用的心跳包接口
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/heart|
+| URL | \[域名\]/accounts/heart |
 | 请求头部 | application/x-www-form-urlencoded |
-| HTTP方式 | POST |
+| HTTP方式 | GET |
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| accountId     | String   | 是  |   用户id |
-| accountToken  | String   | 是  | 用户登录后的accessToken|
-| uuid          | String   | 是  |touch或者手机的sn|
+| accountId | Integer\(11\) | 是 | 用户id |
+| accountToken | String\(32\) | 是 | 用户登录后的accessToken |
+| uuid | String\(64\) | 是 | touch或者手机的sn |
 
 * #### HTTP 请求示例
 
@@ -61,6 +61,7 @@ touch和手机调用的心跳包接口
 | 4023 | 邮箱不存在 | 用户注册没有邮箱，可能是手机注册 |
 | 2 | 发送邮件失败 | 邮件地址未注册等错误 |
 | 4 | 参数格式错误 | 包括language的值超出范围 |
+| 156 | sn重复 |  |
 
 
 

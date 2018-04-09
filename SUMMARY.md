@@ -24,8 +24,8 @@
   * [修改邮箱的密码](account/updatePassword.md)
   * [重发邮件](account/resendEmail.md)
   * [心跳包（旧）](account/oldAppHeart.md)
+  * [验证手机验证码](account/yan-zheng-shou-ji-yan-zheng-ma.md)
   * [使用手机号注册用户](account/registerByPhone.md)
-  * [使用邮箱注册用户](account/registerByEmail.md)
   * [验证手机验证码](account/yan-zheng-shou-ji-yan-zheng-ma.md)
   * 通过手机重置密码
   * [通过邮件重置密码](account/registerByEmail.md)

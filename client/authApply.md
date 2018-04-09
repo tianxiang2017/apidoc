@@ -37,7 +37,7 @@ curl -X GET \
 | algorithmId | Integer&lt;1&gt; | 是 | 1 | 服务器选择的协议。目前服务器只支持使用MD5进行加密，所有固定返回1 |
 | secretKeyId | Integer&lt;1&gt; | 是 | 0 | 固定返回0 |
 
-响应示例：
+* #### 响应示例：
 
 ```json
 {

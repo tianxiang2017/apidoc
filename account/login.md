@@ -58,7 +58,7 @@ curl -X POST \
 | creditCard | String\(30\) | 否 |  | creditCard |
 | accountRank | String\(500\) | 否 |  | 用户组，多个值用&分割 |
 
-响应示例：
+* #### 响应示例：
 
 ```json
 {

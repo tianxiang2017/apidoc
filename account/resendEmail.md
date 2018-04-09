@@ -35,7 +35,7 @@ curl -X GET \
   | email | String | 是 |  | 用户的邮箱 |
   | language | String | 是 | zh\_CN或者en | 同请求参数。默认使用英文（en） |
 
-响应示例：
+* #### 响应示例：
 
 ```json
 {

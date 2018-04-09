@@ -1,8 +1,8 @@
-# 使用邮箱注册用户
+# 通过邮件重置密码
 
 #### 功能说明
 
-用户使用邮箱注册时，输入邮箱后，调用获取验证码接口（/email/code）获取验证码，输入验证码后，调用此接口（/accounts/registerByEmail）完成注册（同时设置密码）
+通过邮箱重置密码时，首先用户输入邮箱地址，调用发送邮箱验证码接口（/email/code）发送验证码给用户，用户输入验证码后，调用此接口（/accounts/resetPasswordByEmail）完成重置密码
 
 #### 调用接口说明
 
@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/accounts/registerByEmail |
+| URL | \[域名\]/accounts/resetPasswordByEmail|
 | 请求头部 | application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

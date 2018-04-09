@@ -33,7 +33,8 @@
 
 ```json
 {
-    "username": "apilogin"
+    "username": "ztx",
+    "language":"zh_TW"
 }
 ```
 

@@ -44,7 +44,7 @@
 | model | String\(255\) | 是 | 设备型号，取值不为空。例如oomi\_cube\_1，oomi\_hub\_1等 |
 | systemType | String&lt;E&gt; | 是 | 客户端系统。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：android， ios， linux， window， windows\_phone |
 | systemVersion | String\(32\) | 是 | 固件版本号 |
-| hardwareVersion | String\(32\) | 否 | 硬件版本号 |
+| hardwareVersion | String\(255\) | 否 | 硬件版本号 |
 | applicationVersion | String\(32\) | 是 | apk版本号。cube的apk版本号，或者touch的apk的版本号，或者手机的apk版本号，或者hub的apk版本号 |
 | psn | String\(64\) | 否 | cube的psn |
 | zwaveVersion | String\(100\) | 否 | zwave版本。cube/hub才有的参数 |
@@ -144,6 +144,7 @@
 | 162 | 设备信息冲突 | sn、ptopUid、wifiMac、bluetoothMac或者randomCode（默认值除外）中的一个冲突或者多个同时冲突 |
 | 3 | 重要参数为空 | sn、ptopUid、wifiMac、bluetoothMac或者randomCode任何一个为空， 只有cube，ptopUid才是必传的。参数超长 |
 | 1000 | 数据错误 | guid不存在。cube已经在服务器注册了，并且有guid，但是由于cube获取底层数据发生变化，导致**服务器认为这个已不是原来的cube** |
+| 1001 | 其他参数错误 | 参数超长等 |
 
 
 

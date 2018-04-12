@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-获取cube信息。这里获取cube的p2p uid和p2p连接方式
+获取cube信息。这里获取cube的p2p uid和p2p连接方式。touch或手机调用
 
 #### 调用接口说明
 
@@ -20,7 +20,7 @@
 | :--- | :---: | :---: | :--- |
 | guid | String\(32\) | 是 | 已注册的cube的guid |
 | dat | String\(32\) | 是 | 设备鉴权接口返回的token |
-| aat | String\(32\) | 是 | 用户登录后产生的token。没有登录功能的设备传空字符串 |
+| aat | String\(32\) | 是 | 用户登录后产生的token。 |
 
 * #### HTTP 请求示例
 

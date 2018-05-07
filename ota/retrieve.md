@@ -1,4 +1,4 @@
-#获取最新版本
+# 获取最新版本
 
 #### 功能说明
 
@@ -80,39 +80,38 @@
   | compel | bool | 否 |  | 是否强制下载，固定为false |
   | versionRank | String | 否 |  | 0表示gamma版本，1表示beta版本，2表示alpha版本，这个字段不再使用，默认为0 |
   | firmwareBinds | array | 否 |  | 和这个更新包绑定的版本，一般为空队列 |
-
 * #### 响应示例：
 
 ```json
 {
-	"code": "1",
-	"note": "OPERATE_SUCCESS",
-	"data": {
-		"firmwareId": 58,
-		"product": "prosyst",
-		"model": "1",
-		"hwVersion": "1.0.0.0",
-		"oldSwVersion": "0.0.0.0",
-		"swVersion": "2.0.0.33",
-		"isFullPackage": true,
-		"firmwareUrl": "http://ota.fantem-gateway.com/firmware/prosyst/1/2/1-0-0-0/prosyst-0.0.0.0-2.0.0.33.apk",
-		"firmwareName": null,
-		"protocol": "http",
-		"protocolVersion": "1.1",
-		"username": "xxx",
-		"password": "xxx",
-		"cnDescription": null,
-		"enDescription": "1. Update the UI and OTA flow; \n\n2. Integrate more Devices.\n\n3. Bugs fixing.",
-		"size": "11769176",
-		"md5Code": "689EE591272FA692320C73CE49187257",
-		"testMode": null,
-		"releaseTime": "2017-05-26,11:59:38",
-		"compel": false,
-		"versionRank": 0,
-		"feature": null,
-		"firmwareBinds": null,
-		"fullPackage": true
-	}
+    "code": "1",
+    "note": "OPERATE_SUCCESS",
+    "data": {
+        "firmwareId": 58,
+        "product": "prosyst",
+        "model": "1",
+        "hwVersion": "1.0.0.0",
+        "oldSwVersion": "0.0.0.0",
+        "swVersion": "2.0.0.33",
+        "isFullPackage": true,
+        "firmwareUrl": "http://ota.fantem-gateway.com/firmware/prosyst/1/2/1-0-0-0/prosyst-0.0.0.0-2.0.0.33.apk",
+        "firmwareName": null,
+        "protocol": "http",
+        "protocolVersion": "1.1",
+        "username": "xxx",
+        "password": "xxx",
+        "cnDescription": null,
+        "enDescription": "1. Update the UI and OTA flow; \n\n2. Integrate more Devices.\n\n3. Bugs fixing.",
+        "size": "11769176",
+        "md5Code": "689EE591272FA692320C73CE49187257",
+        "testMode": null,
+        "releaseTime": "2017-05-26,11:59:38",
+        "compel": false,
+        "versionRank": 0,
+        "feature": null,
+        "firmwareBinds": null,
+        "fullPackage": true
+    }
 }
 ```
 

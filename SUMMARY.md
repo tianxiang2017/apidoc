@@ -37,6 +37,11 @@
   * [获得语言代码](system/regionLanguageCode.md)
   * [获取区域信息](system/regionList.md)
   * [发送nest邮件](system/sendNestEmail.md)
+  * [推送信息注册](system/pushRegister.md)
+  * [推送信息注册](system/pushRegisterNew.md)
+  * [发送Arm消息](system/pushArm.md)
+  * [推送](system/pushMessage.md)
+  * [推送消息确认](system/pushConfirm.md)
 * [ota升级](ota.md)
   * [获取最新版本](ota/retrieve.md)
   * [获取最新版本](ota/firmwareRetrieve.md)
@@ -44,4 +49,6 @@
   * [版本查询\(1.x版本升级到2.x\)](ota/firmwaresSwVersion.md)
   * [大版本-反查](ota/fpkPegging.md)
   * [大版本-检查更新](ota/fpkCheckUpdate.md)
+  * [大版本-获取详情](ota/fpkDetail.md)
+  * [获取单个固件包信息](ota/firmwaresDetail.md)
 

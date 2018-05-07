@@ -42,4 +42,5 @@
   * [获取最新版本](ota/firmwareRetrieve.md)
   * [手机查询所有版本](ota/integrationCheck.md)
   * [版本查询\(1.x版本升级到2.x\)](ota/firmwaresSwVersion.md)
+  * [大版本-反查](ota/fpkPegging.md)
 

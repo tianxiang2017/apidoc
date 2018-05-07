@@ -39,4 +39,5 @@
   * [发送nest邮件](system/sendNestEmail.md)
 * [ota升级](ota.md)
   * [获取最新版本](ota/retrieve.md)
+  * [获取最新版本](ota/firmwareRetrieve.md)
 

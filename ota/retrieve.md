@@ -18,8 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| product | String | 是 | 已注册的cube的guid |
-| model | String\(11\) | 否 | 用户id。accountId和auid两个参数中，必须传一个参数，且只能传一个参数。 |
+| product | String | 是 | 用户名 |
+| model | String\(11\) | 否 | 产品名，例如prosyst,OOMICUBE |
 | devToken | String | 否 | 当前用户token，如用户未登录则无 |
 | accountId | String | 否 | 当前用户id，如用户未登录则无 |
 | currentSwVersion | String | 是 | 产品当前版本号 |

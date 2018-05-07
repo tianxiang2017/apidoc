@@ -37,6 +37,6 @@
   * [获得语言代码](system/regionLanguageCode.md)
   * [获取区域信息](system/regionList.md)
   * [发送nest邮件](system/sendNestEmail.md)
-* ota升级
-  * [获取最新版本](retrieve.md)
+* [ota升级](ota.md)
+  * [获取最新版本](ota/retrieve.md)
 

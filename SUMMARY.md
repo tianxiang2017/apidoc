@@ -40,4 +40,5 @@
 * [ota升级](ota.md)
   * [获取最新版本](ota/retrieve.md)
   * [获取最新版本](ota/firmwareRetrieve.md)
+  * [手机查询所有版本](ota/integrationCheck.md)
 

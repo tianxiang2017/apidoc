@@ -28,15 +28,6 @@ Touch获取自身的APP和固件版本、Cube的App、固件、IR、zware版本�
 | sn| String| 是 | Touch的sn   |
 
 
-##### Firmware
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-|name     | String|是  | product名    |
-|model    | String |是   | 特征值，没有就为空字符串     |
-|hwVersion    | String |是   | 硬件版本号，没有就为硬件版本号    |
-|feature     | String|是   | 特征值，没有就为空字符串    |
-|swVersion     | String|是   | 当前版本号    |
-
 * #### HTTP 请求示例
 
 ```json

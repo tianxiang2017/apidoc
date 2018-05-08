@@ -1,10 +1,8 @@
-#获取单个固件包信息
+# 获取单个固件包信息
 
 #### 功能说明
 
 获取固件包信息
-
-######
 
 #### 调用接口说明
 
@@ -12,20 +10,19 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/firmwares/detail|
+| URL | \[域名\]/firmwares/detail |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
-| HTTP方式 | POST|
+| HTTP方式 | POST |
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-|product |String|是 | 用户名 |
-|feature |String|否 | 目前只有zware才有 |
-|oldSwVersion |String|是 | 暂时固定为：V0.0.0.0 |
-|currentSwVersion |String |是 | 产品当前版本号 |
-|accountId |Integer|否 | 当前用户id，如用户未登录则无 |
-
+| product | String | 是 | 用户名 |
+| feature | String | 否 | 目前只有zware才有 |
+| oldSwVersion | String | 是 | 暂时固定为：V0.0.0.0 |
+| currentSwVersion | String | 是 | 产品当前版本号 |
+| accountId | Integer | 否 | 保留参数。当前用户id，如用户未登录则无 |
 
 * #### HTTP 请求示例
 
@@ -40,24 +37,24 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-|firmwareId |int |否| | 固件包ID |
-|product |String |否| | 产品名，与参数中产品名相同 |
-|model |String |否| | 型号，固定为"1" |
-|hwVersion |String |否| | 硬件版本号 |
-|feature |bool |否| | product的特征，默认为空字符串 |
-|oldSwVersion |String |否| | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
-|swVersion |String |否| | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
-|isFullPackage |String |否| | 是否为全量包，true则表示为全量包，false则表示为增量包 |
-|firmwareUrl |String |否| | 下载此包的url，get请求下载 |
-|protocol |String |否| | 下载包的协议，固定为http |
-|protocolVersion |String |否| | 协议，固定为1.1 |
-|username |String |否| | 下载包时需要携带的用户名 |
-|password |String |否| | 下载此包时，需要携带的密码 |
-|cnDescription |String |否| | 此包的中文说明 |
-|enDescription |String |否| | 包的英文说明 |
-|size |String |否| | 包的大小 |
-|md5Code |String |否| | md5值，供校验包的真伪 |
-|releaseTime |String |否| | 发布时间，就是管理员在后台上传包的时间 |
+| firmwareId | int | 否 |  | 固件包ID |
+| product | String | 否 |  | 产品名，与参数中产品名相同 |
+| model | String | 否 |  | 型号，固定为"1" |
+| hwVersion | String | 否 |  | 硬件版本号 |
+| feature | bool | 否 |  | product的特征，默认为空字符串 |
+| oldSwVersion | String | 否 |  | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
+| swVersion | String | 否 |  | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
+| isFullPackage | String | 否 |  | 是否为全量包，true则表示为全量包，false则表示为增量包 |
+| firmwareUrl | String | 否 |  | 下载此包的url，get请求下载 |
+| protocol | String | 否 |  | 下载包的协议，固定为http |
+| protocolVersion | String | 否 |  | 协议，固定为1.1 |
+| username | String | 否 |  | 下载包时需要携带的用户名 |
+| password | String | 否 |  | 下载此包时，需要携带的密码 |
+| cnDescription | String | 否 |  | 此包的中文说明 |
+| enDescription | String | 否 |  | 包的英文说明 |
+| size | String | 否 |  | 包的大小 |
+| md5Code | String | 否 |  | md5值，供校验包的真伪 |
+| releaseTime | String | 否 |  | 发布时间，就是管理员在后台上传包的时间 |
 
 * #### 响应示例：
 
@@ -93,7 +90,8 @@
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 601 | 出入的product参数不对，就返回这个值 | 传过来的product参数，在服务器找不到，例如把 OOMI_Cube_App 写成 OOMI_Cube_AAA|
-| 630 | 固件包已经是最新了 |传过来的版本比服务器上要高，就会返回这个值。虽然服务器上的最新的版本比发过来的版本高，但没有对应的包可以更新，例如差分包，还是会返回这个值。|
+| 601 | 出入的product参数不对，就返回这个值 | 传过来的product参数，在服务器找不到，例如把 OOMI\_Cube\_App 写成 OOMI\_Cube\_AAA |
+| 630 | 固件包已经是最新了 | 传过来的版本比服务器上要高，就会返回这个值。虽然服务器上的最新的版本比发过来的版本高，但没有对应的包可以更新，例如差分包，还是会返回这个值。 |
+
 
 

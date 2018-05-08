@@ -2,9 +2,9 @@
 
 #### 功能说明
 
-OomiServer2.0新增获取服务器中产品最新版本接口接口主要作用是供cube获取cube与prosyst最新版本固件下载地址与相关参数.
+OomiServer2.0新增获取服务器中产品最新版本接口，接口主要作用是供cube获取cube与prosyst最新版本固件下载地址与相关参数.
 
-###### 
+亿道的touch不允许升级
 
 #### 调用接口说明
 
@@ -22,10 +22,10 @@ OomiServer2.0新增获取服务器中产品最新版本接口接口主要作用�
 | :--- | :--- | :--- | :--- |
 | product | String | 是 | 产品名，例如prosyst,OOMICUBE |
 | model | String\(11\) | 否 | 默认为1 |
-| devToken | String | 否 | 当前用户token，如用户未登录则无 |
+| devToken | String | 否 | 当前用户token，如用户未登录则无。是用户的token，不是设备的token |
 | accountId | String | 否 | 当前用户id，如用户未登录则无 |
 | currentSwVersion | String | 是 | 产品当前版本号 |
-| isHSLTouch | String | 否 | 老版本的Touch的product叫touch，而不是OOMI\_Touch\_App，所以为了区分华商龙还是亿道的，就加了这个字段。true/false |
+| isHSLTouch | Strin&lt;E&gt; | 否 | 老版本的Touch的product叫touch，而不是OOMI\_Touch\_App，所以为了区分华商龙还是亿道的，就加了这个字段。只能是字符串true或者字符串false，true：是华商龙的touch；false：不是华商龙。 |
 | feature | String | 否 | 产品特殊特征，拥有特征的产品，必传参数 |
 
 * #### HTTP 请求示例

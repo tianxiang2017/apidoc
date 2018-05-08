@@ -2,9 +2,11 @@
 
 #### 功能说明
 
-OomiServer2.0新增获取服务器中产品最新版本接口，接口主要作用是供cube获取cube与prosyst最新版本固件下载地址与相关参数.
+OomiServer2.0新增获取服务器中产品最新版本接口，接口主要作用是获取cube与prosyst最新版本固件下载地址与相关参数.
 
-亿道的touch不允许升级
+亿道的touch不允许升级。
+
+获取版本顺序：最新版本完整包&gt;升级到最近版本的差分包&gt;差分包&gt;完整包
 
 #### 调用接口说明
 
@@ -20,44 +22,19 @@ OomiServer2.0新增获取服务器中产品最新版本接口，接口主要作�
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| product | String | 是 | 产品名，例如prosyst,OOMICUBE |
-| model | String\(11\) | 否 | 默认为1 |
-| devToken | String | 否 | 当前用户token，如用户未登录则无。是用户的token，不是设备的token |
-| accountId | String | 否 | 当前用户id，如用户未登录则无 |
-| currentSwVersion | String | 是 | 产品当前版本号 |
-| isHSLTouch | Strin&lt;E&gt; | 否 | 老版本的Touch的product叫touch，而不是OOMI\_Touch\_App，所以为了区分华商龙还是亿道的，就加了这个字段。只能是字符串true或者字符串false，true：是华商龙的touch；false：不是华商龙。 |
-| feature | String | 否 | 产品特殊特征，拥有特征的产品，必传参数 |
+| product | String\(255\) | 是 | 产品名，例如prosyst，OMMICUBE，OOMI\_Cube\_APP等 |
+| model | String\(255\) | 是 | 型号。默认为字符串1。product为touch时传字符串0 |
+| devToken | String\(255\) | 否 | 当前用户token，如用户未登录则无。是用户的token，不是设备的token |
+| accountId | Integer\(11\) | 否 | 当前用户id，如用户未登录则无 |
+| currentSwVersion | String\(255\) | 是 | 产品当前版本号。 |
+| isHSLTouch | Strin&lt;E&gt; | 否 | 老版本的Touch的product叫touch，而不是OOMI\_Touch\_App，所以为了区分是华商龙的touch还是亿道的touch，就加了这个字段。只能是字符串true或者字符串false（但没有验证）。true：是华商龙的touch；false：不是华商龙。 |
+| feature | String\(50\) | 否 | 产品特殊特征。zwave在不同地区使用不同的频率，product为OOMI\_Cube\_Zwave时使用这个参数来区分不同频率。例如zwave\_freq\_01。 |
 
 * #### HTTP 请求示例
 
 ```json
-{
-    "code": "1",
-    "note": "OPERATE_SUCCESS",
-    "data": {
-        "enDescription": "R37z96hdh53a8oG9A52s",
-        "product": "OOMI_Touch_APP",
-        "password": "R37z96hdh53a8oG9A52s",
-        "protocol": "http",
-        "firmwareId": 104,
-        "compel": false,
-        "oldSwVersion": "V0.0.0.0",
-        "swVersion": "V2.0.6.5",
-        "isFullPackage": true,
-        "releaseTime": "2017-12-28,05:55:47",
-        "md5Code": "601A08521F7BE35D6FD3A44411A468DE",
-        "firmwareUrl": "http://ota.fantem-gateway.com/firmware/OOMI_Touch_APP/1/2/V1-0-0-0/OOMI_Touch_APP-V0.0.0.0-V2.0.6.5.apk",
-        "hwVersion": "V1.0.0.0",
-        "firmwareBinds": [],
-        "username": "Awx0YRuq8LNzrn21",
-        "cnDescription": "R37z96hdh53a8oG9A52s",
-        "model": "1",
-        "size": "55968394",
-        "feature": "",
-        "versionRank": 0,
-        "protocolVersion": "1.1"
-    }
-}
+curl -X GET \
+  'http://openapi.fantem-gateway.com/firmwareRetrieve?product=OMMICUBE&model=1&currentSwVersion=00.00' 
 ```
 
 * #### 返回参数
@@ -125,7 +102,7 @@ OomiServer2.0新增获取服务器中产品最新版本接口，接口主要作�
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 601 | 对应的product找不到 | 传过来的product参数，在服务器找不到，例如把 OOMI\_Cube\_App 写成 OOMI\_Cube\_AAA |
+| 601 | 对应的product找不到 | 传过来的product参数，在服务器找不到，例如把 OMMICUBE写成 OOMICUBE |
 | 603 | 当前设备版本已经是最新 | 传过来的版本比服务器上要高，就会返回这个值。 虽然服务器上的最新的版本比发过来的版本高，但没有对应的包可以更新，例如差分包，还是会返回这个值。 |
 
 

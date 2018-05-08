@@ -80,7 +80,6 @@
   | compel | bool | 否 |  | 是否强制下载，固定为false |
   | versionRank | Integer\(E\) | 否 |  | 0表示gamma版本，1表示beta版本，2表示alpha版本，这个字段不再使用，为固定0 |
   | firmwareBinds | Array | 否 |  | 和这个更新包绑定的版本，固定为空队列 |
-
 * #### 响应示例：
 
 ```json

@@ -18,11 +18,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| product | String | 是 | 用户名 |
-| feature | String | 否 | 目前只有zware才有 |
-| oldSwVersion | String | 是 | 暂时固定为：V0.0.0.0 |
-| currentSwVersion | String | 是 | 产品当前版本号 |
-| accountId | Integer | 否 | 保留参数。当前用户id，如用户未登录则无 |
+| product | String\(255\) | 是 | 产品名 |
+| feature | String\(255\) | 否 | 目前只有OOMI\_Cube\_Zwave才有 |
+| oldSwVersion | String\(255\) | 是 | 暂时固定为：V0.0.0.0 |
+| currentSwVersion | String\(255\) | 是 | 产品当前版本号 |
+| accountId | Integer\(11\) | 否 | 保留参数。 |
 
 * #### HTTP 请求示例
 
@@ -92,6 +92,7 @@
 | :--- | :--- | :--- |
 | 601 | 出入的product参数不对，就返回这个值 | 传过来的product参数，在服务器找不到，例如把 OOMI\_Cube\_App 写成 OOMI\_Cube\_AAA |
 | 630 | 固件包已经是最新了 | 传过来的版本比服务器上要高，就会返回这个值。虽然服务器上的最新的版本比发过来的版本高，但没有对应的包可以更新，例如差分包，还是会返回这个值。 |
+| 602 | 固件不存在 |  |
 
 
 

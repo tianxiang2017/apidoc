@@ -1,4 +1,4 @@
-## 版本查询(1.x版本升级到2.x)
+## 版本查询\(1.x版本升级到2.x\)
 
 #### 功能说明
 
@@ -12,41 +12,39 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/firmwares/swVersionk|
+| URL | \[域名\]/firmwares/swVersion |
 | 请求头部 |  |
-| HTTP方式 | GET|
+| HTTP方式 | GET |
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| oomiCubeVersion| String | 是 | OOMI Cube Firmware 的版本 |
-| prosystVersion| String\(11\) | 是 | OOMI Cube App 的版本   |
-
+| oomiCubeVersion | String | 是 | OOMI Cube Firmware 的版本 |
+| prosystVersion | String\(11\) | 是 | OOMI Cube App 的版本 |
 
 * #### HTTP 请求示例
 
-http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4
+[http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4](http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4)
 
 #### 返回参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-|oomiCubeUser | String | 否 | | Cube Firmware 下载包的用户名 |
-| oomiCubePassWord | String | 否 | |Cube Firmware 下载包的密码 |
-| oomiCubeSwVersion | String | 否 || Cube Firmware 更新包的版本 |
-| oomiCubeSize | string | 否 || Cube Firmware 更新包的大小 |
-| oomiCubeUrl | string | 否 || Cube Firmware 下载包的下载地址 |
-| oomiCubeMd5 | string | 否 || Cube Firmware 下载包的MD5值 |
-| oomiCubeDescription | string ||| Cube Firmware 下载包的说明 |
-| prosystUser | string | 否 ||Cube App 下载包的用户名 |
-| prosystPassWord | string | 否 ||Cube App 下载包的密码 |
-| prosystSwVersion | string |否 || Cube App 更新包的版本 |
-| prosystSize | string | 否 ||Cube App 更新包的大小 |
-| prosystUrl | string | 否 ||Cube App 下载包的下载地址 |
-| prosystMd5 | string | 否 ||Cube App 下载包的MD5值 |
-| prosystDescription | string | 否 ||Cube App 下载包的说明 |
-
+| oomiCubeUser | String | 否 |  | Cube Firmware 下载包的用户名 |
+| oomiCubePassWord | String | 否 |  | Cube Firmware 下载包的密码 |
+| oomiCubeSwVersion | String | 否 |  | Cube Firmware 更新包的版本 |
+| oomiCubeSize | string | 否 |  | Cube Firmware 更新包的大小 |
+| oomiCubeUrl | string | 否 |  | Cube Firmware 下载包的下载地址 |
+| oomiCubeMd5 | string | 否 |  | Cube Firmware 下载包的MD5值 |
+| oomiCubeDescription | string |  |  | Cube Firmware 下载包的说明 |
+| prosystUser | string | 否 |  | Cube App 下载包的用户名 |
+| prosystPassWord | string | 否 |  | Cube App 下载包的密码 |
+| prosystSwVersion | string | 否 |  | Cube App 更新包的版本 |
+| prosystSize | string | 否 |  | Cube App 更新包的大小 |
+| prosystUrl | string | 否 |  | Cube App 下载包的下载地址 |
+| prosystMd5 | string | 否 |  | Cube App 下载包的MD5值 |
+| prosystDescription | string | 否 |  | Cube App 下载包的说明 |
 
 * #### 响应示例：
 
@@ -77,7 +75,8 @@ http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=0
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 601     | 出入的product参数不对，就返回这个值  ||
-| 630     | 固件包已经是最新了  ||
+| 601 | 出入的product参数不对，就返回这个值 |  |
+| 630 | 固件包已经是最新了 |  |
+
 
 

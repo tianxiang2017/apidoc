@@ -18,9 +18,9 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| title | String\(120\） | 是 | 消息的Title。中文title和message之和不能超过165个字 |
-| message | String\(120\) | 是 | 消息的内容。中文最多120字 |
-| accountId | Integer | 是 | 接受的用户ID |
+| title | String\(120\) | 是 | 消息的Title。title和message之和不能超过165个字 |
+| message | String\(120\) | 是 | 消息的内容。最多120字 |
+| accountId | Integer\(10\) | 是 | 接受的用户ID |
 
 * #### HTTP 请求示例
 

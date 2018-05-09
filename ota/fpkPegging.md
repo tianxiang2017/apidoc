@@ -89,27 +89,27 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 * #### 返回参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
-| :--- | :--- | :--- | :--- | :--- |
-| id | Integer | 否 | 大版本的ID |
-| version | Integer | 否 | 版本号 |
-| cnDescription | Integer | 是 | 中文描述 |
-| enDescription | Integer | 否 | 英文描述" |
-| releaseDatetime | Integer | 否 | 发布时间 |
-| firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
+| :--- | :--- | :--- | :--- | :--- |:--- |
+| id | Integer | 否 | |大版本的ID |
+| version | Integer | 否 || 版本号 |
+| cnDescription | Integer | 是 | |中文描述 |
+| enDescription | Integer | 否 | |英文描述" |
+| releaseDatetime | Integer | 否 | |发布时间 |
+| firmwarePackage | FpkSubversion\[\] | 否 || 版本列表 |
 
 #### FpkSubversion
 
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| id | Integer | 否 | 大版本的ID |
-| productId | String | 否 | productId |
-| version | Integer | 否 | 版本号 |
-| cnDescription | Integer | 是 | 中文描述 |
-| enDescription | Integer | 否 | 英文描述" |
-| releaseDatetime | Integer | 否 | 发布时间 |
-| upgradeMethod | Integer | 否 | 更新方法，默认为query |
-| updateAt | Integer | 否 | 更新时间，为unix时间戳 |
-| createAt | Integer | 否 | 更新时间，为unix时间戳 |
+| 参数名称 | 参数类型 | 是否必选| 示例 | 描述 |
+| :--- | :--- | :--- | :--- |:--- |
+| id | Integer | 否 || 大版本的ID |
+| productId | String | 否 || productId |
+| version | Integer | 否 | |版本号 |
+| cnDescription | Integer | 是 || 中文描述 |
+| enDescription | Integer | 否 | |英文描述" |
+| releaseDatetime | Integer | 否 || 发布时间 |
+| upgradeMethod | Integer | 否 || 更新方法，默认为query |
+| updateAt | Integer | 否 || 更新时间，为unix时间戳 |
+| createAt | Integer | 否 || 更新时间，为unix时间戳 |
 
 * #### 响应示例：
 

@@ -20,31 +20,31 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| oomiCubeVersion | String | 是 | OOMI Cube Firmware 的版本 |
-| prosystVersion | String\(11\) | 是 | OOMI Cube App 的版本 |
+| oomiCubeVersion | String\(255\) | 是 | OOMI Cube Firmware 的版本 |
+| prosystVersion | String\(255\) | 是 | OOMI Cube App 的版本 |
 
 * #### HTTP 请求示例
 
-[http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4](http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4)
+[http://openapi.fantem-gateway.com/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4](http://openapi.fantem-gateway.com/retrieve/firmwares/swVersion?oomiCubeVersion=00.10&prosystVersion=1.0.0.4)
 
 #### 返回参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| oomiCubeUser | String | 否 |  | Cube Firmware 下载包的用户名 |
-| oomiCubePassWord | String | 否 |  | Cube Firmware 下载包的密码 |
-| oomiCubeSwVersion | String | 否 |  | Cube Firmware 更新包的版本 |
-| oomiCubeSize | string | 否 |  | Cube Firmware 更新包的大小 |
-| oomiCubeUrl | string | 否 |  | Cube Firmware 下载包的下载地址 |
-| oomiCubeMd5 | string | 否 |  | Cube Firmware 下载包的MD5值 |
-| oomiCubeDescription | string |  |  | Cube Firmware 下载包的说明 |
-| prosystUser | string | 否 |  | Cube App 下载包的用户名 |
-| prosystPassWord | string | 否 |  | Cube App 下载包的密码 |
-| prosystSwVersion | string | 否 |  | Cube App 更新包的版本 |
-| prosystSize | string | 否 |  | Cube App 更新包的大小 |
-| prosystUrl | string | 否 |  | Cube App 下载包的下载地址 |
-| prosystMd5 | string | 否 |  | Cube App 下载包的MD5值 |
-| prosystDescription | string | 否 |  | Cube App 下载包的说明 |
+| oomiCubeUser | String\(255\) | 否 |  | Cube Firmware 下载包的用户名 |
+| oomiCubePassWord | String\(255\) | 否 |  | Cube Firmware 下载包的密码 |
+| oomiCubeSwVersion | String\(255\) | 否 |  | Cube Firmware 更新包的版本 |
+| oomiCubeSize | String\(255\) | 否 |  | Cube Firmware 更新包的大小 |
+| oomiCubeUrl | String\(255\) | 否 |  | Cube Firmware 下载包的下载地址 |
+| oomiCubeMd5 | SString\(255\) | 否 |  | Cube Firmware 下载包的MD5值 |
+| oomiCubeDescription | String\(255\) | 否 |  | Cube Firmware 下载包的说明 |
+| prosystUser | String\(255\) | 否 |  | Cube App 下载包的用户名 |
+| prosystPassWord | String\(255\) | 否 |  | Cube App 下载包的密码 |
+| prosystSwVersion | String\(255\) | 否 |  | Cube App 更新包的版本 |
+| prosystSize | String\(255\) | 否 |  | Cube App 更新包的大小 |
+| prosystUrl | String\(255\) | 否 |  | Cube App 下载包的下载地址 |
+| prosystMd5 | String\(255\) | 否 |  | Cube App 下载包的MD5值 |
+| prosystDescription | String\(255\) | 否 |  | Cube App 下载包的说明 |
 
 * #### 响应示例：
 

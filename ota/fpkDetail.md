@@ -12,23 +12,22 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/firmware-package-kit/detail|
+| URL | \[域名\]/firmware-package-kit/detail |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
-| HTTP方式 | POST|
+| HTTP方式 | POST |
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| id| Integer| 是 | 大版本id |
-
+| id | Integer\(10\) | 是 | 大版本id |
 
 * #### HTTP 请求示例
 
 ```json
 {
-	"accountId": 111,
-	"version": "V0.0.1"
+    "accountId": 111,
+    "version": "V0.0.1"
 }
 ```
 
@@ -36,25 +35,25 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-|id | Integer|否| 大版本的ID |
-| version| Integer| 否 | 版本号 |
-| cnDescription| Integer| 是 | 中文描述|
-| enDescription| Integer | 否 | 英文描述"  |
-| releaseDatetime| Integer| 否 | 发布时间 |
-|firmwarePackage|FpkSubversion[]|否|版本列表|
+|  | id | Integer | 否 | 大版本的ID |
+|  | version | Integer | 否 | 版本号 |
+|  | cnDescription | Integer | 是 | 中文描述 |
+|  | enDescription | Integer | 否 | 英文描述" |
+|  | releaseDatetime | Integer | 否 | 发布时间 |
+|  | firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
 
 #### FpkSubversion
 
-|参数名|类型|说明|
-|:-----  |:-----|----- |
-|id | Integer|否| 大版本的ID |
-| version| Integer| 否 | 版本号 |
-| cnDescription| Integer| 是 | 中文描述|
-| enDescription| Integer | 否 | 英文描述"  |
-| releaseDatetime| Integer| 否 | 发布时间 |
-|upgradeMethod | Integer| 否| 更新方法，默认为query |
-|updateAt | Integer| 否| 更新时间，为unix时间戳 |
-|createAt | Integer| 否| 更新时间，为unix时间戳 |
+|  | 参数名 | 类型 | 说明 |
+| :--- | :--- | :--- | :--- |
+| id | Integer | 否 | 大版本的ID |
+| version | Integer | 否 | 版本号 |
+| cnDescription | Integer | 是 | 中文描述 |
+| enDescription | Integer | 否 | 英文描述" |
+| releaseDatetime | Integer | 否 | 发布时间 |
+| upgradeMethod | Integer | 否 | 更新方法，默认为query |
+| updateAt | Integer | 否 | 更新时间，为unix时间戳 |
+| createAt | Integer | 否 | 更新时间，为unix时间戳 |
 
 * #### 响应示例：
 
@@ -144,8 +143,9 @@
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 3     |参数缺失 ||
-|603|已经是最新版本||
-|40|系统异常||
+| 3 | 参数缺失 |  |
+| 603 | 已经是最新版本 |  |
+| 40 | 系统异常 |  |
+
 
 

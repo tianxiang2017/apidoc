@@ -95,11 +95,11 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 | cnDescription | Integer | 是 | 中文描述 |
 | enDescription | Integer | 否 | 英文描述" |
 | releaseDatetime | Integer | 否 | 发布时间 |
-|  firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
+| firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
 
 #### FpkSubversion
 
-|  | 参数名 | 类型 | 说明 |
+| 参数名 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | id | Integer | 否 | 大版本的ID |
 | productId | String | 否 | productId |

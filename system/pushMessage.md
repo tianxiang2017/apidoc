@@ -64,7 +64,7 @@
 
 表2.2
 
-##### additional的值是一个map，key表示参数名，value表示参数值，支持以下key：
+##### additional的值是一个map，key表示参数名（String类型），value表示参数值（类型不确定），支持以下key：
 
 | key | value类型 | 描述 |
 | :--- | :--- | :--- |

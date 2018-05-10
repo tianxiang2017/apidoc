@@ -36,12 +36,12 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-|  | id | Integer | 否 | 大版本的ID |
-|  | version | Integer | 否 | 版本号 |
-|  | cnDescription | Integer | 是 | 中文描述 |
-|  | enDescription | Integer | 否 | 英文描述" |
-|  | releaseDatetime | Integer | 否 | 发布时间 |
-|  | firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
+| id | Integer | 否 || 大版本的ID |
+|  version | Integer | 否 || 版本号 |
+| cnDescription | Integer | 是| | 中文描述 |
+| enDescription | Integer | 否| | 英文描述" |
+|  releaseDatetime | Integer | 否 || 发布时间 |
+|  firmwarePackage | FpkSubversion\[\] | 否| | 版本列表 |
 
 #### FpkSubversion
 

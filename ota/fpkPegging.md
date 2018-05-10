@@ -24,12 +24,12 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| product | String | 是 | 产品类型名 |
-| model | String | 是 | 产品类型型号，固定为1\(字符串\) |
-| hwVersion | String | 是 | 产品的硬件版本号，固定为：V1.0.0.0 |
+| product | String\(255\) | 是 | 产品类型名 |
+| model | String\(255\) | 是 | 产品类型型号，固定为1\(字符串\) |
+| hwVersion | String\(255\) | 是 | 产品的硬件版本号，固定为：V1.0.0.0 |
 | feature | String\(11\) | 否 | 产品类型特征值 |
-| swVersion | String | 是 | 固件当前版本号 |
-| sn | String | 是 | Touch的sn |
+| swVersion | String\(255\) | 是 | 固件当前版本号 |
+| sn | String\(64\) | 是 | Touch的sn |
 
 * #### HTTP 请求示例
 
@@ -89,27 +89,27 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 * #### 返回参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
-| :--- | :--- | :--- | :--- | :--- |:--- |
-| id | Integer | 否 | |大版本的ID |
-| version | Integer | 否 || 版本号 |
-| cnDescription | Integer | 是 | |中文描述 |
-| enDescription | Integer | 否 | |英文描述" |
-| releaseDatetime | Integer | 否 | |发布时间 |
-| firmwarePackage | FpkSubversion\[\] | 否 || 版本列表 |
+| :--- | :--- | :--- | :--- | :--- |
+| id | Integer\(10\) | 否 |  | 大版本的ID |
+| version | String\(255\) | 否 |  | 版本号 |
+| cnDescription | Text | 是 |  | 中文描述 |
+| enDescription | Text | 否 |  | 英文描述" |
+| releaseDatetime | Integer\(14\) | 否 |  | 发布时间 |
+| firmwarePackage | FpkSubversion\[\] | 否 |  | 版本列表 |
 
 #### FpkSubversion
 
-| 参数名称 | 参数类型 | 是否必选| 示例 | 描述 |
-| :--- | :--- | :--- | :--- |:--- |
-| id | Integer | 否 || 大版本的ID |
-| productId | String | 否 || productId |
-| version | Integer | 否 | |版本号 |
-| cnDescription | Integer | 是 || 中文描述 |
-| enDescription | Integer | 否 | |英文描述" |
-| releaseDatetime | Integer | 否 || 发布时间 |
-| upgradeMethod | Integer | 否 || 更新方法，默认为query |
-| updateAt | Integer | 否 || 更新时间，为unix时间戳 |
-| createAt | Integer | 否 || 更新时间，为unix时间戳 |
+| 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
+| :--- | :--- | :--- | :--- | :--- |
+| id | Integer | 否 |  | 大版本的ID |
+| productId | Integer\(11\) | 否 |  | productId |
+| version | String\(255\) | 否 |  | 版本号 |
+| cnDescription | Text | 是 |  | 中文描述 |
+| enDescription | T | 否 |  | 英文描述" |
+| releaseDatetime | Integer | 否 |  | 发布时间 |
+| upgradeMethod | Integer | 否 |  | 更新方法，默认为query |
+| updateAt | Integer | 否 |  | 更新时间，为unix时间戳 |
+| createAt | Integer | 否 |  | 更新时间，为unix时间戳 |
 
 * #### 响应示例：
 

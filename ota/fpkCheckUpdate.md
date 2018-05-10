@@ -53,7 +53,7 @@
 | cnDescription | Text\(6500\) | 是 |  | 中文描述 |
 | enDescription | Text\(6500\) | 否 |  | 英文描述" |
 | releaseDatetime | Integer\(10\) | 否 |  | 发布时间 |
-| upgradeMethod | Integer | 否 |  | 更新方法，默认为query |
+| upgradeMethod | String\(45\) | 否 |  | 更新方法，默认为query |
 | updateAt | Integer\(10\) | 否 |  | 更新时间，为unix时间戳 |
 | createAt | Integer\(10\) | 否 |  | 更新时间，为unix时间戳 |
 

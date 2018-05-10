@@ -37,24 +37,24 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| firmwareId | int | 否 |  | 固件包ID |
-| product | String | 否 |  | 产品名，与参数中产品名相同 |
-| model | String | 否 |  | 型号，固定为"1" |
-| hwVersion | String | 否 |  | 硬件版本号 |
-| feature | bool | 否 |  | product的特征，默认为空字符串 |
-| oldSwVersion | String | 否 |  | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
-| swVersion | String | 否 |  | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
-| isFullPackage | String | 否 |  | 是否为全量包，true则表示为全量包，false则表示为增量包 |
-| firmwareUrl | String | 否 |  | 下载此包的url，get请求下载 |
-| protocol | String | 否 |  | 下载包的协议，固定为http |
-| protocolVersion | String | 否 |  | 协议，固定为1.1 |
-| username | String | 否 |  | 下载包时需要携带的用户名 |
-| password | String | 否 |  | 下载此包时，需要携带的密码 |
-| cnDescription | String | 否 |  | 此包的中文说明 |
-| enDescription | String | 否 |  | 包的英文说明 |
-| size | String | 否 |  | 包的大小 |
-| md5Code | String | 否 |  | md5值，供校验包的真伪 |
-| releaseTime | String | 否 |  | 发布时间，就是管理员在后台上传包的时间 |
+| firmwareId | Integer\(10\) | 否 |  | 固件包ID |
+| product | String\(255\) | 否 |  | 产品名，与参数中产品名相同 |
+| model | String\(255\) | 否 |  | 型号，固定为"1" |
+| hwVersion | String\(255\) | 否 |  | 硬件版本号 |
+| feature | String\(50\) | 否 |  | product的特征，默认为空字符串 |
+| oldSwVersion | String\(255\) | 否 |  | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
+| swVersion | String\(255\) | 否 |  | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
+| isFullPackage | String\(255\) | 否 |  | 是否为全量包，true则表示为全量包，false则表示为增量包 |
+| firmwareUrl | String\(255\) | 否 |  | 下载此包的url，get请求下载 |
+| protocol | String\(255\) | 否 |  | 下载包的协议，固定为http |
+| protocolVersion | String\(255\) | 否 |  | 协议，固定为1.1 |
+| username | String\(255\) | 否 |  | 下载包时需要携带的用户名 |
+| password | String\(255\) | 否 |  | 下载此包时，需要携带的密码 |
+| cnDescription | Text\(6500\) | 否 |  | 此包的中文说明 |
+| enDescription | Text\(6500\) | 否 |  | 包的英文说明 |
+| size | Integer\(11\) | 否 |  | 包的大小 |
+| md5Code | String\(255\) | 否 |  | md5值，供校验包的真伪 |
+| releaseTime | Integer\(11\) | 否 |  | 发布时间，就是管理员在后台上传包的时间 |
 
 * #### 响应示例：
 

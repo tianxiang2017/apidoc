@@ -35,25 +35,28 @@
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-|  | id | Integer | 否 | 大版本的ID |
-|  | version | Integer | 否 | 版本号 |
-|  | cnDescription | Integer | 是 | 中文描述 |
-|  | enDescription | Integer | 否 | 英文描述" |
-|  | releaseDatetime | Integer | 否 | 发布时间 |
-|  | firmwarePackage | FpkSubversion\[\] | 否 | 版本列表 |
+| id | Integer\(10\) | 否 | | 大版本的ID |
+| version | String\(255\) | 否 | | 版本号 |
+| cnDescription | Text\(6500\) | 是 | | 中文描述 |
+| enDescription | Text\(6500\) | 否 | | 英文描述" |
+| releaseDatetime | Integer\(14\) | 否 | | 发布时间 |
+| firmwarePackage | FpkSubversion\[\] | 否 | | 版本列表 |
 
 #### FpkSubversion
 
-|  | 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- | :--- |
-| id | Integer | 否 | 大版本的ID |
-| version | Integer | 否 | 版本号 |
-| cnDescription | Integer | 是 | 中文描述 |
-| enDescription | Integer | 否 | 英文描述" |
-| releaseDatetime | Integer | 否 | 发布时间 |
-| upgradeMethod | Integer | 否 | 更新方法，默认为query |
-| updateAt | Integer | 否 | 更新时间，为unix时间戳 |
-| createAt | Integer | 否 | 更新时间，为unix时间戳 |
+| 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
+| :--- | :--- | :--- | :--- | :--- |
+| id | Integer\(10\) | 否 | | 大版本的ID |
+| productId | Integer\(11\) | 否 | | productId |
+| version | String\(255\) | 否 | | 版本号 |
+| cnDescription | Text\(6500\)| 是 | | 中文描述 |
+| enDescription | Text\(6500\)| 否 | | 英文描述" |
+| releaseDatetime | Integer\(10\) | 否 | | 发布时间 |
+| upgradeMethod | Integer | 否 | | 更新方法，默认为query |
+| updateAt | Integer\(10\) | 否 | | 更新时间，为unix时间戳 |
+| createAt | Integer\(10\) | 否 | | 更新时间，为unix时间戳 |
+
+
 
 * #### 响应示例：
 

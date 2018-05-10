@@ -101,15 +101,15 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| id | Integer | 否 |  | 大版本的ID |
+| id | Integer\(10\) | 否 |  | 大版本的ID |
 | productId | Integer\(11\) | 否 |  | productId |
 | version | String\(255\) | 否 |  | 版本号 |
 | cnDescription | Text | 是 |  | 中文描述 |
 | enDescription | Text | 否 |  | 英文描述" |
-| releaseDatetime | Integer | 否 |  | 发布时间 |
+| releaseDatetime | Integer\(10\) | 否 |  | 发布时间 |
 | upgradeMethod | Integer | 否 |  | 更新方法，默认为query |
-| updateAt | Integer | 否 |  | 更新时间，为unix时间戳 |
-| createAt | Integer | 否 |  | 更新时间，为unix时间戳 |
+| updateAt | Integer\(10\) | 否 |  | 更新时间，为unix时间戳 |
+| createAt | Integer\(10\) | 否 |  | 更新时间，为unix时间戳 |
 
 * #### 响应示例：
 

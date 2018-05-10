@@ -92,8 +92,8 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 | :--- | :--- | :--- | :--- | :--- |
 | id | Integer\(10\) | 否 |  | 大版本的ID |
 | version | String\(255\) | 否 |  | 版本号 |
-| cnDescription | Text | 是 |  | 中文描述 |
-| enDescription | Text | 否 |  | 英文描述" |
+| cnDescription | Text\(6500\) | 是 |  | 中文描述 |
+| enDescription | Text\(6500\) | 否 |  | 英文描述" |
 | releaseDatetime | Integer\(14\) | 否 |  | 发布时间 |
 | firmwarePackage | FpkSubversion\[\] | 否 |  | 版本列表 |
 
@@ -104,8 +104,8 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 | id | Integer\(10\) | 否 |  | 大版本的ID |
 | productId | Integer\(11\) | 否 |  | productId |
 | version | String\(255\) | 否 |  | 版本号 |
-| cnDescription | Text | 是 |  | 中文描述 |
-| enDescription | Text | 否 |  | 英文描述" |
+| cnDescription | Text\(6500\)| 是 |  | 中文描述 |
+| enDescription | Text\(6500\)| 否 |  | 英文描述" |
 | releaseDatetime | Integer\(10\) | 否 |  | 发布时间 |
 | upgradeMethod | Integer | 否 |  | 更新方法，默认为query |
 | updateAt | Integer\(10\) | 否 |  | 更新时间，为unix时间戳 |

@@ -32,6 +32,7 @@
   * [绑定网关](account/bindCube.md)
   * [解绑网关](account/unbindCube.md)
   * [V2登录](account/v2AccountsLogin.md)
+  * [v2登出](account/v2AccountsLogout.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](system/emailCode.md)
   * [发送短信验证码 ](system/smsCode.md)

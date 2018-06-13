@@ -32,7 +32,7 @@
   * [绑定网关](account/bindCube.md)
   * [解绑网关](account/unbindCube.md)
   * [V2登录](account/v2AccountsLogin.md)
-  * [v2登出](account/v2AccountsLogout.md)
+  * [V2登出](account/v2AccountsLogout.md)
   * [获取用户绑定的设备的guid](account/v2HhomeGateway.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](system/emailCode.md)

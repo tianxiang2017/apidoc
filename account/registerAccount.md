@@ -31,11 +31,11 @@ touch使用此接口注册用户，国内版手机有新的注册用户接口
 | email | String\(255\) | 是 | 邮箱，由数字字母 以及@-\_.构成，以数字或者字母开头，以数字或者字母结束 |
 | password | String\(255\) | 是 | 用户密码，调用接口时，需要先对密码进行一次md5加密。否则无法登录 |
 | rePassword | String\(255\) | 是 | 确认密码，必须和password的值一样 |
-| displayName | String\(255\) | 否 | 用户昵称 |
-| sex | String&lt;E&gt; | 否 | 性别。只能取0，1，male，female，man，women，男或者女 |
-| birthday | String&lt;10&gt; | 否 | 生日，yyyy/MM/dd格式，例如：1996/07/22 |
-| address | String\(255\) | 否 | 家庭地址 |
-| language | String&lt;E&gt; | 否 | 系统语言。默认值en，只能取en，es，zh\_CN或者ch\_TW |
+| displayName | String | 否 | 保留参数。 |
+| sex | String | 否 | 保留参数。 |
+| birthday | String | 否 | 保留参数。 |
+| address | String | 否 | 保留参数。 |
+| language | String&lt;E&gt; | 否 | 系统语言。默认值en，只能取en或者zh\_CN |
 
 * #### HTTP 请求示例
 

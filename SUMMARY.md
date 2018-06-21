@@ -55,4 +55,5 @@
   * [大版本-获取详情](ota/fpkDetail.md)
   * [获取单个固件包信息](ota/firmwaresDetail.md)
   * [获取产品的所有固件包](ota/firmwaresByProductId.md)
+  * [客户端上报下载状态](ota/ke-hu-duan-shang-bao-xia-zai-zhuang-tai.md)
 

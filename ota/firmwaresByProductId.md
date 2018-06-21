@@ -14,32 +14,61 @@
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 
-* #### 输入参数说明
+* * #### 输入参数说明
 
 无
-{productId}替换为实际值，例如10
 
 * #### HTTP 请求示例
 
-```json
-
-```
+  ```json
+  {
+  }
+  ```
 
 * #### 返回参数
+
 无
 
 * #### 响应示例：
 
-```json
-{
-"code": "1",
-"note": "OPERATE_SUCCESS"
-}
-```
+  ```json
+  {
+      "code": "1",
+      "note": "OPERATE_SUCCESS",
+
+  }
+  ```
 
 * #### 异常返回值
 
-无
+  无
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

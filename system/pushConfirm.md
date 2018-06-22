@@ -12,7 +12,7 @@
 | --- | --- |
 | URL | \[域名\]/push/confirmPush |
 | 请求头部 |  |
-| HTTP方式 | GET |
+| HTTP方式 | POST |
 
 * #### 输入参数说明
 

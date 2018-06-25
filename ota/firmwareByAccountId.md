@@ -32,7 +32,11 @@
 
 * #### HTTP 请求示例
 
-
+{
+	"product":"OOMI_Cube_APP",
+	"currentSwVersion":"0"
+	
+}
 
 
 * #### 返回参数

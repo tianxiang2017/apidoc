@@ -74,4 +74,6 @@
   * [testServlet](testservlet.md)
   * [testServlet2](testservlet2.md)
   * [testServlet3](testservlet3.md)
+  * [calculateOnlineClientByHour](calculateonlineclientbyhour.md)
+  * [moveOnlineClientPerHour](moveonlineclientperhour.md)
 

@@ -74,7 +74,7 @@
   * [testServlet](testservlet.md)
   * [testServlet2](testservlet2.md)
   * [testServlet3](testservlet3.md)
-  * [calculateOnlineClientByHour](calculateonlineclientbyhour.md)
-  * [moveOnlineClientPerHour](moveonlineclientperhour.md)
-  * [statDayReport](statdayreport.md)
+  * [测试计算设备](calculateonlineclientbyhour.md)
+  * [测试移动设备](moveonlineclientperhour.md)
+  * [测试统计](statdayreport.md)
 

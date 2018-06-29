@@ -1,4 +1,4 @@
-# debug/json
+# statDayReport
 
 #### 功能说明
 直接返回传入的参数
@@ -10,17 +10,13 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/debug/json|
+| URL | \[域名\]/statDay/report|
 | 请求头部 |  Content-Type:application/json;charset=utf-8|
 | HTTP方式 | POST |
 
 * #### 输入参数说明
 
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-| num | Integer | 否 | 一个数字|
-| name| String\(64\) | 否 | name|
-| detail| Map | 否 | detail |
+无
 
 
 * #### HTTP 请求示例

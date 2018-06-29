@@ -76,4 +76,5 @@
   * [testServlet3](testservlet3.md)
   * [calculateOnlineClientByHour](calculateonlineclientbyhour.md)
   * [moveOnlineClientPerHour](moveonlineclientperhour.md)
+  * [statDayReport](statdayreport.md)
 

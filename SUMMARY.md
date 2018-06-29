@@ -47,6 +47,7 @@
   * [推送消息确认](system/pushConfirm.md)
   * [云片发送短信回调](system/smsYunpianStatus.md)
   * [云片短信回复内容](system/smsYunpianReplay.md)
+  * [系统版本](system/systemVersion.md)
 * [ota升级](ota.md)
   * [获取最新版本](ota/retrieve.md)
   * [获取最新版本](ota/firmwareRetrieve.md)

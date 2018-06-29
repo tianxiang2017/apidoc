@@ -20,6 +20,7 @@
   * [authenCubes](client/authencubes.md)
   * [cube的心跳包（旧）](client/cubeHeart.md)
   * [devCubes](client/devcubes.md)
+  * [获取OSS基本信息](client/huoqu-oss-ji-ben-xin-xi.md)
 * [用户管理](account.md)
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)

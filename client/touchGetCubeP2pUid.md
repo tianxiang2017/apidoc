@@ -23,6 +23,21 @@ touch获取cube的p2pId。
 
 
 * #### HTTP 请求示例
+
+```
+curl -X GET \
+  'http://localhost:9000/cube/confirm?uuid=A01011725020927&devToken=b3a742582be0faf4dd43b71712e67678' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+```
+  
+ ```
+GET /cube/confirm?uuid=A01011725020927&amp;devToken=b3a742582be0faf4dd43b71712e67678 HTTP/1.1
+Host: localhost:9000
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Postman-Token: 83ea06b0-c387-f10d-5f7e-8f88d28b3f71
+```
 * #### 返回参数
 
  | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |

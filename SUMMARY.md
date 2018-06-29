@@ -67,7 +67,7 @@
   * [获取产品的所有固件包](ota/firmwaresByProductId.md)
   * [客户端上报下载状态](ota/ke-hu-duan-shang-bao-xia-zai-zhuang-tai.md)
   * [获得某个用户的所有固件包](ota/firmwareByAccountId.md)
-* 语音
+* [语音](yu-yin.md)
 * [测试](ce-shi.md)
   * [debugJson](debugjson.md)
   * [debugp2p](debugp2p.md)

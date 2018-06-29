@@ -38,17 +38,32 @@
 * #### 响应示例：
 
   ```json
-{
-    "code": "1",
-    "note": "操作成功",
-    "data": {
-        "num": 1,
-        "name": "name",
-        "detail": {
-            "key1": "value1"
-        }
+[
+    {
+        "id": 13,
+        "code": "report01",
+        "value": 666,
+        "day": "20170503",
+        "type": "report",
+        "remark": "总注册用户数"
+    },
+    {
+        "id": 14,
+        "code": "report02",
+        "value": 547,
+        "day": "20170503",
+        "type": "report",
+        "remark": "已验证邮箱用户数"
+    },
+    {
+        "id": 15,
+        "code": "report03",
+        "value": 118,
+        "day": "20170503",
+        "type": "report",
+        "remark": "未验证邮箱用户数"
     }
-}
+]
 ```
 
 

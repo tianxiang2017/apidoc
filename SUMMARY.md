@@ -17,6 +17,7 @@
   * [解绑cube（旧）](client/unbindCubeOld.md)
   * [用户绑定的网关列表](client/accountGatewayList.md)
   * [touch获取cube的p2pId](client/touchGetCubeP2pUid.md)
+  * [authenCubes](client/authencubes.md)
 * [用户管理](account.md)
   * [注册账号](account/registerAccount.md)
   * [登录](account/login.md)

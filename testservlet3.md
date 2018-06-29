@@ -1,7 +1,7 @@
-# testServlet
+# testServlet2
 
 #### 功能说明
-测试Servlet
+测试Servlet3，返回json字符串
 
 
 #### 调用接口说明
@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/debug/testServlet|
+| URL | \[域名\]/debug/testServlet3|
 | 请求头部 |  |
 | HTTP方式 | POST |
 
@@ -23,17 +23,14 @@
 
 * #### 返回参数
 
-无
+返回文本
 
 
 * #### 响应示例：
 
-  ```json
-{
-    "code": "1",
-    "note": "操作成功",
-}
-```
+
+ {"code":"1","note":"操作成功"}
+ 
 
 
 

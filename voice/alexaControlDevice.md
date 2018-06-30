@@ -1,9 +1,11 @@
-## AIUI验证服务器Token
+## Alexa设备控制
 
 #### 功能说明
 
-AIUI验证服务器Token。aiui根据rand，timestamp和分配给oomi服务器的token，使用sha1加密算法生成一个签名。服务器同样生成已经签名，然后比较签名是否是aiui期待的签名。如果不是aiui期待的签名，则token无效，返回failed。
-此接口已开放出去。但没有使用。
+Alexa设备控制。
+旧的customer skill。现在不用，现在用smarthome。
+
+
 
 #### Alexa设备控制
 

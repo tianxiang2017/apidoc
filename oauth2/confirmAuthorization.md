@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/oauth/authorize |
+| URL | \[域名\]/oauth/confirm_authorization|
 | 请求头部 |Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST |
 

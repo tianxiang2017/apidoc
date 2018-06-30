@@ -9,7 +9,7 @@ Alexa请求获取token
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/alexaControl|
+| URL | \[域名\]/register/alexa|
 | 请求头部 | |
 | HTTP方式 | GET |
 

@@ -13,16 +13,16 @@ Alexa设备控制。
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/aiui/ |
+| URL | \[域名\]/alexaControl |
 | 请求头部 | Content-Type:application/json;charset=UTF-8 |
-| HTTP方式 | POST|
+| HTTP方式 | GET|
 
 * ### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| SessionParams| String| 是 | 会话参数。从这个参数里面获得access_token|
-| Msg| String| 否 |  |
+| accountToken| String| 是 | access_token|
+| intent| String| 是 |  |
 
 
 
@@ -33,9 +33,16 @@ Alexa设备控制。
 
 * #### 返回参数
 
-
+无
 
 * #### 响应示例：
+
+```json
+{
+    "code":"1",
+    "note":"OPERATION_SUCCESS"
+}
+```
 
 
 

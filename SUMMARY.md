@@ -83,4 +83,5 @@
   * [登录授权](oauth2/authorize.md)
   * [用户确认授权](oauth2/confirmAuthorization.md)
   * [获取token](oauth2/token.md)
+  * [获取token2](oauth2/huo-qu-token2.md)
 

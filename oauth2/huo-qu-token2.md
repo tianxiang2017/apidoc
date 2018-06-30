@@ -1,8 +1,8 @@
-# 获取token
+# 获取token2
 
 #### 功能说明
 
-获取token
+用户授权后产生code
 
 #### 调用接口说明
 
@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/oauth/token|
+| URL | \[域名\]/google/token|
 | 请求头部 | |
 | HTTP方式 | POST |
 

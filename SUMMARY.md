@@ -69,6 +69,7 @@
   * [获得某个用户的所有固件包](ota/firmwareByAccountId.md)
 * [语音](voice.md)
   * [AIUI验证服务器Token](voice/verifytoken.md)
+  * [AIUI设备控制](voice/deviceControl.md)
 * [测试](test.md)
   * [debugJson](debugjson.md)
   * [debugp2p](debugp2p.md)

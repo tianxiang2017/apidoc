@@ -1,8 +1,7 @@
 # alexa请求获取token
 
 #### 功能说明
-设备控制。
-旧的customer skill。现在不用，现在用smarthome。
+Alexa请求获取token
 
 #### 调用接口说明
 

@@ -79,4 +79,6 @@
   * [测试计算设备](calculateonlineclientbyhour.md)
   * [测试移动设备](moveonlineclientperhour.md)
   * [测试统计](statdayreport.md)
+* [Oauth2](oauth2.md)
+  * [登录授权](oauth2/authorize.md)
 

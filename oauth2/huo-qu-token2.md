@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-用户授权后产生code
+获取token
 
 #### 调用接口说明
 
@@ -47,6 +47,9 @@ grant_type是authorization_code时，返回
 | access_token| String\(16\) | 是 | | 访问令牌 |
 | expires_in| String | 是 |  | 有效时间，单位是秒 |
 | refresh_token| String | 是 |  | 刷新令牌 |
+| token_type| String | 否 |  | google home返回固定值bearer。天猫精灵不返回。 |
+
+
 
 grant_type是refresh_token时，返回
 
@@ -54,6 +57,11 @@ grant_type是refresh_token时，返回
 | :--- | :--- | :--- | :--- | :--- |
 | access_token| String\(16\) | 是 | | 访问令牌 |
 | expires_in| String | 是 |  | 有效时间，单位是秒 |
+| token_type| String | 否 |  | google home返回固定值bearer。天猫精灵不返回。 |
+
+
+
+
 
 
 

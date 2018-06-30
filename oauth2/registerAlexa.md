@@ -1,8 +1,8 @@
 # alexa请求获取token
 
 #### 功能说明
-
-获取token
+设备控制。
+旧的customer skill。现在不用，现在用smarthome。
 
 #### 调用接口说明
 
@@ -10,9 +10,9 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/oauth/token|
+| URL | \[域名\]/alexaControl|
 | 请求头部 | |
-| HTTP方式 | POST |
+| HTTP方式 | GET |
 
 * #### 输入参数说明
 

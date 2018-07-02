@@ -73,6 +73,8 @@
   * [Alexa设备控制](voice/alexaControlDevice.md)
   * [Alexa smart home设备控制](voice/alexa-smart-homeshe-bei-kong-zhi.md)
   * [Alexa smart home同步数据](voice/alexa-smart-hometong-bu-shu-ju.md)
+  * [设备同步](voice/deviceSync.md)
+  * [设备控制](voice/devicdeControl2.md)
 * [测试](test.md)
   * [debugJson](debugjson.md)
   * [debugp2p](debugp2p.md)

@@ -75,6 +75,8 @@
   * [Alexa smart home同步数据](voice/alexa-smart-hometong-bu-shu-ju.md)
   * [设备同步](voice/deviceSync.md)
   * [设备控制](voice/devicdeControl2.md)
+  * [google home对接](voice/google-home.md)
+  * 天猫smarthome
 * [测试](test.md)
   * [debugJson](debugjson.md)
   * [debugp2p](debugp2p.md)

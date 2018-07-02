@@ -93,7 +93,7 @@
   * [获取token2](oauth2/huo-qu-token2.md)
   * [alexa请求获取token](oauth2/registerAlexa.md)
 * MQTT
-  * 获取topic
+  * [获取topic](huo-qu-topic.md)
   * 设备控制
   * 场景列表
   * 场景控制

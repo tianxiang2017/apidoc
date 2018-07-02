@@ -2,10 +2,13 @@
 
 #### 功能说明
 
-Alexa设备控制。
-旧的customer skill。现在不用，现在用smarthome。
+Google Home的Actions on Google平台与Oomi服务器的对接的接口。
+执行intent值和对应操作关系：
+1.action.devices.SYNC：同步操作，返回google home需要的数据
+2.action.devices.QUERY 查询操作
+2.action.devices.EXECUTE 执行指令
 
-
+accessToken放在Authorization请求头中
 
 #### Alexa设备控制
 
@@ -13,7 +16,7 @@ Alexa设备控制。
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/device/control |
+| URL | \[域名\]/alexaControl |
 | 请求头部 | Content-Type:application/json;charset=UTF-8 |
 | HTTP方式 | GET|
 

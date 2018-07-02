@@ -3,10 +3,10 @@
 #### 功能说明
 
 Google Home的Actions on Google平台与Oomi服务器的对接的接口。
-执行intent值和对应操作关系：
-1.action.devices.SYNC：同步操作，返回google home需要的数据
-2.action.devices.QUERY 查询操作
-2.action.devices.EXECUTE 执行指令
+执行namespace值和对应操作关系：
+1.AliGenie.Iot.Device.Discovery：设备发现，即设备同步
+2.AliGenie.Iot.Device.Control:设备控制
+2.aAliGenie.Iot.Device.Query 设备查询，目前尚不支持
 
 accessToken放在Authorization请求头中
 
@@ -16,7 +16,7 @@ accessToken放在Authorization请求头中
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/alexaControl |
+| URL | \[域名\]/tmall/smarthome |
 | 请求头部 | Content-Type:application/json;charset=UTF-8 |
 | HTTP方式 | GET|
 
@@ -24,8 +24,8 @@ accessToken放在Authorization请求头中
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| accountToken| String| 是 | access_token|
-| intent| String| 是 |  |
+| header| String| 是 | {"namespace":"","name":""}|
+| payload| String| 是 | {“accessToken”} |
 
 
 
@@ -41,10 +41,7 @@ accessToken放在Authorization请求头中
 * #### 响应示例：
 
 ```json
-{
-    "code":"1",
-    "note":"OPERATION_SUCCESS"
-}
+
 ```
 
 

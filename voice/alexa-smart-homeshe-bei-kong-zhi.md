@@ -42,19 +42,7 @@ Alexa同步用户设备信息。
 
 
 * #### 返回参数
-| 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
-| :--- | :--- | :--- | :--- | :--- |
-| applianceId| String| 是 | | sn |
-| manufacturerName| String | 否 |  | 固定值FANTEM|
-| modelName| String | 否 |  |  |
-| version| String | 否 |  | 固定字符串“1.0” |
-| friendlyName| String | 否 |  |  |
-| friendlyDescription| String | 否 |  |  |
-| isReachable| String | 否 |  | 固定值true |
-| actions| String[] | 否 |  | |
-| type| String | 否 |  |场景时返回scene |
-| additionalApplianceDetails| Map| 否 |  |场景时返回 |
-| applianceTypes| String | 否 | |场景时返回["SCENE_TRIGGER"] |
+返回一个字符串。当执行动作失败，返回failed；当执行成功，返回OK
 
 
 * #### 响应示例：

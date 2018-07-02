@@ -29,8 +29,8 @@ touch使用此接口注册用户，国内版手机有新的注册用户接口
 | :--- | :--- | :--- | :--- |
 | username | String\(255\) | 是 | 用户名，区分大小写，不能重复 |
 | email | String\(255\) | 是 | 邮箱，由数字字母 以及@-\_.构成，以数字或者字母开头，以数字或者字母结束 |
-| password | String\(255\) | 是 | 用户密码，调用接口时，需要先对密码进行一次md5加密。否则无法登录 |
-| rePassword | String\(255\) | 是 | 确认密码，必须和password的值一样 |
+| password | String\(32\) | 是 | 用户密码，调用接口时，需要先对密码进行一次md5加密。否则无法登录 |
+| rePassword | String\(32\) | 是 | 确认密码，必须和password的值一样 |
 | displayName | String | 否 | 保留参数。 |
 | sex | String | 否 | 保留参数。 |
 | birthday | String | 否 | 保留参数。 |

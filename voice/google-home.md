@@ -16,7 +16,7 @@ accessToken放在Authorization请求头中
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/alexaControl |
+| URL | \[域名\]/google/smarthome |
 | 请求头部 | Content-Type:application/json;charset=UTF-8 |
 | HTTP方式 | GET|
 

@@ -1,4 +1,4 @@
-## Alexa smart home同步数据
+## Alexa smart home设备控制
 
 #### 功能说明
 
@@ -10,7 +10,7 @@ Alexa同步用户设备信息。
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/smart_home/synchrodata |
+| URL | \[域名\]/smart_home/control|
 | 请求头部 |  |
 | HTTP方式 | GET|
 
@@ -19,6 +19,19 @@ Alexa同步用户设备信息。
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
 | accessToken| String| 是 | access token|
+| action| String| 是 |控制动作。同步数据接口返回的actions中一个|
+| applianceId| String| 是 | sn |
+| value | String | 否   | 不同的action对应的值类型可能不一样|
+
+| hue| String | 否 |  setColor动作需要用这个值  |
+| saturation| String | 否 |  setColor动作需要用这个值 |
+| brightness| String | 否 | setColor动作需要用这个值   |
+| deltaPercentage| String | 否 | incrementPercentager动作需要用这个值  |
+| deltaPercentage| String | 否 | decrementPercentage动作需要用这个值 |
+
+
+
+
 
 
 

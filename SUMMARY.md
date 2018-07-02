@@ -71,7 +71,7 @@
   * [AIUI验证服务器Token](voice/verifytoken.md)
   * [AIUI设备控制](voice/deviceControl.md)
   * [Alexa设备控制](voice/alexaControlDevice.md)
-  * Alexa smart home设备控制
+  * [Alexa smart home设备控制](voice/alexa-smart-homeshe-bei-kong-zhi.md)
   * [Alexa smart home同步数据](voice/alexa-smart-hometong-bu-shu-ju.md)
 * [测试](test.md)
   * [debugJson](debugjson.md)

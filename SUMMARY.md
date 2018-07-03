@@ -92,8 +92,8 @@
   * [获取token](oauth2/token.md)
   * [获取token2](oauth2/huo-qu-token2.md)
   * [alexa请求获取token](oauth2/registerAlexa.md)
-* MQTT
-  * [获取topic](huo-qu-topic.md)
+* [MQTT](mqtt.md)
+  * [获取topic](mqtt/topic.md)
   * [设备控制](she-bei-kong-zhi.md)
   * [场景列表](chang-jing-lie-biao.md)
   * [场景控制](chang-jing-kong-zhi.md)

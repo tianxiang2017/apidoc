@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-修改用户在设备上的状态为登出状态。
+修改用户在设备上的状态为登出状态。  
 如果请求cookie中有guid，使用guid查询设备，不使用uuid参数
 
 #### 调用接口说明
@@ -20,8 +20,8 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | accountId | Integer\(10\) | 是 | 用户ID |
-| uuid | String\(64\) | 是 | app的sn，唯一标识app登录所使用的客户端。如果请求cookie中有guid，使用guid查询设备，不使用uuid参数
- |
+| uuid | String\(64\) | 是 | app的sn，唯一标识app登录所使用的客户端。如果请求cookie中有guid，使用guid查询设备，不使用uuid参数 |
+|  |  |  |  |
 | accountToken | String&lt;32&gt; | 是 | accessToken，用户登录凭证，标识accountId对应的用户在uuid对应的设备上登录 |
 
 * #### HTTP 请求示例

@@ -1,7 +1,7 @@
-## 设备列表
+## 场景控制
 
 #### 功能说明
-mqtt设备列表
+mqtt场景控制
 
 #### 调用接口说明
 
@@ -9,7 +9,7 @@ mqtt设备列表
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/device/mqtt/device/list |
+| URL | \[域名\]/device/mqtt/scene/control |
 | 请求头部 | |
 | HTTP方式 | GET |
 
@@ -18,12 +18,14 @@ mqtt设备列表
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | clientId| Integer\(10\) | 是 | 设备的id |
+| sn| String\(64\) | 是 | 设备的id |
+
 
 * #### HTTP 请求示例
 
 ```
 curl -X GET \
-  'http://openapi.fantem-gateway.com/device/mqtt/device/list?clientId=1' \
+  'http://openapi.fantem-gateway.com/device/mqtt/scene/control?clientId=1&sn=xxxxxxxxxxxxxx' \
 ```
 
 * #### 返回参数

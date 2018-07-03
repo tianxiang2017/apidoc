@@ -1,7 +1,7 @@
-## 设备列表
+## 场景列表
 
 #### 功能说明
-mqtt设备列表
+mqtt场景列表
 
 #### 调用接口说明
 
@@ -9,7 +9,7 @@ mqtt设备列表
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/device/mqtt/device/list |
+| URL | \[域名\]/device/mqtt/scene/list |
 | 请求头部 | |
 | HTTP方式 | GET |
 
@@ -23,7 +23,7 @@ mqtt设备列表
 
 ```
 curl -X GET \
-  'http://openapi.fantem-gateway.com/device/mqtt/device/list?clientId=1' \
+  'http://openapi.fantem-gateway.com/device/mqtt/scene/list?clientId=1' \
 ```
 
 * #### 返回参数
@@ -31,9 +31,16 @@ curl -X GET \
 无
 
 
+
+
+
+
+
 * #### 响应示例：
 
+```json
 
+```
 
 * #### 异常返回值
 

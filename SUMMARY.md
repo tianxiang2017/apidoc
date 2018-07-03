@@ -94,7 +94,7 @@
   * [alexa请求获取token](oauth2/registerAlexa.md)
 * MQTT
   * [获取topic](huo-qu-topic.md)
-  * 设备控制
+  * [设备控制](she-bei-kong-zhi.md)
   * 场景列表
   * 场景控制
   * 添加设备

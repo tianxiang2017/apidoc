@@ -97,7 +97,7 @@
   * [设备控制](mqtt/deviceControl.md)
   * [场景列表](chang-jing-lie-biao.md)
   * [场景控制](chang-jing-kong-zhi.md)
-  * [添加设备](tian-jia-she-bei.md)
+  * [添加设备](mqtt/deviceAdd.md)
   * [删除设备](shan-chu-she-bei.md)
   * [设备列表](she-bei-lie-biao.md)
 

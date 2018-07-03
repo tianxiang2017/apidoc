@@ -31,29 +31,27 @@ curl -X GET \
 
 | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| guid | String&lt;16&gt; | 是 |  | 请求参数中的guid |
-| algorithmId | Integer&lt;1&gt; | 是 | 1 | 服务器选择的协议。目前服务器只支持使用MD5进行加密，所有固定返回1 |
-| secretKeyId | Integer&lt;1&gt; | 是 | 0 | 固定返回0 |
+| inTopic| String&lt;16&gt; | 否 |  | inTopic|
+| outTopic| String | 否 |  | outTopic|
+| guid | String  | 否 |  |  |
+| code | Integer | 否 |  |  |
+| message| String  | 否 |  |  |
+| data| Map|否 |  |  |
+
+
+
+
+
+
 
 * #### 响应示例：
 
 ```json
-{
-    "code": 1,
-    "note": "OPERATE_SUCCESS",
-    "data": {
-        "data": "SsiFs6NxP5V01z3d",
-        "algorithmId": 1,
-        "secretKeyId": 0
-    }
-}
+
 ```
 
 * #### 异常返回值
 
-| 错误码 | 提示信息 | 备注 |
-| --- | --- | --- |
-| 3 | 必填参数为空 | uuid、devType或者supportAlgs为空都会返回这个值. |
 
 
 

@@ -4,7 +4,6 @@
 
 设备获取一个topic
 
-
 #### 调用接口说明
 
 * #### HTTP配置
@@ -19,7 +18,7 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| guid| String\(64\) | 是 | 设备的guid |
+| guid | String\(32\) | 是 | 设备的guid |
 
 * #### HTTP 请求示例
 
@@ -32,7 +31,7 @@ curl -X GET \
 
 | 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| guid| String&lt;16&gt; | 是 | | 请求参数中的guid |
+| guid | String&lt;16&gt; | 是 |  | 请求参数中的guid |
 | algorithmId | Integer&lt;1&gt; | 是 | 1 | 服务器选择的协议。目前服务器只支持使用MD5进行加密，所有固定返回1 |
 | secretKeyId | Integer&lt;1&gt; | 是 | 0 | 固定返回0 |
 

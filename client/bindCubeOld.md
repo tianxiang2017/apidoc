@@ -22,7 +22,7 @@
 | sn | String\(64\) | 是 | cube的sn |
 | uuid | String\(64\) | 否 | cube的uuid，保留参数 |
 | accountId | Integer\(10\) | 是 | 用户的id |
-| touchToken | String\(32\) | 否 | 在touch上登录的用户的accessToken |
+| touchToken | String\(32\) | 是 | 在touch上登录的用户的accessToken |
 | touchUuid | String\(64\) | 是 | 在touch的sn， 用户在此touch上登录，并发起绑定 |
 
 * #### HTTP 请求示例

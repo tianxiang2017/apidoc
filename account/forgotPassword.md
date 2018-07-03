@@ -19,7 +19,7 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | email | String\(255\) | 是 | 用户邮箱，用户在做用户注册时填写的邮箱 |
-| language | String&lt;E&gt; | 否 | 邮件使用的语言，默认值en。可以使用的值有zh\_CN，en，zh\_TW，es和pt。其中，es和pt是保留值 |
+| language | String&lt;E&gt; | 否 | 邮件使用的语言，默认值en。可以使用的值有zh\_CN，en |
 
 * #### HTTP 请求示例
 

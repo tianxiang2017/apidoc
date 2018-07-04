@@ -12,7 +12,7 @@
 | --- | --- |
 | URL | \[域名\]/layout/permission|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
-| HTTP方式 | POST|
+| HTTP方式 | GET |
 
 * #### 输入参数说明
 

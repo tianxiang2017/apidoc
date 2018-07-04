@@ -100,7 +100,7 @@
   * [场景列表](chang-jing-lie-biao.md)
   * [场景控制](chang-jing-kong-zhi.md)
   * [添加设备](mqtt/deviceAdd.md)
-  * [删除设备](shan-chu-she-bei.md)
+  * [删除设备](mqtt/deviceDelete.md)
   * [设备列表](mqtt/deviceList.md)
 * [用户](userAdmin.md)
   * [用户列表](account/yong-hu-lie-biao.md)
@@ -111,7 +111,7 @@
   * 用户统计
 * [权限](permissionAdmin.md)
   * [布局-菜单](account/bu-5c40-cai-dan.md)
-  * 查询业务系统所有的用户组
+  * [查询业务系统所有的用户组](account/cha-xun-ye-wu-xi-tong-suo-you-de-yong-hu-zu.md)
   * 创建权限
   * 修改权限
   * 删除权限

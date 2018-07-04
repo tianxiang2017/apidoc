@@ -146,6 +146,7 @@
 * 邮件
   * 邮件列表
 * Nest
-  * Nest 编辑用户的DataModel
   * 绑定Nest用户
+  * Nest 编辑用户的DataModel
+
 

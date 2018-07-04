@@ -1,4 +1,4 @@
-## 场景列表
+# 场景列表
 
 #### 功能说明
 mqtt场景列表
@@ -23,7 +23,7 @@ mqtt场景列表
 
 ```
 curl -X GET \
-  'http://openapi.fantem-gateway.com/device/mqtt/scene/list?clientId=1' \
+'http://openapi.fantem-gateway.com/device/mqtt/scene/list?clientId=1' \
 ```
 
 * #### 返回参数

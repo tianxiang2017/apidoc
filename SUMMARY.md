@@ -101,15 +101,15 @@
   * [场景控制](chang-jing-kong-zhi.md)
   * [添加设备](mqtt/deviceAdd.md)
   * [删除设备](shan-chu-she-bei.md)
-  * [设备列表](she-bei-lie-biao.md)
-* 用户
+  * [设备列表](mqtt/deviceList.md)
+* [用户](userAdmin.md)
   * [用户列表](account/yong-hu-lie-biao.md)
-  * 用户基本信息
+  * [用户基本信息](account/yong-hu-ji-ben-xin-xi.md)
   * 忘记密码
   * 主页的四个数据
   * 导出用户统计
   * 用户统计
-* [权限](quan-xian.md)
+* [权限](permissionAdmin.md)
   * [布局-菜单](account/bu-5c40-cai-dan.md)
   * 查询业务系统所有的用户组
   * 创建权限
@@ -118,7 +118,7 @@
   * 权限列表
   * 查询指定权限的信息信息
   * 指定角色的权限信息
-* [角色](jiao-se.md)
+* [角色](roleAdmin.md)
   * 创建角色
   * 修改角色
   * 删除角色
@@ -127,7 +127,7 @@
   * 查询指定角色的详细信息
   * 查询用户的角色
   * 更新用户的角色
-* [设备](she-bei.md)
+* [设备](deviceAdmin.md)
   * [设备列表](she-bei-lie-biao.md)
   * [生产环境设置](sheng-chan-huan-jing-she-zhi.md)
   * 获取固件信息
@@ -143,10 +143,14 @@
   * 文件列表
   * 下载文件
   * 处理文件
-* 邮件
+* [邮件](emailAdmin.md)
   * 邮件列表
-* Nest
+* [Nest](nestAdmin.md)
   * 绑定Nest用户
   * Nest 编辑用户的DataModel
-
+  * Nest 显示用户的DataModel
+  * Nest 更新Nest的Structure
+* [OTA](otaAdmin.md)
+* [推送](pushAdmin.md)
+* [其他](otherAdmin.md)
 

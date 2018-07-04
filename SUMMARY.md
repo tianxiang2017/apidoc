@@ -106,89 +106,89 @@
   * [用户列表](userAdmin/userList.md)
   * [用户基本信息](userAdmin/userInfo.md)
   * [忘记密码](userAdmin/forgetPassword.md)
-  * 主页的四个数据
-  * 导出用户统计
-  * 用户统计
+  * [主页的四个数据](userAdmin/mainPage4Data.md)
+  * [导出用户统计](userAdmin/exportUserStat.md)
+  * [用户统计](userAdmin/userStat.md)
 * [权限](permissionAdmin.md)
-  * [布局-菜单](account/bu-5c40-cai-dan.md)
-  * [查询业务系统所有的用户组](account/cha-xun-ye-wu-xi-tong-suo-you-de-yong-hu-zu.md)
-  * 创建权限
-  * 修改权限
-  * 删除权限
-  * 权限列表
-  * 查询指定权限的信息信息
-  * 指定角色的权限信息
+  * [布局-菜单](permissionAdmin/layoutMenu.md)
+  * [业务系统的用户组](permissionAdmin/accountGroup.md)
+  * [创建权限](permission/permissionCreate.md)
+  * [修改权限](permission/permissionUpdate.md)
+  * [删除权限](permission/permissionDelete.md)
+  * [权限列表](permission/permissionList.md)
+  * [查询指定权限的信息信息](permission/permissionGet.md)
+  * [指定角色的权限信息](permission/permissionByRole.md)
 * [角色](roleAdmin.md)
-  * 创建角色
-  * 修改角色
-  * 删除角色
-  * 权限列表
-  * 查询全部角色
-  * 查询指定角色的详细信息
-  * 查询用户的角色
-  * 更新用户的角色
+  * [创建角色](roleAdmin/roleCreate.md)
+  * [修改角色](roleAdmin/roleUpdate.md)
+  * [删除角色](roleAdmin/roleDelete.md)
+  * [权限列表](roleAdmin/roleList.md)
+  * [查询全部角色](roleAdmin/roleQuery.md)
+  * [查询指定角色的详细信息](roleAdmin/roleGet.md)
+  * [查询用户的角色](roleAdmin/roleAccount.md)
+  * [更新用户的角色](roleAdmin/updateAccountRole.md)
 * [设备](deviceAdmin.md)
-  * [设备列表](she-bei-lie-biao.md)
-  * [生产环境设置](sheng-chan-huan-jing-she-zhi.md)
-  * 获取固件信息
-  * 蓝牙地址修复-修复
-  * 蓝牙地址修复-查询
-  * 上一个绝对小时指定设备的在线情况
-  * 用户登录的app列表
-  * 用户绑定的网关
-  * Client Uniqueness右边列表
-  * Client Uniqueness右边列表
-  * 查询设备详情
-  * 生成指定设备的二维码
-  * 文件列表
-  * 下载文件
-  * 处理文件
+  * [设备列表](deviceAdmin/clientList.md)
+  * [生产环境设置](deviceAdmin/productSearch.md)
+  * [获取固件信息](deviceAdmin/findFirmwareInfo.md)
+  * [蓝牙地址修复-修复](deviceAdmin/macAddressRepair.md)
+  * [蓝牙地址修复-查询](deviceAdmin/macAddressRepairQuery.md)
+  * [上一个绝对小时指定设备的在线情况](deviceAdmin/onlinePreviousHour.md)
+  * [用户登录的app列表](deviceAdmin/queryAccountApp.md)
+  * [用户绑定的网关](deviceAdmin/queryAccountGateway.md)
+  * [Client Uniqueness右边列表](deviceAdmin/error.md)
+  * [Client Uniqueness右边列表](deviceAdmin/uniqueness.md)
+  * [查询设备详情](deviceAdmin/findDetailByGuid.md)
+  * [生成指定设备的二维码](deviceAdmin/qrcode.md)
+  * [文件列表](deviceAdmin/fileList.md)
+  * [下载文件](deviceAdmin/fileDownload.md)
+  * [处理文件](deviceAdmin/fileProcessFile.md)
 * [邮件](emailAdmin.md)
-  * 邮件列表
+  * [邮件列表](emailAdmin/emailList.md)
 * [Nest](nestAdmin.md)
-  * 绑定Nest用户
-  * Nest 编辑用户的DataModel
-  * Nest 显示用户的DataModel
-  * Nest 更新Nest的Structure
+  * [绑定Nest用户](nestAdmin/code.md)
+  * [Nest 编辑用户的DataModel](nestAdmin/editDataModel.md)
+  * [Nest 显示用户的DataModel](nestAdmin/showDataModel.md)
+  * [Nest 更新Nest的Structure](nestAdmin/editDataModelStructure.md)
 * [OTA](otaAdmin.md)
-  * 查询某个产品的固件包列表
-  * 上传固件包前检查（版本号等）
-  * 创建固件包
-  * 修改固件包
-  * 删除固件包
-  * 获得可以使用此固件包的权限类别
-  * 获得指定产品的所有固件包
-  * 获得业务系统的所有权限
-  * 下载固件包文件
-  * 固件包详细
-  * 大版本详细
-  * 创建大版本
-  * 修改大版本
-  * 删除大版本
-  * 可以访问此大版本的权限
-  * 查询所有大版本相关产品列表
-  * 查询大版本
-  * 某个产品详情
-  * 创建产品
-  * 查询产品列表
-  * 修改产品权限
-  * 查询所有产品
+  * [查询某个产品的固件包列表](otaAdmin/firmwareQuery.md)
+  * [上传固件包前检查（版本号等）](otaAdmin/firmwareCheckBeforCreate.md)
+  * [创建固件包](otaAdmin/firmwareCreate.md)
+  * [修改固件包](otaAdmin/firmwareUpdate.md)
+  * [删除固件包](otaAdmin/firmwareDelete.md)
+  * [获得可以使用此固件包的权限类别](otaAdmin/firmwareNeedPermission.md)
+  * [获得指定产品的所有固件包](otaAdmin/firmwareByProduct.md)
+  * [获得业务系统的所有权限](otaAdmin/firmwareAccountScope.md)
+  * [下载固件包文件](otaAdmin/firmwareDownload.md)
+  * [固件包详细](otaAdmin/firmwareDetail.md)
+  * [大版本详细](otaAdmin/fpkDetail.md)
+  * [创建大版本](otaAdmin/fpkCreate.md)
+  * [修改大版本](otaAdmin/fpkUpdate.md)
+  * [删除大版本](otaAdmin/fpkDelete.md)
+  * [可以访问此大版本的权限](otaAdmin/fpkNeedPermission.md)
+  * [查询所有大版本相关产品列表](otaAdmin/fpkDependProduct.md)
+  * [查询大版本](otaAdmin/fpkQuery.md)
+  * [某个产品详情](otaAdmin/productDetail.md)
+  * [创建产品](otaAdmin/productCreate.md)
+  * [查询产品列表](otaAdmin/productList.md)
+  * [修改产品权限](otaAdmin/productUpdatePermission.md)
+  * [查询所有产品](otaAdmin/productAll.md)
 * [推送](pushAdmin.md)
-  * 查询推送内容（单条）
-  * 创建推送
-  * 查询推送列表
-  * 查询指定id的模板
-  * 查询所有模板
+  * [查询推送内容（单条）](pushAdmin/pushTaskGet.md)
+  * [创建推送](pushAdmin/pushCreate.md)
+  * [查询推送列表](pushAdmin/pushList.md)
+  * [查询指定id的模板](pushAdmin/messageTemplateGet.md)
+  * [查询所有模板](pushAdmin/messageTemplateAll.md)
 * [其他](otherAdmin.md)
-  * Setting详情
-  * 修改Setting
-  * 创建Setting
-  * 所有的Setting
-  * 添加系统参数
-  * 修改系统参数
-  * 查询所有系统参数
-  * 后面管理界面版本
-  * 查询接口版本
-  * 所有系统类型
-  * 指定code的系统类型
+  * [Setting详情](otherAdmin/settingDetail.md)
+  * [修改Setting](otherAdmin/settingUpdate.md)
+  * [创建Setting](otherAdmin/settingCreate.md)
+  * [所有的Setting](otherAdmin/settingAll.md)
+  * [添加系统参数](otherAdmin/systemParameterAdd.md)
+  * [修改系统参数](otherAdmin/systemParameterUpdate.md)
+  * [查询所有系统参数](otherAdmin/systemParameterQuery.md)
+  * [后面管理界面版本](otherAdmin/systemManagerVersion.md)
+  * [查询接口版本](otherAdmin/systemApiVersion.md)
+  * [所有系统类型](otherAdmin/businessSystemAll.md)
+  * [指定code的系统类型](otherAdmin/businessSystemByCode.md)
 

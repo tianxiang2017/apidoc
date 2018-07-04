@@ -137,7 +137,7 @@
   * [用户登录的app列表](deviceAdmin/queryAccountApp.md)
   * [用户绑定的网关](deviceAdmin/queryAccountGateway.md)
   * [Client Uniqueness右边列表](deviceAdmin/error.md)
-  * [Client Uniqueness右边列表](deviceAdmin/uniqueness.md)
+  * [Client Uniqueness左边列表](deviceAdmin/uniqueness.md)
   * [查询设备详情](deviceAdmin/findDetailByGuid.md)
   * [生成指定设备的二维码](deviceAdmin/qrcode.md)
   * [文件列表](deviceAdmin/fileList.md)

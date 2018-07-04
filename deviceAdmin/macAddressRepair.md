@@ -1,5 +1,4 @@
-#
-#
+## 蓝牙地址修复-修复
 
 #### 功能说明
 
@@ -11,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/|
+| URL | \[域名\]/clients/macAddressRepair|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 

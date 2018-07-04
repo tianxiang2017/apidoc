@@ -1,5 +1,4 @@
-#
-#
+## Nest 更新Nest的Structure
 
 #### 功能说明
 
@@ -11,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/|
+| URL | \[域名\]/nest/editDataModelStructure/{accountId}|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 

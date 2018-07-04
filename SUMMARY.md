@@ -103,9 +103,9 @@
   * [删除设备](mqtt/deviceDelete.md)
   * [设备列表](mqtt/deviceList.md)
 * [用户](userAdmin.md)
-  * [用户列表](account/yong-hu-lie-biao.md)
-  * [用户基本信息](account/yong-hu-ji-ben-xin-xi.md)
-  * 忘记密码
+  * [用户列表](userAdmin/userList.md)
+  * [用户基本信息](userAdmin/userInfo.md)
+  * [忘记密码](userAdmin/forgetPassword.md)
   * 主页的四个数据
   * 导出用户统计
   * 用户统计
@@ -151,6 +151,44 @@
   * Nest 显示用户的DataModel
   * Nest 更新Nest的Structure
 * [OTA](otaAdmin.md)
+  * 查询某个产品的固件包列表
+  * 上传固件包前检查（版本号等）
+  * 创建固件包
+  * 修改固件包
+  * 删除固件包
+  * 获得可以使用此固件包的权限类别
+  * 获得指定产品的所有固件包
+  * 获得业务系统的所有权限
+  * 下载固件包文件
+  * 固件包详细
+  * 大版本详细
+  * 创建大版本
+  * 修改大版本
+  * 删除大版本
+  * 可以访问此大版本的权限
+  * 查询所有大版本相关产品列表
+  * 查询大版本
+  * 某个产品详情
+  * 创建产品
+  * 查询产品列表
+  * 修改产品权限
+  * 查询所有产品
 * [推送](pushAdmin.md)
+  * 查询推送内容（单条）
+  * 创建推送
+  * 查询推送列表
+  * 查询指定id的模板
+  * 查询所有模板
 * [其他](otherAdmin.md)
+  * Setting详情
+  * 修改Setting
+  * 创建Setting
+  * 所有的Setting
+  * 添加系统参数
+  * 修改系统参数
+  * 查询所有系统参数
+  * 后面管理界面版本
+  * 查询接口版本
+  * 所有系统类型
+  * 指定code的系统类型
 

@@ -1,5 +1,4 @@
-#
-#
+## 查询所有大版本相关产品列表
 
 #### 功能说明
 
@@ -11,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/|
+| URL | \[域名\]/firmware-package-kit/dependent/product|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 

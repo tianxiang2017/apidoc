@@ -42,7 +42,6 @@
   * [获取用户绑定的设备的guid](account/v2HhomeGateway.md)
   * [激活账户](account/userVerify.md)
   * [设置密码页面](account/setPasswordPage.md)
-  * [用户列表](account/yong-hu-lie-biao.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](system/emailCode.md)
   * [发送短信验证码 ](system/smsCode.md)
@@ -103,4 +102,13 @@
   * [添加设备](mqtt/deviceAdd.md)
   * [删除设备](shan-chu-she-bei.md)
   * [设备列表](she-bei-lie-biao.md)
+* 用户
+  * [用户列表](account/yong-hu-lie-biao.md)
+  * 用户基本信息
+  * 忘记密码
+  * 主页的四个数据
+  * 导出用户统计
+  * 用户统计
+  * [布局-菜单](account/bu-5c40-cai-dan.md)
+  * 查询业务系统所有的用户组
 

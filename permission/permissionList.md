@@ -18,7 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| businessSystemId| Integer\(10\) | 否 | 业务系统ID。manager system 或者oomi system对应的ID|
+
 
 
 * #### HTTP 请求示例

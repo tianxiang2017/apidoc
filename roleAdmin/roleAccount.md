@@ -18,21 +18,51 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| auid | String\(32\) | 是 | |
 
 
 * #### HTTP 请求示例
 
+```json
+{
+	"auid":"ffbb7379c5a94ad3a02759dd6abf5186"
+}
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+|id|Integer\(10\) | 否 | 角色ID|
+|name |String\(255\) | 否 | 角色名|
+| cnDescription|String\(\) | 否 | 中文描述|
+| enDescription| String\(\)| 否 | 英文描述|
+| reserve| Boolean | 否 | 保留参数 |
+| updateAt| Long | 否 | 修改时间|
+| createAt| Long | 否 | 创建时间|
 
 
 * #### 响应示例：
 
-无
+```json
+{
+    "code": "1000",
+    "note": "Operate success",
+    "data": {
+        "total": 1,
+        "data": [
+            {
+                "id": 11,
+                "name": "OrdinaryRole ",
+                "cnDescription": "Ordinary role",
+                "enDescription": "Ordinary role",
+                "reserve": true,
+                "updateAt": 1516389092000,
+                "createAt": 1516389092000
+            }
+        ]
+    }
+}
+```
 
 * #### 异常返回值
 

@@ -24,11 +24,10 @@
 * #### HTTP 请求示例
 ```json
 {
-    "roleId": 1
+    "roleId": 12
 }
 
  ```
-
 
 
 * #### 返回参数
@@ -51,13 +50,13 @@
 	"code": "1000",
 	"note": "Operate success",
 	"data": {
-		"id": 1,
-		"name": "Anonymous",
-		"cnDescription": "Anonymous",
-		"enDescription": "Anonymous",
-		"reserve": true,
-		"updateAt": 1516393239000,
-		"createAt": 1516388485000
+		"id": 12,
+		"name": "R&D",
+		"cnDescription": "研发",
+		"enDescription": "R&D",
+		"reserve": false,
+		"updateAt": 1516526981000,
+		"createAt": 1516526981000
 	}
 }
 

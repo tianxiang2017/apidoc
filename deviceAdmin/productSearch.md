@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/clients/production/search|
+| URL | \[域名\]/client/production/search|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
@@ -18,10 +18,16 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| key| String\(255\) | 否 | |
-| status|  | 否是 |true |
-| registerDate|  | Long | |
-
+| id| Integer\(10\) | 是 | 设备的id |
+| guid| String\(64\) | 是 | 设备的guid |
+| sn | String\(64\) | 是 | 设备的sn |
+| ptopUid | String\(64\) | 否 | p2puid |
+| wifiMac | String\(32\) | 是 | wifi mac地址 |
+| bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。 |
+| uuid | String\(64\) | 是 | uuid。保留参数，不为空，默认值为0。 |
+| name | String\(255\) | 否 | 设备名称 |
+| randomCode | String\(32\) | 否 | RandomCode|
+| status| Integer\(10\) | 否 | 1：正常；2：重置|
 
 * #### HTTP 请求示例
 ```json

@@ -27,10 +27,10 @@
 
 ```json
 {
-"page": 1,
-"pageSize": 10,
-"username": "xdsxxxxxx",
-"sn": "xxxxxxxxx"
+	"page": 1,
+	"pageSize": 10,
+	"username": "xdsxxxxxx",
+	"sn": "xxxxxxxxx"
 }
 ```
 

@@ -19,7 +19,17 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| businessSystemId| String\(255\) | 否 | 业务系统ID|
+| businessSystemId| Integer\(10\) | 否 | 业务系统ID。manager system 或者oomi system|
+|name |String\(255\) | 否 | 菜单名|
+| code| String\(255\)| 否 | 菜单code，唯一标识|
+| sortNo|String\(\) | 否 | 排序编号。影响菜单先后顺序|
+| parentId| Integer(10)| 否 | 父菜单|
+| cnDescription|String\(\) | 否 | 中文详情|
+| enDescription| String\(\)| 否 | 英文详情|
+
+|reserve|Boolean|否||
+
+
 
 
 * #### HTTP 请求示例
@@ -28,7 +38,12 @@
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+|id| Integer(10) | 否 |菜单ID |
+
+
+
+
+
 
 
 * #### 响应示例：

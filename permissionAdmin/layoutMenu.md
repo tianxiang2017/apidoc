@@ -48,14 +48,16 @@
 	{
 		"id": 1,
 		"name": "用户管理",
-		"code": "ACCOUNT_LIST"
+		"code": "MENU_ACCOUNT_ROOT"
 	},
 	{
 		"id": 1,
-		"name": "用户管理",
-		"code": "ACCOUNT_LIST"
+		"name": "角色列表",
+		"code": "MENU_ROLE_LIST"
 	}
 ]
+* #### 异常返回码
+无
 
 * #### HTTP返回码
 200 OK

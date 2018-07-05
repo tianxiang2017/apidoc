@@ -43,7 +43,37 @@
 
 * #### 响应示例：
 
-无
+```json
+{
+    "total": 10690,
+    "data": [{
+        "sn": "A01011643005003",
+        "ptopUid": "92VK4TSBNFWX5VH5111A",
+        "wifiMac": "00:03:7F:12:06:EC",
+        "bluetoothMac": "00:03:7F:12:06:EC",
+        "id": 1760,
+        "guid": "E99D5E098D4E49A59CA2A2DA369547D1",
+        "uuid": "dev01_ld_1",
+        "name": "Cube",
+        "type": 4,
+        "ptopConnectMethod": "v1",
+        "acfCode": "",
+        "randomCode": "RD000000",
+        "imei": "",
+        "imsi": "",
+        "manufacturerId": 11,
+        "model": "oomi_cube_1",
+        "systemType": 3,
+        "systemVersion": "V0.2.0.3",
+        "hardwareVersion": "V1.1.0.1",
+        "applicationVersion": "V2.0.4.18",
+        "psn": "PSN00000000",
+        "status": 1,
+        "remark": null,
+        "manufacturer": null
+    }]
+}
+```
 
 * #### 异常返回值
 

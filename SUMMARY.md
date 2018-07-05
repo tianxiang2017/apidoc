@@ -117,7 +117,7 @@
   * [修改权限](permission/permissionUpdate.md)
   * [删除权限](permission/permissionDelete.md)
   * [权限列表](permission/permissionList.md)
-  * [查询指定权限的信息信息](permission/permissionGet.md)
+  * [查询权限详情](permission/permissionGet.md)
   * [指定角色的权限信息](permission/permissionByRole.md)
 * [角色](roleAdmin.md)
   * [创建角色](roleAdmin/roleCreate.md)

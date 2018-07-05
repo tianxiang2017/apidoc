@@ -18,10 +18,23 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+|name |String\(255\) | 否 | 菜单名|
+| cnDescription|String\(\) | 否 | 中文详情|
+| enDescription| String\(\)| 否 | 英文详情|
+|permissionIds|Integer[]|角色拥有的权限列表|
+
 
 
 * #### HTTP 请求示例
+
+```json
+{
+	"name": "role1",
+	"cnDescription": "角色1",
+	"enDescription": "role 1 desc",
+	"permissionIds": [1, 23, 4]
+}
+```
 
 
 * #### 返回参数
@@ -32,11 +45,11 @@
 
 * #### 响应示例：
 
-无
+ok
 
 * #### 异常返回值
 
-无
+400 Error
 
 
 

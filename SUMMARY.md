@@ -130,7 +130,7 @@
   * [更新用户的角色](roleAdmin/updateAccountRole.md)
 * [设备](deviceAdmin.md)
   * [设备列表](deviceAdmin/clientList.md)
-  * [生产环境设置](deviceAdmin/productSearch.md)
+  * [生产环境搜索](deviceAdmin/productSearch.md)
   * [获取固件信息](deviceAdmin/findFirmwareInfo.md)
   * [蓝牙地址修复-修复](deviceAdmin/macAddressRepair.md)
   * [蓝牙地址修复-查询](deviceAdmin/macAddressRepairQuery.md)

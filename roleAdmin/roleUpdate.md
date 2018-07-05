@@ -18,7 +18,7 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-|id|Integer\(10\) | 否 | 角色ID|
+|roleId|Integer\(10\) | 否 | 角色ID|
 |name |String\(255\) | 否 | 角色名|
 | cnDescription|String\(\) | 否 | 中文详情|
 | enDescription| String\(\)| 否 | 英文详情|
@@ -26,7 +26,15 @@
 
 
 * #### HTTP 请求示例
-
+```json
+{
+	"roleId": 17,
+	"name": "roel1",
+	"enDescription": "ssssssssssssswerwe",
+	"cnDescription": "sdfssssss",
+	"permissionIds": [1, 69]
+}
+```
 
 * #### 返回参数
 无

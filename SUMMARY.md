@@ -104,7 +104,6 @@
   * [删除设备](mqtt/deviceDelete.md)
   * [设备列表](mqtt/deviceList.md)
 * [用户](userAdmin.md)
-  * [用户列表](userAdmin/userList.md)
   * [用户基本信息](userAdmin/userInfo.md)
   * [忘记密码](userAdmin/forgetPassword.md)
   * [主页的四个数据](userAdmin/mainPage4Data.md)

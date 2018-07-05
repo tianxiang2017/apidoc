@@ -21,14 +21,27 @@
 | businessSystemId| Integer\(10\) | 否 | 业务系统ID。manager system 或者oomi system对应的ID|
 
 
-
 * #### HTTP 请求示例
 
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| total| Long| 是 | 总数|
+|data|Permission[]|否|权限列表。permission数组|
+
+permission内容如下：
+
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| id | Integer\(255\) | 是 | 权限ID|
+|name |String\(255\) | 是 | 菜单名|
+| code| String\(255\)| 是 | 菜单code，唯一标识|
+| sortNo|Integer\(10\) | 否 | 排序编号。影响菜单先后顺序|
+| parentId| Integer(10)| 否 | 父菜单|
+| cnDescription|String\((255\) | 否 | 中文详情|
+| enDescription| String\((255\)| 否 | 英文详情|
+
 
 
 * #### 响应示例：

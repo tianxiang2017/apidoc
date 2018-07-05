@@ -10,13 +10,29 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/role/get|
+| URL | \[域名\]/role/get-by-id|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
+| :--- | :--- | :--- | :--- |
+|roleId|Integer\(10\) | 否 | 角色ID|
+
+
+* #### HTTP 请求示例
+```json
+{
+    "roleId": 1
+}
+
+ ```
+
+
+
+* #### 返回参数
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 |id|Integer\(10\) | 否 | 角色ID|
 |name |String\(255\) | 否 | 角色名|
@@ -28,27 +44,21 @@
 
 
 
-* #### HTTP 请求示例
-
-
-* #### 返回参数
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-|id|Integer\(10\) | 否 | 角色ID|
-
-
-
 * #### 响应示例：
 
 ```json
 {
-    "id": 3,
-    "name": "Beta",
-    "cnDescription": null,
-    "enDescription": null,
-    "reserve": false,
-    "updateAt": 1509047618000,
-    "createAt": 1509047618000
+	"code": "1000",
+	"note": "Operate success",
+	"data": {
+		"id": 1,
+		"name": "Anonymous",
+		"cnDescription": "Anonymous",
+		"enDescription": "Anonymous",
+		"reserve": true,
+		"updateAt": 1516393239000,
+		"createAt": 1516388485000
+	}
 }
 
  ```

@@ -27,32 +27,23 @@
 | cnDescription|String\(\) | 否 | 中文详情|
 | enDescription| String\(\)| 否 | 英文详情|
 
-|reserve|Boolean|否||
-
-
-
-
 * #### HTTP 请求示例
 
 
 * #### 返回参数
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-|id| Integer(10) | 否 |菜单ID |
-
-
-
-
-
+返回一个字符串
 
 
 * #### 响应示例：
+ok
 
-无
 
-* #### 异常返回值
+* #### HTTP返回
 
-无
+返回400 
+内容   Error Code_Exist
+返回200
+ok
 
 
 

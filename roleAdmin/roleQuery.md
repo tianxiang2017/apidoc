@@ -15,24 +15,40 @@
 | HTTP方式 | POST|
 
 * #### 输入参数说明
-
-| 参数名称 | 参数类型 | 是否必须 | 参数描述 |
-| :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+无
 
 
 * #### HTTP 请求示例
-
+无
 
 * #### 返回参数
+返回一个元素为Role的数组，Role内容如下：
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+|id|Integer\(10\) | 否 | 角色ID|
+|name |String\(255\) | 否 | 角色名|
+| cnDescription|String\(\) | 否 | 中文描述|
+| enDescription| String\(\)| 否 | 英文描述|
+
 
 
 * #### 响应示例：
+[
+    {
+        "id":1,
+        "name":"xxx",
+        "cnDescription":"中文描述",
+        "enDescription":" en desc"
+    },
+    {
+        "id":2,
+        "name":"xxxbbb",
+        "cnDescription":"中文描述2",
+        "enDescription":" esdfn descdfsdfsdf"
+    },
 
-无
+]
+
 
 * #### 异常返回值
 

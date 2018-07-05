@@ -21,8 +21,8 @@
 | :--- | :--- | :--- | :--- |
 | businessSystemId| Integer\(10\) | 否 | 业务系统ID。manager system 或者oomi system|
 | id | Integer\(255\) | 是 | 权限ID|
-|name |String\(255\) | 否 | 菜单名|
-| code| String\(255\)| 否 | 菜单code，唯一标识|
+|name |String\(255\) | 是 | 菜单名|
+| code| String\(255\)| 是 | 菜单code，唯一标识|
 | sortNo|Integer\(10\) | 否 | 排序编号。影响菜单先后顺序|
 | parentId| Integer(10)| 否 | 父菜单|
 | cnDescription|String\((255\) | 否 | 中文详情|
@@ -30,23 +30,30 @@
 
 
 
-
 * #### HTTP 请求示例
+{
+    "businessSystemId":2,
+    "id":23,
+    "name":"xxxx",
+    "code":"XXXX_XX",
+    "sortNo":10,
+    "parentId":10,
+    "cnDescription":"中文描述",
+    "enDescription":"en desc"
+}
 
 
 * #### 返回参数
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-| | | 否 | |
+字符串
 
 
 * #### 响应示例：
 
-无
+ok
 
 * #### 异常返回值
 
-无
+Http返回码400  内容Error
 
 
 

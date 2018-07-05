@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/clients/macAddressRepair|
+| URL | \[域名\]/client/macAddressRepair|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
@@ -18,25 +18,39 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| id| Integer\(10\) | 是 | 待修复的设备的id|
+| bluetoothMac| String\(32\) | 是 | |
 
 
 * #### HTTP 请求示例
+```json
+{
+    "id":112
+    "bluetoothMa":"00:03:7F:21:49:98"
+}
+```
 
 
 * #### 返回参数
-| 参数名称 | 参数类型 | 是否必须 | 描述 |
-| :--- | :--- | :--- | :--- |
-| | | 否 | |
+无
 
 
 * #### 响应示例：
 
-无
+```json
+{
+    "code": "1000",
+    "note": "Operate success",
+}
+```
+
 
 * #### 异常返回值
 
-无
+| 错误码 | 提示信息 | 备注 |
+| --- | --- | --- |
+| 3| 参数为空，参数错误 | |
+
 
 
 

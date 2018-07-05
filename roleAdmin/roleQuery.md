@@ -19,7 +19,7 @@
 
 
 * #### HTTP 请求示例
-无
+{}
 
 * #### 返回参数
 返回一个元素为Role的数组，Role内容如下：
@@ -29,26 +29,51 @@
 |name |String\(255\) | 否 | 角色名|
 | cnDescription|String\(\) | 否 | 中文描述|
 | enDescription| String\(\)| 否 | 英文描述|
-
+| reserve| Boolean | 否 | 保留参数 |
+| updateAt| Long | 否 | 修改时间|
+| createAt| Long | 否 | 创建时间|
 
 
 * #### 响应示例：
-[
-    {
-        "id":1,
-        "name":"xxx",
-        "cnDescription":"中文描述",
-        "enDescription":" en desc"
-    },
-    {
-        "id":2,
-        "name":"xxxbbb",
-        "cnDescription":"中文描述2",
-        "enDescription":" esdfn descdfsdfsdf"
-    },
 
-]
-
+```json
+{
+    "code": "1000",
+    "note": "Operate success",
+    "data": {
+        "total": 12,
+        "data": [
+            {
+                "id": 1,
+                "name": "Anonymous",
+                "cnDescription": "Anonymous",
+                "enDescription": "Anonymous",
+                "reserve": true,
+                "updateAt": 1516393239000,
+                "createAt": 1516388485000
+            },
+            {
+                "id": 2,
+                "name": "Alpha",
+                "cnDescription": "cn",
+                "enDescription": "cn",
+                "reserve": false,
+                "updateAt": 1514829566000,
+                "createAt": 1509047618000
+            },
+            {
+                "id": 3,
+                "name": "Beta",
+                "cnDescription": null,
+                "enDescription": null,
+                "reserve": false,
+                "updateAt": 1509047618000,
+                "createAt": 1509047618000
+            }
+        ]
+    }
+}
+```
 
 * #### 异常返回值
 

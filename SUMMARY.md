@@ -123,7 +123,7 @@
   * [创建角色](roleAdmin/roleCreate.md)
   * [修改角色](roleAdmin/roleUpdate.md)
   * [删除角色](roleAdmin/roleDelete.md)
-  * [权限列表](roleAdmin/roleList.md)
+  * [角色列表](roleAdmin/roleList.md)
   * [查询全部角色](roleAdmin/roleQuery.md)
   * [查询指定角色的详细信息](roleAdmin/roleGet.md)
   * [查询用户的角色](roleAdmin/roleAccount.md)

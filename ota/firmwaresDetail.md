@@ -28,8 +28,10 @@
 
 ```json
 {
-"accountId": 111,
-"version": "V0.0.1"
+	"product":"OOMI_Cube_Zwave",
+	"oldSwVersion":"V0.0.0.0",
+	"currentSwVersion":""
+	
 }
 ```
 

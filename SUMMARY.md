@@ -41,7 +41,7 @@
   * [获取用户绑定的设备的guid](account/v2HhomeGateway.md)
   * [激活账户](account/userVerify.md)
   * [设置密码页面](account/setPasswordPage.md)
-  * [重置密码提交](account/userUpdatePassword.md)
+  * [修改密码确认](account/userUpdatePassword.md)
 * [系统服务器管理](system.md)
   * [发送邮箱验证码](system/emailCode.md)
   * [发送短信验证码 ](system/smsCode.md)

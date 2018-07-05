@@ -3,6 +3,7 @@
 #### 功能说明
 
 现在已经修改，直接返回成功。
+productId：产品Id
 
 #### 调用接口说明
 
@@ -20,9 +21,9 @@
 
 * #### HTTP 请求示例
 
-  ```json
-  {
-  }
+  ```
+  curl -X POST \
+  http://openapi.fantem-gateway.com/firmwares/all/product/7 
   ```
 
 * #### 返回参数

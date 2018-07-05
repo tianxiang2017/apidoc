@@ -17,6 +17,12 @@
 无
 
 * #### HTTP 请求示例
+
+```
+curl -X GET \
+  http://openapi..fantem-gateway.com/system/version 
+```
+
 * #### 返回参数
 
   字符串，不是json

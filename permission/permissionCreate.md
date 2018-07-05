@@ -28,6 +28,17 @@
 | enDescription| String\(\)| 否 | 英文详情|
 
 * #### HTTP 请求示例
+{
+    "businessSystemId":2,
+    "name":"xxxx",
+    "code":"XXXX_XX",
+    "sortNo":10,
+    "parentId":10,
+    "cnDescription":"中文描述",
+    "enDescription":"en desc"
+}
+
+
 
 
 * #### 返回参数

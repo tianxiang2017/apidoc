@@ -37,7 +37,7 @@
 	"code": "1",
 	"note": "Operate success",
 	"data": {
-		"qrcode": "{t|~? ]))Of?f#?||({{{?|+#&Itt]^a))"
+		"qrcode": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 	}
 }
 ```

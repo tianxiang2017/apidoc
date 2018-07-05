@@ -2,7 +2,10 @@
 
 #### 功能说明
 
-
+系统把权限分为两类。
+一个是后台管理界面的权限，叫Manager System，编码是MANAGER
+一个是接口的权限，叫Oomi System，编码是OOMI_SYSTEM。
+这个接口获取OOMI_SYSTEM系统定义的所有权限
 
 #### 调用接口说明
 
@@ -27,7 +30,20 @@
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+返回一个元素为Permission的数组，Permission如下：
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+|id| Integer(10) | 否 |菜单ID |
+|name |String\(255\) | 否 | 菜单名|
+| code| String\(255\)| 否 | 菜单code，唯一标识|
+| parentId| Integer(10)| 否 | 父菜单|
+| cnDescription|String\(\) | 否 | 中文详情|
+| enDescription| String\(\)| 否 | 英文详情|
+
+
+
+
+
 
 
 * #### 响应示例：

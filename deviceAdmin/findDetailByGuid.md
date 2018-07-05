@@ -22,7 +22,9 @@
 
 
 * #### HTTP 请求示例
-
+```
+\[域名\]/client/findDetailByGuid?guid=xxxxxxxxxxxx
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |

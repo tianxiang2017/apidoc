@@ -18,7 +18,16 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| pageNum| Integer\(10\) | 否 |  |
+| pageSize | Integer\(10\) | 否 |  |
+| productId| Integer\(10\) | 否 | 按什么排序 |
+| sortName| String | 否 | |
+| sortOrder| String| 否 | |
+
+
+
+
+
 
 
 * #### HTTP 请求示例

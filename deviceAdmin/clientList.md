@@ -77,7 +77,7 @@
 		"applicationVersion": "2.0.4.8",
 		"psn": "2.0.4.8",
 		"status": 31,
-		"manufacturer": null,
+		"manufacturer": null
 	}, {
 		"sn": "A01011643005003",
 		"ptopUid": "92VK4TSBNFWX5VH5111A",

@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/clients/onlinePreviousHour|
+| URL | \[域名\]/client/onlinePreviousHour|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | GET |
 
@@ -18,21 +18,27 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| guid | String\(32\) | 是 | |
 
 
 * #### HTTP 请求示例
-
+client/onlinePreviousHou?guid=xxxxxxxxxxxxxxx
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| online | Boolean | 是 | true:在线；false：不在线|
+|hour|String|是|时间
 
 
 * #### 响应示例：
 
-无
+```json
+{
+    "online":false,
+    "hour":2018070211
+}
+```
 
 * #### 异常返回值
 

@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/clients/{guid}/qrcode|
+| URL | \[域名\]/client/{guid}/qrcode|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
@@ -27,12 +27,20 @@
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| qrcode| String| 否 | 二维码|
 
 
 * #### 响应示例：
 
-无
+```json
+{
+	"code": "1",
+	"note": "Operate success",
+	"data": {
+		"qrcode": "{t|~? ]))Of?f#?||({{{?|+#&Itt]^a))"
+	}
+}
+```
 
 * #### 异常返回值
 

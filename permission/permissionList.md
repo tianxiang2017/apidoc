@@ -22,7 +22,11 @@
 
 
 * #### HTTP 请求示例
-
+```json
+{
+    "businessSystemId":2
+}
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
@@ -46,7 +50,21 @@ permission内容如下：
 
 * #### 响应示例：
 
-无
+```json
+[
+    {
+        "businessSystemId":2,
+        "id":23,
+        "name":"xxxx",
+        "code":"XXXX_XX",
+        "sortNo":10,
+        "parentId":10,
+        "cnDescription":"中文描述",
+        "enDescription":"en desc"
+    }
+
+]
+```
 
 * #### 异常返回值
 

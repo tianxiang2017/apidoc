@@ -38,7 +38,17 @@
 
 * #### 响应示例：
 
-无
+```json
+{
+    "id":23,
+    "name":"xxxx",
+    "code":"XXXX_XX",
+    "sortNo":10,
+    "parentId":10,
+    "cnDescription":"中文描述",
+    "enDescription":"en desc"
+}
+```
 
 * #### 异常返回值
 

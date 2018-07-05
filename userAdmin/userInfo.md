@@ -18,13 +18,23 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 是 | |
+| id| Integer\(10\) | 是 | |
 
 
 * #### HTTP 请求示例
 
 
 * #### 返回参数
+| 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
+| :--- | :--- | :--- | :--- | :--- |
+| id| Integer(10) | 是 | | 用户的auid |
+| auid| String&lt;32&gt; | 是 | | 用户的auid|
+| username| String&lt;255&gt;  |是 | |用户名|
+| phone| String&lt;255&gt; | 是 | |手机号|
+| registerTime| Long|是 | |注册时间|
+| displayName| String&lt;255&gt; | 是 | |显示名称|
+| address| String&lt;255&gt; | 是 | |显示名称|
+| status| String&lt;255&gt; | 是 | |显示名称|
 
 
 * #### 响应示例：

@@ -4,7 +4,7 @@
 cube获得sts账号
 
 请求cookie中要有aat。
-请求路径中要有sn
+请求路径中的sn是cube的sn
 #### 调用接口说明
 
 * #### HTTP配置
@@ -22,6 +22,11 @@ cube获得sts账号
 
 
 * #### HTTP 请求示例
+```
+curl -X GET \
+  http://openapi.fantem-gateway.com/ram/stsToken/A02343er324 \
+  -H 'Cache-Control: no-cache' 
+ ```
 
 * #### 返回参数
 

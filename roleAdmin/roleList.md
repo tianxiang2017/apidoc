@@ -30,7 +30,9 @@
     "sortBy": "id",
     "order": "desc"
   }
-  ```
+ 
+ ```
+ 
 * #### 返回参数
 
  返回一个元素为Role的数组，Role内容如下：
@@ -43,8 +45,6 @@
 | reserve| Boolean | 否 | 保留参数 |
 | updateAt| Long | 否 | 修改时间|
 | createAt| Long | 否 | 创建时间|
-
-
 
 
 * #### 响应示例：

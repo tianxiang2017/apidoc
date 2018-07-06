@@ -2,7 +2,8 @@
 
 #### 功能说明
 
-
+根据产品ID查询产品信息。
+请求地址中设置productId
 
 #### 调用接口说明
 
@@ -22,21 +23,46 @@
 
 
 * #### HTTP 请求示例
+```
+curl -X POST \
+  http://openapi.fantem-gateway.com/products/one/2 \
+  -H 'Cache-Control: no-cache' \
+```
 
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| id| Integer\(10\) | 是 | 产品ID |
+| product| String\(255\) | 否 | c产品名   |
+| model | String\(255\) | 否 |   |
+| hwVersion | String\(255\) | 否 | 产品版本  |
+| feature | String\(255\) | 否 | 特性   |
+| versionFormat | String\(255\) | 否 | 版本号格式  |
 
 
 * #### 响应示例：
 
-无
+
+```json
+{
+    "id": 2,
+    "product": "OMMICUBE",
+    "model": "1",
+    "hwVersion": "1.0",
+    "feature": null,
+    "versionFormat": "#N.#N"
+}
+```
+
+
 
 * #### 异常返回值
 
-无
+
+| 错误码 | 提示信息 | 备注 |
+| :--- | :--- | :--- |
+| 3 | 参数为空，参数错误 | |
 
 
 

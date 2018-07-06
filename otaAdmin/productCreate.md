@@ -18,11 +18,22 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| product | String\(255\) | 否 | 产品名|
+| model| String\(255\) | 否 | model|
+| hwVersion| String\(255\) | 否 | 版本号|
+| versionFormat| String\(255\) | 否 | 版本格式|
 
 
 * #### HTTP 请求示例
 
+```json
+{
+	"product": "aadfs",
+	"model": "aaa",
+	"hwVersion": "aaa",
+	"versionFormat": "dsfdf"
+}
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |

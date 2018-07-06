@@ -7,6 +7,9 @@
 使用touch登录时，必须携带cube的sn。这个cube需要提前注册。  
 接口不能用于一个用户绑定多个cube后登录。一个用户绑定多个cube后，使用/v2/accounts/login登录
 
+Touch端的APP通过已经激活的账号，实现登录OOMI服务器。而手机端的APP登录，则需要Touch登录并且已经实现了对cube的绑定。
+
+
 #### 调用接口说明
 
 * #### HTTP配置

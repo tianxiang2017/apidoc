@@ -20,7 +20,7 @@ Content-Type:multipart/form-data
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| productId | Integer\(10\) | 否 | 第几页 |
+| productId | Integer\(10\) | 否 | 固件包所属产品ID |
 | oldSwVersion| String\(255\) | 否 | 差分包的前置版本。差分包从oldSwVersion升级到swVersion版本 |
 | swVersion| String\(255\) | 否 | 当前版本 |
 | fullPackage| Boolean | 否 | 是否是完整包 |

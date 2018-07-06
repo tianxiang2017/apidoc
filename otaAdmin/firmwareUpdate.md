@@ -18,7 +18,18 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+|id |Integer\(10\) | Integer\(10\) | 否 | 固件包ID |
+| productId | Integer\(10\) | 否 | 固件包所属产品ID |
+| oldSwVersion| String\(255\) | 否 | 差分包的前置版本。差分包从oldSwVersion升级到swVersion版本 |
+| swVersion| String\(255\) | 否 | 当前版本 |
+| fullPackage| Boolean | 否 | 是否是完整包 |
+| cnDescription | String\(255\) | 否 | 更新说明（中文） |
+| enDescription | String\(255\) | 否 | 更新说明（英文） |
+| permissionIds| Integer[] | 否 | 访问固件包需要的权限 |
+| publicStatus| Boolean | 否 | 是否发布） |
+| remark| String\(255\) | 否 | 备注 |
+
+
 
 
 * #### HTTP 请求示例

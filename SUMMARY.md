@@ -154,7 +154,7 @@
   * [创建固件包](otaAdmin/firmwareCreate.md)
   * [修改固件包](otaAdmin/firmwareUpdate.md)
   * [删除固件包](otaAdmin/firmwareDelete.md)
-  * [获得可以使用此固件包的权限类别](otaAdmin/firmwareNeedPermission.md)
+  * [获得可以使用此固件包的权限列表](otaAdmin/firmwareNeedPermission.md)
   * [获得指定产品的所有固件包](otaAdmin/firmwareByProduct.md)
   * [获得业务系统的所有权限](otaAdmin/firmwareAccountScope.md)
   * [下载固件包文件](otaAdmin/firmwareDownload.md)

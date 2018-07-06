@@ -169,7 +169,7 @@
   * [某个产品详情](otaAdmin/productDetail.md)
   * [创建产品](otaAdmin/productCreate.md)
   * [查询产品列表](otaAdmin/productList.md)
-  * [修改产品权限](otaAdmin/productUpdatePermission.md)
+  * [刷新产品的版本信息](otaAdmin/productUpdatePermission.md)
   * [查询所有产品](otaAdmin/productAll.md)
 * [推送](pushAdmin.md)
   * [查询推送内容（单条）](pushAdmin/pushTaskGet.md)

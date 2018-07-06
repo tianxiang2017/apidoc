@@ -18,11 +18,20 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| pageNum| Integer\(10\) | 否 | 第几页|
+| pageSize| Integer\(10\) | 否 |每页大小 |
+| keyword| String\(10\) | 否 | 产品名|
 
 
 * #### HTTP 请求示例
 
+```json
+{
+    "pageNum":1,
+    "pageSize":10,
+    "keyword":null
+}
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |

@@ -2,7 +2,7 @@
 
 #### 功能说明
 
-检查固件包是否已经存在
+检查固件包版本是否已经上传了。
 
 #### 调用接口说明
 
@@ -18,14 +18,23 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| page | Integer\(10\) | 否 | 第几页 |
-| pageSize | Integer\(10\) | 否 | 每页大小 |
-| sendTimes | Date[2] | 否 | 时间范围 |
-
+| productId | Integer\(10\) | 否 | 第几页 |
+| oldSwVersion| String\(255\) | 否 | 差分包的前置版本。差分包从oldSwVersion升级到swVersion版本 |
+| swVersion| String\(255\) | 否 | 当前版本 |
+| fullPackage| Boolean | 否 | 是否是完整包 |
 
 
 * #### HTTP 请求示例
 
+
+```json
+{
+	"productId": 14,
+	"oldSwVersion": null,
+	"swVersion": "V2.0.5.4",
+	"fullPackage": true
+}
+```
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
@@ -38,8 +47,10 @@
 无
 
 * #### 异常返回值
-
-无
-
+error 参数错误
+Product is not exist 产品已存在
+版本格式错误
+Firmware_Exist 固件包不存在
+ok 操作成功
 
 

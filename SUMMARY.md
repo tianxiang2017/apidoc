@@ -149,7 +149,7 @@
   * [Nest 显示用户的DataModel](nestAdmin/showDataModel.md)
   * [Nest 更新Nest的Structure](nestAdmin/editDataModelStructure.md)
 * [OTA](otaAdmin.md)
-  * [查询某个产品的固件包列表](otaAdmin/firmwareQuery.md)
+  * [查询固件包列表](otaAdmin/firmwareQuery.md)
   * [上传固件包前检查（版本号等）](otaAdmin/firmwareCheckBeforCreate.md)
   * [创建固件包](otaAdmin/firmwareCreate.md)
   * [修改固件包](otaAdmin/firmwareUpdate.md)

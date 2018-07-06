@@ -162,7 +162,7 @@
   * [创建大版本](otaAdmin/fpkCreate.md)
   * [修改大版本](otaAdmin/fpkUpdate.md)
   * [删除大版本](otaAdmin/fpkDelete.md)
-  * [可以访问此大版本的权限](otaAdmin/fpkNeedPermission.md)
+  * [查询大版本权限](otaAdmin/fpkNeedPermission.md)
   * [查询大版本相关产品列表](otaAdmin/fpkDependProduct.md)
   * [某个产品详情](otaAdmin/productDetail.md)
   * [创建产品](otaAdmin/productCreate.md)

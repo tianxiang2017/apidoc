@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/business_system/getByCode |
+| URL | \[域名\]/business-system/getByCode |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
@@ -18,7 +18,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| id            | Integer\(10\) | 否 | id|
+| name| String\(255\) | 否 | code 例如：Manager System。 Oomi System|
+| code| String\(255\) | 否 | 系统编码。例如：MANAGER OOMI_SYSTEM|
+
+
 
 
 * #### HTTP 请求示例
@@ -32,7 +36,14 @@
 
 * #### 响应示例：
 
-无
+```json
+{
+    "id": 2,
+    "name": "Oomi System",
+    "code": "OOMI_SYSTEM"
+}
+
+```
 
 * #### 异常返回值
 

@@ -1,4 +1,4 @@
-## 查询大版本
+## 查询大版本列表
 
 #### 功能说明
 
@@ -18,10 +18,28 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
+| pageNum| Integer\(10\) | 否 |  |
+| pageSize | Integer\(10\) | 否 |  |
+| productId| Integer\(10\) | 否 |  |
+| sortName| String | 否 |按什么排序 |
+| sortOrder| String| 否 |升序(asc)还是降序(desc) |
+
+
+
 
 
 * #### HTTP 请求示例
+
+
+```json
+{
+	"pageNum": 1,
+	"pageSize": 5,
+	"sortName": "id",
+	"sortOrder": "desc"
+}
+```
+
 
 
 * #### 返回参数

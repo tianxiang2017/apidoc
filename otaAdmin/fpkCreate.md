@@ -27,12 +27,22 @@
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| id | Integer\(10\) | 否 | 大版本ID |
+| product | Integer\(10\) | 否 | 固件包所属产品ID |
+| cnDescription | String\(255\) | 否 | 更新说明（中文） |
+| enDescription | String\(255\) | 否 | 更新说明（英文） |
+| upgradeMethod| String\(255\) | 否 | 升级方式 |
+| createAt| Boolean | 否 | 创建时间 |
+| updateAt| String\(255\) | 否 | 修改时间 |
+
+
+
 
 
 * #### 响应示例：
 
-无
+
+
 
 * #### 异常返回值
 

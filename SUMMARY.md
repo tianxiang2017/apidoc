@@ -151,7 +151,7 @@
 * [OTA](otaAdmin.md)
   * [查询固件包列表](otaAdmin/firmwareQuery.md)
   * [固件包详细](otaAdmin/firmwareDetail.md)
-  * [上传固件包前检查（版本号等）](otaAdmin/firmwareCheckBeforCreate.md)
+  * [创建固件包前检查](otaAdmin/firmwareCheckBeforCreate.md)
   * [创建固件包](otaAdmin/firmwareCreate.md)
   * [修改固件包](otaAdmin/firmwareUpdate.md)
   * [删除固件包](otaAdmin/firmwareDelete.md)

@@ -34,6 +34,76 @@
 
 * #### HTTP 请求示例
 
+```
+
+	"cnDescription": "qqqqqqqqq",
+	"enDescription": "qqqqqqqqqqqqqqqqqq",
+	"fullPackage": true,
+	"oldSwVersion": "null",
+	"permissionIds": [],
+	"productId": 14,
+	"publicStatus": true,
+	"remark": "qqqqqqqq",
+	"swVersion": "V2.0.5.4"
+
+
+```
+
+
+
+
+```
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="id"
+
+159
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="fileList"
+
+
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="productId"
+
+14
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="oldSwVersion"
+
+V0.0.0.0
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="swVersion"
+
+V2.0.5.4
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="publicStatus"
+
+true
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="fullPackage"
+
+true
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="cnDescription"
+
+qqqqqqqqq
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="enDescription"
+
+qqqqqqqqqqqqqqqqqqeeeeeeee
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="remark"
+
+qqqqqqqq
+------WebKitFormBoundaryv5trFj6len8vJ9tC
+Content-Disposition: form-data; name="permissionIds"
+
+
+------WebKitFormBoundaryv5trFj6len8vJ9tC--
+```
+
+
+
+
+
 
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |

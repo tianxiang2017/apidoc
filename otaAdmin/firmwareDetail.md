@@ -30,6 +30,7 @@ http://openapi.fantem-gateway.com/firmwares/129
 
 
 * #### 返回参数
+
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 | id | Integer\(10\) | 是 | 固件包ID |

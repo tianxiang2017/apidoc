@@ -22,6 +22,7 @@ Alexa同步用户设备信息。
 
 
 * #### HTTP 请求示例
+
 ```
 GET HTTP/1.1
 http://openapi.fantem-gateway.com/alexaControl?accountToken=294D412BD5A20464043F2381EC3EB6C7

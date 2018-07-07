@@ -1,4 +1,4 @@
-## 创建Setting
+## 修改Setting
 
 #### 功能说明
 
@@ -12,9 +12,9 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/setting|
+| URL | \[域名\]/setting/|
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
-| HTTP方式 | POST|
+| HTTP方式 | PUT|
 
 * #### 输入参数说明
 
@@ -24,29 +24,28 @@
 | flag          | String\(255\) | 否 | 标志|
 | cnDescription | String\(255\) | 否 | 中文描述|
 | enDescription | String\(255\) | 否 | 英文描述|
-| createTime    | String\(255\) | 否 |创造时间 |
+| createTime      | String\(255\) | 否 |创造时间 |
 
 
 * #### HTTP 请求示例
 
 
-```
 
 ```
 
+```
 
 
 * #### 返回参数
-字符串
-
+无
 
 * #### 响应示例：
 
-ok
+无
 
 * #### 异常返回值
 
-error
+无
 
 
 

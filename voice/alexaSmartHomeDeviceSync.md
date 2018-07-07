@@ -22,7 +22,6 @@ Alexa同步用户设备信息。
 | action| String| 是 |控制动作。同步数据接口返回的actions中一个|
 | applianceId| String| 是 | sn |
 | value | String | 否   | 不同的action对应的值类型可能不一样|
-
 | hue| String | 否 |  setColor动作需要用这个值  |
 | saturation| String | 否 |  setColor动作需要用这个值 |
 | brightness| String | 否 | setColor动作需要用这个值   |
@@ -32,6 +31,14 @@ Alexa同步用户设备信息。
 
 
 * #### HTTP 请求示例
+
+```
+GET  HTTP/1.1
+http://openapi.fantem-gateway.com/alexaControl?accountToken=294D412BD5A20464043F2381EC3EB6C7&action=SetValueByName&applianceId=A01011725020927&value=1
+
+```
+
+
 
 
 

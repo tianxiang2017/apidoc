@@ -31,16 +31,52 @@
 * #### 返回参数
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| title| String | 否 |模板标题 |
+| text| String  | 否 | 模板文本内容|
+| pits|Pit[] | 否 |模板数据 |
+| customDataRules|Map[] | 否 | 自定义数据|
 
 
 * #### 响应示例：
 
-无
+```json
+{
+    "title": "{-title-}",
+    "text": "{-body-}",
+    "pits": [
+        {
+            "type": "STRING",
+            "name": "title"
+        },
+        {
+            "type": "STRING",
+            "name": "body"
+        }
+    ],
+    "customDataRules": [
+        {
+            "changed": false,
+            "value": "1",
+            "type": "STRING",
+            "name": "pushType"
+        },
+        {
+            "changed": false,
+            "value": 1,
+            "type": "INT",
+            "name": "typeAttr"
+        }
+    ]
+}
+```
+
+
 
 * #### 异常返回值
 
-无
+| 错误码 | 提示信息 | 备注 |
+| :--- | :--- | :--- |
+| 3 | 参数为空，参数错误 | |
 
 
 

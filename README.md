@@ -1,6 +1,6 @@
 # 文档介绍
 
-# 数据类型和长度
+## 数据类型和长度
 
 格式：数据类型+长度类型描述开始+长度 +长度类型介绍。例如：String\(32\)
 
@@ -38,7 +38,7 @@ String{8,16} 8到16位的字符串
 
 User\[2\] 两个User对象的数据
 
-# ### 接口返回
+## 接口返回
 如果没有特殊说明，所有接口返回code-note-data三段式的json，接口中所列出的返回值指的是data内容。如果接口返回参数标识为“无”，表示没有data数据，此仍然是code-note-data,格式
 返回参数：
 
@@ -58,8 +58,8 @@ User\[2\] 两个User对象的数据
     }
 }
 ```
-### 请求地址中的占位符
+## 请求地址中的占位符
 请求地址中的变量用一对大括号“{”“}”表示占位符，在请求时需要替换成对应值。
 例如：在调用/video/applyAuth/{videoId}接口时，实际请求地址类似如下：
-https://api.dev.fantem-gateway.com/video/applyAuth/kf923kld98su43klsdf234
+ http://openapi.fantem-gateway.com/video/applyAuth/kf923kld98su43klsdf234
 

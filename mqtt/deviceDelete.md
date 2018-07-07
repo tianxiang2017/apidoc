@@ -3,6 +3,8 @@
 #### 功能说明
 mqtt删除设备
 
+目前还适合cube调用
+
 #### 调用接口说明
 
 * #### HTTP配置
@@ -17,15 +19,15 @@ mqtt删除设备
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| clientId| Integer\(10\) | 是 | 设备的id |
-| sn| String\(64\) | 是 | 设备的id |
+| clientId| Integer\(10\) | 是 | 设备的sn，待确认 |
+| sn| String\(64\) | 是 | 设备的sn|
 
 
 * #### HTTP 请求示例
 
 ```
 curl -X GET \
-'http://openapi.fantem-gateway.com/device/mqtt/device/delete ?clientId=1&sn=xxxxxxxxxxxxxx' \
+'http://openapi.fantem-gateway.com/device/mqtt/device/delete ?clientId=A01011725020927&sn=xxxxxxxxxxxxxx' \
 ```
 
 * #### 返回参数
@@ -34,11 +36,11 @@ curl -X GET \
 
 
 * #### 响应示例：
-
+无
 
 
 * #### 异常返回值
-
+无
 
 
 

@@ -17,13 +17,13 @@ mqtt场景列表
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| clientId| Integer\(10\) | 是 | 设备的id |
+| clientId| Integer\(10\) | 是 | 设备的sn |
 
 * #### HTTP 请求示例
 
 ```
 curl -X GET \
-'http://openapi.fantem-gateway.com/device/mqtt/scene/list?clientId=1' \
+'http://openapi.fantem-gateway.com/device/mqtt/scene/list?clientId=A01011725020927' \
 ```
 
 * #### 返回参数
@@ -31,11 +31,11 @@ curl -X GET \
 无
 
 * #### 响应示例：
-
+无
 
 
 * #### 异常返回值
-
+无
 
 
 

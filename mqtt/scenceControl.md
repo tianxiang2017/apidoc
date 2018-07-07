@@ -17,15 +17,15 @@ mqtt场景控制
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| clientId| Integer\(10\) | 是 | 设备的id |
-| sn| String\(64\) | 是 | 设备的sn |
+| clientId| Integer\(10\) | 是 | 设备的sn |
+| sceneId| String\(64\) | 是 | 场景id |
 
 
 * #### HTTP 请求示例
 
 ```
 curl -X GET \
-  'http://openapi.fantem-gateway.com/device/mqtt/scene/control?clientId=1&sn=xxxxxxxxxxxxxx' \
+  'http://openapi.fantem-gateway.com/device/mqtt/scene/control?clientId=A01011725020927&sceneId=xxxxxxxxxxxxxx' \
 ```
 
 * #### 返回参数
@@ -35,10 +35,10 @@ curl -X GET \
 
 * #### 响应示例：
 
-
+无
 
 * #### 异常返回值
-
+无
 
 
 

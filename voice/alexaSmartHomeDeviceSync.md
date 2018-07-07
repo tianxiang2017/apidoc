@@ -18,7 +18,7 @@ Alexa同步用户设备信息。
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| accessToken| String| 是 | access token|
+| accessToken| String\(100\)| 是 | access token|
 | action| String| 是 |控制动作。同步数据接口返回的actions中一个|
 | applianceId| String| 是 | sn |
 | value | String | 否   | 不同的action对应的值类型可能不一样|

@@ -18,14 +18,15 @@ Alexa同步用户设备信息。
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| accessToken| String| 是 | access token|
-
-
-
+| accessToken| String\(100\)| 是 | access token|
 
 
 * #### HTTP 请求示例
+```
+GET HTTP/1.1
+http://openapi.fantem-gateway.com/alexaControl?accountToken=294D412BD5A20464043F2381EC3EB6C7
 
+```
 
 
 * #### 返回参数

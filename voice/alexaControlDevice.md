@@ -2,8 +2,7 @@
 
 #### 功能说明
 
-Alexa设备控制。
-旧的customer skill。现在不用，现在用smarthome。
+Alexa Customer Skill设备控制。
 
 
 
@@ -26,7 +25,6 @@ Alexa设备控制。
 
 
 
-
 * #### HTTP 请求示例
 
 
@@ -45,8 +43,7 @@ Alexa设备控制。
 ```
 
 
-
 * #### 异常返回值
 
-
+无
 

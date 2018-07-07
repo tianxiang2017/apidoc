@@ -38,3 +38,28 @@ String{8,16} 8到16位的字符串
 
 User\[2\] 两个User对象的数据
 
+# ### 接口返回
+如果没有特殊说明，所有接口返回code-note-data三段式的json，接口中所列出的返回值指的是data内容。如果接口返回参数标识为“无”，表示没有data数据，此仍然是code-note-data,格式
+返回参数：
+
+| 参数  | 类型  | 是否必选  |   取值范围    | 说明  |
+| -     | -     | -         |               |       |
+| code  | String   | 必选 | 正整数 | 返回的业务代码，1表示成功，其他值表示失败 |
+| note  | String    | 可选 |        | 返回值的描述 
+| data  | Object    | 可选 |        | 返回数据，所有接口最外层都是这三个参数。data的结构由实际接口决定|
+返回示例：
+```json
+{
+    "code":"1",
+    "note":"OPERATION_SUCCESS"
+    "data":{
+        "devToken":"",
+        "expireTime":""
+    }
+}
+```
+### 请求地址中的占位符
+请求地址中的变量用一对大括号“{”“}”表示占位符，在请求时需要替换成对应值。
+例如：在调用/video/applyAuth/{videoId}接口时，实际请求地址类似如下：
+https://api.dev.fantem-gateway.com/video/applyAuth/kf923kld98su43klsdf234
+

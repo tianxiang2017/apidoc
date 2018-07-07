@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/connection/ping |
+| URL | \[域名\]/system/connection/ping |
 | 请求头部 |  |
 | HTTP方式 | GET |
 

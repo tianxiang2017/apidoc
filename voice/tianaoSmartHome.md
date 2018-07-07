@@ -6,7 +6,7 @@ Google Home的Actions on Google平台与Oomi服务器的对接的接口。
 执行namespace值和对应操作关系：
 1.AliGenie.Iot.Device.Discovery：设备发现，即设备同步
 2.AliGenie.Iot.Device.Control:设备控制
-2.aAliGenie.Iot.Device.Query 设备查询，目前尚不支持
+3.AliGenie.Iot.Device.Query 设备查询，目前尚不支持
 
 accessToken放在Authorization请求头中
 

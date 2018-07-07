@@ -19,14 +19,43 @@ AIUI验证服务器Token。aiui根据rand，timestamp和分配给oomi服务器�
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | --- | --- | --- | --- |
-| SessionParams| String| 是 | 会话参数。从这个参数里面获得access_token|
+| SessionParams| String| 是 | 会话参数。进过Base64编码。从这个参数里面获得access_token|
 | Msg| String| 否 |  |
 
+SessionParams明文示例：
 
 
+```json
+{
+	"pers_param": {
+		"access_token": "access_tokenaccess_token"
+	}
+}
+```
+SessionParams明文示例：
+
+
+
+```json
+{
+	"intent": {
+		"semantic": [{
+		}]
+	}
+}
+```
 
 * #### HTTP 请求示例
 
+
+```json
+{
+	"SessionParams":"eyJwZXJzX3BhcmFtIjp7ImFjY2Vzc190b2tlbiI6ImFjY2Vzc190b2tlbmFjY2Vzc190b2tlbiJ9fQ==",
+	"Msg":{
+		"Content":"ewoJImludGVudCI6IHsKCQkic2VtYW50aWMiOiBbXQoJfQp9"
+	}
+}
+```
 
 
 * #### 返回参数

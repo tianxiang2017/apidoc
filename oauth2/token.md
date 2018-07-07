@@ -2,7 +2,9 @@
 
 #### 功能说明
 
-获取token
+Alexa获取token调用这个接口。
+grant_type为authorization_code时获取accessToken
+grant_type为refresh_token时刷新accessToken
 
 #### 调用接口说明
 
@@ -16,27 +18,40 @@
 
 * #### 输入参数说明
 
+grant_type为authorization_code时：
+
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| grant_type| String | 是 | 授权类型。 传authorization_code refresh_token|
+| grant_type| String | 是 | 授权类型。 传authorization_code|
 | client_id| String | 否 | Client ID|
 | code| String | 否 | 授权码 |
 | redirect_uri| String | 否 |重定向地址|
 
+grant_type为refresh_token时：
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| grant_type| String | 是 | 授权类型。 传refresh_token|
+| grant_type |String | 是 | 授权类型。 传refresh_token|
 | refresh_token| String | 否 |refresh token|
 | client_id| String | 否 | Client ID|
 
 
 
-
-
-
-
 * #### HTTP 请求示例
+
+
+```
+curl -X POST \
+  http://openapi.fantem-gateway.com/oauth/token \
+  -H 'Cache-Control: no-cache' \
+  -H 'Postman-Token: f503af8e-d622-1cd0-244d-37de65bf52f2' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F grant_type=authorization_code \
+  -F client_id=xxxxxxxxxxxxxxxxx \
+  -F code=bcb09cffbe2c4d31 \
+  -F redirect_uri=xxxxxxxxxxx
+```
+
 
 
 * #### 返回参数

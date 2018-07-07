@@ -74,13 +74,26 @@ grant_type是refresh_token时，返回
 
 
 * #### 响应示例：
+grant_type是authorization_code时，返回
 
  ```json
- {
-    "code": "52e441823c2f4e1d",
-    "state": "xfcgdsfdsssssssssssss"
+{
+  "access_token": "294D412BD5A20464043F2381EC3EB6C7",
+  "refresh_token": "567030884C7EA513FB843843859A58C3",
+  "expires_in": 36000
 }
  ```
+ 
+ grant_type是refresh_token时，返回
+
+ ```json
+{
+  "access_token": "294D412BD5A20464043F2381EC3EB6C7",
+  "expires_in": 36000
+}
+ ```
+
+
 
 * #### 异常返回值
 400 grant_type错误。refreshToken不存在。code不存在code

@@ -24,33 +24,38 @@
 
 ```
 curl -X GET \
-  'http://openapi.fantem-gateway.com/clientTopic/topic/get?guid=myguid' \
+  'http://openapi.fantem-gateway.com/clientTopic/topic/get?guid=344AA453FDE44024A2AE6A7671A4A32C' \
 ```
 
 * #### 返回参数
 
-| 参数名称 | 参数类型 | 是否必须 | 示例 | 描述 |
-| :--- | :--- | :--- | :--- | :--- |
-| inTopic| String&lt;16&gt; | 否 |  | inTopic|
-| outTopic| String | 否 |  | outTopic|
-| guid | String  | 否 |  |  |
-| code | Integer | 否 |  |  |
-| message| String  | 否 |  |  |
-| data| Map|否 |  |  |
-
-
-
-
-
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| guid| String| 否 | 传入的guid|
+| inTopic| String | 否 |输入topic |
+| outTopic| String | 否 | 输出topic|
 
 
 * #### 响应示例：
 
-```json
-
 ```
+{
+	"code": 11000,
+	"message": "OPERATE_SUCCESS",
+	"data": {
+		"guid": "344AA453FDE44024A2AE6A7671A4A32C",
+		"inTopic": "Oomi/5344AA453FDE44024A2AE6A7671A4A32C",
+		"outTopic": "OOMI_CUBE_REPORT_TOPIC"
+	}
+}
+```
+11000 表示操作成功
 
 * #### 异常返回值
+
+| 错误码 | 提示信息 | 备注 |
+| :--- | :--- | :--- |
+| 11002 | 操作失败| |
 
 
 

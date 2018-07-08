@@ -31,14 +31,7 @@ productId：产品Id
 无
 
 * #### 响应示例：
-
-  ```json
-  {
-      "code": "1",
-      "note": "OPERATE_SUCCESS",
-
-  }
-  ```
+无
 
 * #### 异常返回值
 

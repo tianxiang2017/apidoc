@@ -25,7 +25,7 @@ Alexa同步用户设备信息。
 
 ```
 GET HTTP/1.1
-http://openapi.fantem-gateway.com/alexaControl?accountToken=294D412BD5A20464043F2381EC3EB6C7
+http://openapi.fantem-gateway.com/smart_home/synchrodata?accountToken=294D412BD5A20464043F2381EC3EB6C7
 
 ```
 

@@ -32,7 +32,7 @@ Alexa同步用户设备信息。
 
 ```
 GET  HTTP/1.1
-http://openapi.fantem-gateway.com/alexaControl?accountToken=294D412BD5A20464043F2381EC3EB6C7&action=SetValueByName&applianceId=A01011725020927&value=1
+http://openapi.fantem-gateway.com/smart\_home/control ?accountToken=294D412BD5A20464043F2381EC3EB6C7&action=SetValueByName&applianceId=A01011725020927&value=1
 ```
 
 * #### 返回参数

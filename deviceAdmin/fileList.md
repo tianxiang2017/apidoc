@@ -30,6 +30,7 @@
 file/list?page=1&size=10&username=nzxxx&sn=snxxxxxxxxx&mode=1&type=log
 
 * #### 返回参数
+
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 | type | String\(E\) | 是 | 类型。取值：log或者db |

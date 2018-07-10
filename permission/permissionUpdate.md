@@ -31,6 +31,7 @@
 
 
 * #### HTTP 请求示例
+```
 {
     "businessSystemId":2,
     "id":23,
@@ -41,7 +42,7 @@
     "cnDescription":"中文描述",
     "enDescription":"en desc"
 }
-
+```
 
 * #### 返回参数
 返回一个字符串

@@ -28,6 +28,8 @@
 | enDescription| String\(\)| 否 | 英文详情|
 
 * #### HTTP 请求示例
+
+```
 {
     "businessSystemId":2,
     "name":"xxxx",
@@ -37,6 +39,7 @@
     "cnDescription":"中文描述",
     "enDescription":"en desc"
 }
+```
 
 
 

@@ -18,20 +18,21 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| id            | Integer\(10\) | 否 | id|
-| name| String\(255\) | 否 | code 例如：Manager System。 Oomi System|
-| code| String\(255\) | 否 | 系统编码。例如：MANAGER OOMI_SYSTEM|
-
-
+| code| String\(255\) | 是 | 系统编码。例如：MANAGER OOMI_SYSTEM|
 
 
 * #### HTTP 请求示例
 
 
 * #### 返回参数
+
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| | | 否 | |
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| id            | Integer\(10\) | 否 | id|
+| name| String\(255\) | 否 | 系统名称 例如：Manager System。 Oomi System|
+| code| String\(255\) | 否 | 系统编码。例如：MANAGER OOMI_SYSTEM|
 
 
 * #### 响应示例：

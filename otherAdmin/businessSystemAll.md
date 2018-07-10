@@ -21,11 +21,13 @@
 
 
 * #### 返回参数
+
 返回一个元素为BusinessSystem数组。BusinessSystem内容如下：
+
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 | id            | Integer\(10\) | 否 | id|
-| name| String\(255\) | 否 | code 例如：Manager System。 Oomi System|
+| name| String\(255\) | 否 | 系统名称 例如：Manager System。 Oomi System|
 | code| String\(255\) | 否 | 系统编码。例如：MANAGER OOMI_SYSTEM|
 
 

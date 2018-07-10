@@ -31,6 +31,7 @@ http://openapi.fantem-gateway.com/smart_home/synchrodata?accountToken=294D412BD5
 
 
 * #### 返回参数
+
 | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
 | applianceId| String| 是 | | sn |

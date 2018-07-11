@@ -18,16 +18,15 @@ touch和手机调用的心跳包接口
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| accountId | Integer\(11\) | 是 | 用户id |
+| accountId | Integer\(10\) | 是 | 用户id |
 | accountToken | String\(32\) | 是 | 用户登录后的accessToken |
 | uuid | String\(64\) | 是 | touch或者手机的sn |
 
 * #### HTTP 请求示例
 
-```json
-{
-    "username": "598206408@qq.com"
-}
+```
+curl -X GET \
+  'http://{{apigateway}}/accounts/heart?accountId=171&accountToken=AAD&uuid=A01011725020927' \
 ```
 
 * #### HTTP 请求示例2
@@ -35,7 +34,7 @@ touch和手机调用的心跳包接口
 ```json
 {
     "username": "ztx",
-    "language":"zh_TW"
+    "language":"zh_CN"
 }
 ```
 

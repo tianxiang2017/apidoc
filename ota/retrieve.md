@@ -21,7 +21,7 @@
 | product | String\(255\) | 是 | 产品名，例如prosyst,OOMICUBE |
 | model | String\(255\) | 否 | 型号。默认为字符串1。product为touch时传字符串0 |
 | devToken | String\(255\) | 否 | 当前用户token，如用户未登录则无 |
-| accountId | Integer\(11\) | 否 | 当前用户id，如用户未登录则无 |
+| accountId | Integer\(10\) | 否 | 当前用户id，如用户未登录则无 |
 | currentSwVersion | String\(255\) | 否 | 产品当前版本号。为空时，系统根据格式生成默认的初始版本 |
 
 **由于历史原因，旧版本的Cube和Touch还会传下面参数**
@@ -80,6 +80,7 @@
  | compel | bool | 否 |  | 是否强制下载，固定为false |
  | versionRank | Integer\(E\) | 否 |  | 0表示gamma版本，1表示beta版本，2表示alpha版本，这个字段不再使用，为固定0 |
  | firmwareBinds | Array | 否 |  | 和这个更新包绑定的版本，固定为空队列 |
+ 
 * #### 响应示例：
 
 ```json

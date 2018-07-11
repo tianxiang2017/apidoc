@@ -1,6 +1,7 @@
 # 发送nest邮件
 
 #### 功能说明
+
 此接口用于用户使用Cube接入nest设备时，发送邮件给nest用户
 
 #### 调用接口说明
@@ -9,21 +10,18 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/sendEmail/nest|
-| 请求头部 |  application/x-www-form-urlencoded|
-| HTTP方式 | POST|
+| URL | \[域名\]/sendEmail/nest |
+| 请求头部 | application/x-www-form-urlencoded |
+| HTTP方式 | POST |
 
 * #### 输入参数说明
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-|context |String  |是 | 一个URL，nest连接   |
-|email |String  |是| 用户的邮箱    |
-|uuid     |String  |是| Cube的sn    |
-| language | String&lt;E&gt; | 否 | 邮件使用的语言，默认值en。可以使用的值有zh\_CN，en，zh\_TW，es和pt。其中，es和pt是保留值 |
-
-
-
+| context | String | 是 | 一个URL，nest连接 |
+| email | String\(255\) | 是 | 用户的邮箱 |
+| uuid | String\(64\) | 否 | 保留参数。Cube的sn |
+| language | String&lt;E&gt; | 否 | 邮件使用的语言，默认值en。可以使用的值有zh\_CN，en |
 
 * #### HTTP 请求示例
 
@@ -57,8 +55,6 @@ curl -X POST \
 | 3 | 必填参数为空。 | 必填参数为空，或者参数错误 |
 | 4 | 参数格式错误 |  |
 | 104 | 邮件格式错误 |  |
-
-
 
 
 

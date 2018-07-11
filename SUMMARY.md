@@ -57,7 +57,7 @@
   * [云片短信回复内容](system/smsYunpianReplay.md)
   * [系统版本](system/systemVersion.md)
   * [连接Ping](client/connectionping.md)
-* [ota升级](ota.md)
+* [OTA升级](ota.md)
   * [获取最新版本（旧）](ota/retrieve.md)
   * [获取最新版本](ota/firmwareRetrieve.md)
   * [手机查询所有版本](ota/integrationCheck.md)

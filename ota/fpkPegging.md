@@ -26,7 +26,7 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 | :--- | :--- | :--- | :--- |
 | product | String\(255\) | 是 | 产品类型名 |
 | model | String\(255\) | 是 | 产品类型型号，固定为1\(字符串\) |
-| hwVersion | String\(255\) | 是 | 产品的硬件版本号，固定为：V1.0.0.0 |
+| hwVersion | String\(255\) | 否 | 产品的硬件版本号，固定为：V1.0.0.0 |
 | feature | String\(11\) | 否 | 产品类型特征值 |
 | swVersion | String\(255\) | 是 | 固件当前版本号 |
 | sn | String\(64\) | 否 | Touch的sn |

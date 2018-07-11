@@ -19,7 +19,8 @@ cube会调用此接口上传文件。文件大小限制为60M
 | 参数**名称** | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | type | String\(E\) | 是 | 类型。取值：log或者db |
-| guid | String&lt;32&gt; | 是 | cube注册成功后获得的guid |
+| guid | String&lt;32&gt; | 否 | cube注册成功后获得的guid。guid和sn要传一个 |
+| sn| String&lt;64&gt; | 否 | cube没有guid传sn。guid和sn要传一个 |
 | accountId | Integer\(10\) | 否 | 用户的ID |
 | version | String\(255\) | 否 | 所属版本 |
 | remark | String\(1024\) | 否 | 描述 |

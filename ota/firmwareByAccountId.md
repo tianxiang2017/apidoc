@@ -25,7 +25,7 @@
 | accountId | Integer\(10\) | 是 | 用户ID。所有accountId要一样，值看第一个accountId判断权限。现在还没有检查accountId是否一样|
 | product| String\(255\) | 否 | 产品名|
 | model | String\(255\) | 否 | 型号 |
-| feature | Integer\(11\) | 否 | zwave区分不同频率 |
+| feature | String\(50\) | 否 | zwave区分不同频率 |
 | currentSwVersion | String\(255\) | 否 | 产品当前版本号。 |
 
 

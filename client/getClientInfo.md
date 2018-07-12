@@ -19,8 +19,8 @@
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :---: | :---: | :--- |
 | guid | String\(32\) | 是 | 已注册的cube的guid |
-| dat | String\(32\) | 是 | 设备鉴权接口返回的token |
-| aat | String\(32\) | 是 | 用户登录后产生的token。 |
+| dat | String\(32\) | 否 | 设备鉴权接口返回的token |
+| aat | String\(32\) | 否 | 用户登录后产生的token。 |
 
 * #### HTTP 请求示例
 

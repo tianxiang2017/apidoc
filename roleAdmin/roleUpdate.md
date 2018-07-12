@@ -20,8 +20,8 @@
 | :--- | :--- | :--- | :--- |
 |roleId|Integer\(10\) | 否 | 角色ID|
 |name |String\(255\) | 否 | 角色名|
-| cnDescription|String\(\) | 否 | 中文详情|
-| enDescription| String\(\)| 否 | 英文详情|
+| cnDescription|String\(255\)  | 否 | 中文详情|
+| enDescription|String\(255\) | 否 | 英文详情|
 |permissionIds|Integer[]|修改角色后，这个角色拥有的权限，之前的权限会被清空|
 
 

@@ -19,8 +19,8 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 |name |String\(255\) | 否 | 角色名|
-|cnDescription|String\(\) | 否 | 中文详情|
-|enDescription| String\(\)| 否 | 英文详情|
+|cnDescription|String\(255\) | 否 | 中文详情|
+|enDescription| String\(255\)| 否 | 英文详情|
 |permissionIds|Integer[]|角色拥有的权限列表|
 
 

@@ -12,7 +12,7 @@ Content-Type:multipart/form-data
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]//firmwares/create|
+| URL | \[域名\]/firmwares/create|
 | 请求头部 | Content-Type:multipart/form-data |
 | HTTP方式 | POST|
 

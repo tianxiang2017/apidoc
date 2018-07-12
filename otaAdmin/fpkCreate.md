@@ -32,7 +32,7 @@
 * #### HTTP 请求示例
 
 
-```
+```json
 {
 	"version": "7.2.00",
 	"cnDescription": "1sdfsdfsd",

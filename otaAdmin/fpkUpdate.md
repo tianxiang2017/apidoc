@@ -33,6 +33,40 @@
 
 * #### HTTP 请求示例
 
+```json
+{	"id":1
+	"version": "7.2.00",
+	"cnDescription": "1sdfsdfsd",
+	"subVersion": [{
+		"id": 11,
+		"version": "V0.1.0.1",
+		"checked": false
+	}, {
+		"id": 10,
+		"version": "V2.0.0.33",
+		"checked": false
+	}, {
+		"id": 13,
+		"version": "V1.0.0.19",
+		"checked": false
+	}, {
+		"id": 12,
+		"version": "V2.0.4.31",
+		"checked": false
+	}, {
+		"id": 8,
+		"version": "V1.1.0.0",
+		"checked": false
+	}, {
+		"id": 16,
+		"version": "V1.02.0.0",
+		"checked": false
+	}],
+	"upgradeMethod": "query",
+	"permissionIds": [79]
+}
+```
+
 
 * #### 返回参数
 

@@ -18,14 +18,23 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| businessSystemId| Integer\(10\) | 否 | 业务系统ID。manager system 或者oomi system对应的ID|
-
+| page | Integer\(10\) | 否 |  |
+| pageSize | Integer\(10\) | 否 |  |
+| sortBy | Integer\(10\) | 否 | 按什么排序 |
+| order | String&lt;E&gt; | 否 | 升序（ASC）还是降序（DESC） |
 
 * #### HTTP 请求示例
-```json
-{
-    "businessSystemId":2
-}
+
+  ```json
+  {
+    "page": 1,
+    "pageSize": 10,
+    "sortBy": "id",
+    "order": "desc"
+  }
+ 
+ ```
+
 ```
 
 * #### 返回参数

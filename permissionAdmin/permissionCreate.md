@@ -21,10 +21,10 @@
 | businessSystemId | Integer\(10\) | 是 | 业务系统ID。manager system 或者oomi system对应的ID |
 | name | String\(255\) | 是 | 菜单名 |
 | code | String\(255\) | 是 | 菜单code，唯一标识 |
-| sortNo | String\(\) | 否 | 排序编号。影响菜单先后顺序 |
+| sortNo | Integer\(10\) | 否 | 排序编号。影响菜单先后顺序 |
 | parentId | Integer\(10\) | 否 | 父菜单 |
-| cnDescription | String\(\) | 否 | 中文详情 |
-| enDescription | String\(\) | 否 | 英文详情 |
+| cnDescription | String\(255\) | 否 | 中文详情 |
+| enDescription | String\(255\) | 否 | 英文详情 |
 
 * #### HTTP 请求示例
 
@@ -50,7 +50,7 @@
 
 * #### HTTP返回
 
-返回400   
+返回400  
 内容   Error Code\_Exist  
 返回200  
 ok

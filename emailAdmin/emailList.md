@@ -18,8 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| page | Integer\(10\) | 否 | 第几页 |
-| pageSize | Integer\(10\) | 否 | 每页大小 |
+| page | Integer\(10\) | 是 | 第几页 |
+| pageSize | Integer\(10\) | 是 | 每页大小 |
 | sendTimes | Date[2] | 否 | 时间范围 |
 | status | Integer&lt;E&gt; | 否 | 发送结果。1：已发送：2：发送失败 |
 | email | String\(10\) | 否 | 邮箱地址 |

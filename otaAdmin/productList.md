@@ -20,7 +20,7 @@
 | :--- | :--- | :--- | :--- |
 | pageNum| Integer\(10\) | 是 | 第几页|
 | pageSize| Integer\(10\) | 是 |每页大小 |
-| keyword| String\(10\) | 否 | 产品名|
+| keyword| String\(255\) | 否 | 产品名|
 
 
 * #### HTTP 请求示例

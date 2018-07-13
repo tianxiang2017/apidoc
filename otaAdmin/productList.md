@@ -18,8 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| pageNum| Integer\(10\) | 否 | 第几页|
-| pageSize| Integer\(10\) | 否 |每页大小 |
+| pageNum| Integer\(10\) | 是 | 第几页|
+| pageSize| Integer\(10\) | 是 |每页大小 |
 | keyword| String\(10\) | 否 | 产品名|
 
 

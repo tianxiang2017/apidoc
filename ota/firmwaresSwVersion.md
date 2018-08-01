@@ -4,7 +4,10 @@
 
 此接口是为了让1.x的设备升级到2.x上。
 
-###### 
+1.x的cube的product名称是OMMICUBE和prosyst
+
+- 如果根据oomiCubeVersion查到OMMICUBE的固件包，则返回结果中有oomiCubeUrl这类返回参数。此时，如果没有prosyst固件包，就不会返回prosystUrl这类参数。
+- 如果根据prosystVersion查询到prosyst固件包，则返回结果中有prosystUrl这类返回参数。如果没有OMMICUBE固件包，就不会返回oomiCubeUrl这类参数。
 
 #### 调用接口说明
 
@@ -20,8 +23,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| oomiCubeVersion | String\(255\) | 是 | OOMI Cube Firmware 的版本 |
-| prosystVersion | String\(255\) | 是 | OOMI Cube App 的版本 |
+| oomiCubeVersion | String\(255\) | 是 | OOMI Cube Firmware 的版本。对应的产品名是OMMICUBE |
+| prosystVersion | String\(255\) | 是 | OOMI Cube App 的版本。对应的产品名是prosyst |
 
 * #### HTTP 请求示例
 
@@ -75,8 +78,7 @@
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 601 | 出入的product参数不对，就返回这个值 |  |
-| 630 | 固件包已经是最新了 |  |
+| 601 | 传入的参数不对，就返回这个值 |  |
 
 
 

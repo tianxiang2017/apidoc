@@ -35,7 +35,7 @@
 | bluetoothMac | String\(32\) | 是 | 蓝牙mac地址。cube要求唯一，app没要求 |
 | uuid | String\(64\) | 是 | uuid。保留参数，不为空，默认值为0。 |
 | name | String\(255\) | 否 | 设备名称 |
-| type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：oomi\_touch，oomi\_cube，android\_phone，ios\_phone，oomi\_hub" |
+| type | String&lt;E&gt; | 是 | 设备类型。长度为&lt;E&gt;表示只能取固定值。只能取以下几个值中的一个值：.oomi\_touch，oomi\_cube，android\_phone，ios\_phone，oomi\_hub" |
 | acfCode | String\(64\) | 否 | acfCode |
 | randomCode | String\(32\) | 否 | RandomCode，cube必须有值 |
 | imei | String\(255\) | 否 | IMEI |
@@ -126,7 +126,7 @@
 
 ```json
 {
-    "code": 1,
+    "code": "1",
     "note": "操作成功",
     "data": {
         "guid": "BFCEB59DEAF44BE2A004FB1B8A5E5507",

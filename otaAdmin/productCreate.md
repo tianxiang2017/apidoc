@@ -10,7 +10,7 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/products|
+| URL | \[域名\]/products/create |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
 | HTTP方式 | POST|
 
@@ -18,10 +18,10 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| product | String\(255\) | 否 | 产品名|
-| model| String\(255\) | 否 | model|
-| hwVersion| String\(255\) | 否 | 版本号|
-| versionFormat| String\(255\) | 否 | 版本格式|
+| product | String\(255\) | 是 | 产品名|
+| model| String\(255\) | 是 | model|
+| hwVersion| String\(255\) | 是 | 版本号|
+| versionFormat| String\(255\) | 是 | 版本格式|
 
 
 * #### HTTP 请求示例

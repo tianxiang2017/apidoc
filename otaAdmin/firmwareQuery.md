@@ -19,11 +19,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| pageNum | Integer\(10\) | 否 | 第几页 |
-| pageSize | Integer\(10\) | 否 | 每页大小 |
+| pageNum | Integer\(10\) | 是 | 第几页 |
+| pageSize | Integer\(10\) | 是 | 每页大小 |
 | productId | Integer\(10\) | 否 | 产品id |
-| sortName | String\(255\) | 否 | 按什么 排序 |
-| sortOrder | String | 否 | 怎么排序，升序\(asc\)还是降序\(desc\) |
+| sortName | String\(255\) | 是 | 按什么 排序 |
+| sortOrder | String | 是 | 怎么排序，升序\(asc\)还是降序\(desc\) |
 
 * #### HTTP 请求示例
 
@@ -39,10 +39,10 @@
 
 * #### 返回参数
 
- | 参数名称 | 参数类型 | 是否必须 | 描述 |
- | :--- | :--- | :--- | :--- |
- | total | Long | 是 | 总记录数 |
- | data | Firmware\[\] | 是 | 具体数据 |
+| 参数名称 | 参数类型 | 是否必须 | 描述 |
+| :--- | :--- | :--- | :--- |
+| total | Long | 是 | 总记录数 |
+| data | Firmware\[\] | 是 | 具体数据 |
 
 Firmware内容如下：
 

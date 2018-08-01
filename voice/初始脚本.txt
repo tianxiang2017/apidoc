@@ -1,0 +1,258 @@
+-- ft_account 必须要有manager
+-- ft_role 初始角色
+-- ft_role_permission 角色初始权限
+-- ft_permission 权限
+-- ft_business_system 业务系统
+-- ft_language 
+-- ft_oauth_application 初始shap、google和天猫
+-- ft_product 产品权限
+
+INSERT INTO `ft_account` VALUES ('0', 'aef0dccf5e7c4427a1a002c5eafdf187', 'manager', null, 'cdf4a007e2b02a0c49fc9b7ccfbb8a10c644f635e1765dcf2a7ab794ddc7edac', null, null, null, '59820640778@qq.com', '2', '3', null, null, null, '2', '2018-06-14 16:34:13', '2018-07-05 19:22:29', '2018-06-14 16:34:13', null, '1', null);
+UPDATE ft_account SET id=0 where name='manager';
+
+
+-- ----------------------------
+-- Table structure for `ft_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_role`;
+CREATE TABLE `ft_role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `cn_description` varchar(255) DEFAULT NULL,
+  `en_description` varchar(255) DEFAULT NULL,
+  `reserve` tinyint(1) NOT NULL DEFAULT '0',
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ft_role
+-- ----------------------------
+INSERT INTO `ft_role` VALUES ('1', 'Anonymous', 'Anonymous', 'Anonymous', '1', '2018-01-20 04:20:39', '2018-01-20 03:01:25');
+INSERT INTO `ft_role` VALUES ('2', 'Alpha', 'cn', 'cn', '0', '2018-01-02 01:59:26', '2017-10-27 03:53:38');
+INSERT INTO `ft_role` VALUES ('3', 'Beta', null, null, '0', '2017-10-27 03:53:38', '2017-10-27 03:53:38');
+INSERT INTO `ft_role` VALUES ('4', 'FAE', 'FAE', 'FAE', '0', '2017-10-27 03:53:38', '2017-10-27 03:53:38');
+INSERT INTO `ft_role` VALUES ('5', 'Factory', 'Factory', 'Factory', '0', '2017-11-12 19:44:34', '2017-11-12 19:44:34');
+INSERT INTO `ft_role` VALUES ('6', '内部测试专用', '用于内部测试', 'For our Test Team', '0', '2017-12-18 22:32:44', '2017-12-18 22:32:44');
+INSERT INTO `ft_role` VALUES ('7', 'Sharp', 'Sharp', 'Sharp', '0', '2018-01-02 01:35:13', '2018-01-02 01:35:13');
+INSERT INTO `ft_role` VALUES ('11', 'OrdinaryRole ', 'Ordinary role', 'Ordinary role', '1', '2018-01-20 03:11:32', '2018-01-20 03:11:32');
+INSERT INTO `ft_role` VALUES ('12', 'R&D', '研发', 'R&D', '0', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role` VALUES ('13', '夏普测试', '用于测试提供给夏普的软件版本', '用于测试提供给夏普的软件版本', '0', '2018-01-22 19:58:46', '2018-01-22 19:58:46');
+INSERT INTO `ft_role` VALUES ('14', 'Cube Group', 'Cube Group', 'Cube Group', '0', '2018-03-05 19:26:25', '2018-03-05 19:26:25');
+INSERT INTO `ft_role` VALUES ('16', 'SuperManager', 'manager', 'manager', '1', '2018-05-03 11:54:03', '2017-10-28 16:30:47');
+
+
+-- ----------------------------
+-- Table structure for `ft_oauth_application`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_oauth_application`;
+CREATE TABLE `ft_oauth_application` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `account_id` int(11) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `client_id` varchar(100) DEFAULT NULL,
+  `client_secret` varchar(100) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `home_page` varchar(255) DEFAULT NULL,
+  `direct_uri` varchar(255) DEFAULT NULL,
+  `scope` varchar(255) DEFAULT NULL,
+  `status` int(1) DEFAULT NULL,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ft_oauth_application
+-- ----------------------------
+INSERT INTO `ft_oauth_application` VALUES ('1', null, 'alexa', 'Awx0YRuq8LNzrn21', 'R37z96hdh53a8oG9A52s', 'alexa', null, null, null, '1', '2017-08-02 02:25:55', '2017-07-25 09:07:55');
+INSERT INTO `ft_oauth_application` VALUES ('2', null, 'google_home', 'client_id', 'client_secret', 'alexa', null, null, null, '1', '2017-07-25 09:07:55', '2017-07-25 09:07:55');
+INSERT INTO `ft_oauth_application` VALUES ('3', null, 'AliGenie', 'AliGenie', 'RbikpeJpTqYlJRCI', 'tmall', null, null, null, '1', '2018-02-27 23:47:06', '2018-02-27 23:47:06');
+
+
+-- ----------------------------
+-- Table structure for `ft_role_permission`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_role_permission`;
+CREATE TABLE `ft_role_permission` (
+  `role_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ft_role_permission
+-- ----------------------------
+INSERT INTO `ft_role_permission` VALUES ('9', '79', '2018-01-20 03:01:47', '2018-01-20 03:01:47');
+INSERT INTO `ft_role_permission` VALUES ('11', '79', '2018-01-20 03:11:49', '2018-01-20 03:11:49');
+INSERT INTO `ft_role_permission` VALUES ('3', '1', '2018-01-20 03:32:52', '2018-01-20 03:32:52');
+INSERT INTO `ft_role_permission` VALUES ('3', '79', '2018-01-20 03:32:52', '2018-01-20 03:32:52');
+INSERT INTO `ft_role_permission` VALUES ('2', '1', '2018-01-20 03:32:58', '2018-01-20 03:32:58');
+INSERT INTO `ft_role_permission` VALUES ('2', '2', '2018-01-20 03:32:58', '2018-01-20 03:32:58');
+INSERT INTO `ft_role_permission` VALUES ('2', '79', '2018-01-20 03:32:58', '2018-01-20 03:32:58');
+INSERT INTO `ft_role_permission` VALUES ('1', '79', '2018-01-20 04:23:03', '2018-01-20 04:23:03');
+INSERT INTO `ft_role_permission` VALUES ('12', '47', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '48', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '49', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '50', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '51', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '52', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '53', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '54', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '55', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '56', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '57', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '58', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '59', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '60', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '61', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '62', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '63', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '64', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '65', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '66', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '67', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '68', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '69', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '70', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '71', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '72', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '73', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '74', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '75', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '76', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '77', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '78', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '80', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '81', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('12', '82', '2018-01-21 17:29:41', '2018-01-21 17:29:41');
+INSERT INTO `ft_role_permission` VALUES ('13', '83', '2018-01-22 19:58:46', '2018-01-22 19:58:46');
+INSERT INTO `ft_role_permission` VALUES ('5', '48', '2018-01-23 19:05:18', '2018-01-23 19:05:18');
+INSERT INTO `ft_role_permission` VALUES ('5', '63', '2018-01-23 19:05:18', '2018-01-23 19:05:18');
+INSERT INTO `ft_role_permission` VALUES ('5', '64', '2018-01-23 19:05:18', '2018-01-23 19:05:18');
+INSERT INTO `ft_role_permission` VALUES ('4', '47', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '48', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '49', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '50', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '65', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '66', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '68', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '73', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '74', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '75', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '80', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '81', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('4', '82', '2018-02-06 02:34:34', '2018-02-06 02:34:34');
+INSERT INTO `ft_role_permission` VALUES ('6', '50', '2018-02-28 00:39:26', '2018-02-28 00:39:26');
+INSERT INTO `ft_role_permission` VALUES ('6', '74', '2018-02-28 00:39:26', '2018-02-28 00:39:26');
+INSERT INTO `ft_role_permission` VALUES ('6', '78', '2018-02-28 00:39:26', '2018-02-28 00:39:26');
+INSERT INTO `ft_role_permission` VALUES ('6', '84', '2018-02-28 00:39:26', '2018-02-28 00:39:26');
+INSERT INTO `ft_role_permission` VALUES ('14', '47', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '48', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '52', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '62', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '63', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '64', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+INSERT INTO `ft_role_permission` VALUES ('14', '81', '2018-03-05 19:30:37', '2018-03-05 19:30:37');
+
+
+-- ----------------------------
+-- Table structure for `ft_business_system`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_business_system`;
+CREATE TABLE `ft_business_system` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `code` varchar(255) DEFAULT NULL,
+  `permission_custom_data` text,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ft_business_system
+-- ----------------------------
+INSERT INTO `ft_business_system` VALUES ('1', 'Manager System', 'MANAGER', '', '2018-01-20 03:01:24', '2018-01-20 03:00:32');
+INSERT INTO `ft_business_system` VALUES ('2', 'Oomi System', 'OOMI_SYSTEM', '', '2018-01-20 03:00:32', '2018-01-20 03:00:32');
+
+
+
+-- ----------------------------
+-- Table structure for `ft_language`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_language`;
+CREATE TABLE `ft_language` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` int(11) DEFAULT NULL,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `active` int(11) DEFAULT NULL COMMENT '0：删除 1：正常',
+  `delete_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code_UNIQUE` (`code`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of ft_language
+-- ----------------------------
+INSERT INTO `ft_language` VALUES ('1', 'en', 'English', '1', '2018-06-07 14:25:04', '2018-06-07 14:25:04', null, null);
+INSERT INTO `ft_language` VALUES ('2', 'zh-CN', 'Simple Chinese', '2', '2018-06-07 14:25:04', '2018-06-07 14:25:04', null, null);
+INSERT INTO `ft_language` VALUES ('3', 'zh-HK', 'Traditional Chinese', '3', '2018-06-07 14:25:04', '2018-06-07 14:25:04', null, null);
+
+
+
+-- ----------------------------
+-- Table structure for `ft_product`
+-- ----------------------------
+DROP TABLE IF EXISTS `ft_product`;
+CREATE TABLE `ft_product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id号',
+  `product` varchar(255) DEFAULT NULL COMMENT '产品名（区分大小写）',
+  `model` varchar(255) DEFAULT NULL COMMENT '型号',
+  `hw_version` varchar(255) DEFAULT NULL COMMENT '硬件版本',
+  `latest_version` varchar(255) DEFAULT NULL COMMENT '当前最新版本',
+  `version_number` int(11) DEFAULT NULL COMMENT '当前ota包的数量，由于代码没完善，这个字段并不准确，但不影响。',
+  `version_format` varchar(255) DEFAULT NULL COMMENT '版本号的格式，#N表示是number',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `latest_beta_version` varchar(255) DEFAULT NULL,
+  `latest_alpha_version` varchar(255) DEFAULT NULL,
+  `feature` varchar(50) DEFAULT NULL,
+  `update_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ft_product
+-- ----------------------------
+INSERT INTO `ft_product` VALUES ('1', 'prosyst', '1', '1.0.0.0', '2.0.0.33', '27', '#N.#N.#N.#N', '2017-05-26 15:35:23', '1.2.3.6', '2.0.0.23', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('2', 'OMMICUBE', '1', '1.0', '01.01', '3', '#N.#N', '2017-05-26 12:24:48', '00.04', '00.04', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('3', 'touch', '0', '1.0', 'V2.0.0.29', '35', 'V#N.#N.#N.#N', '2017-08-14 13:54:42', 'V1.2.3.9', 'V2.0.0.13', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('6', 'AndroidPhone', '1', '1.0.0.0', '0.0.0.0', '12', '#N.#N.#N.#N', '2017-05-26 10:03:44', '0.0.0.0', '1.0.4.7', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('7', 'touchFirmware', '1', 'V1.0.0.0', 'V1.0.0.14', '7', 'V#N.#N.#N.#N', '2017-05-26 15:58:21', 'V0.0.0.0', 'V1.0.0.19', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('8', 'OOMI_Cube_IR', '1', 'V1.0.0.0', 'V1.1.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:00:28', 'V0.0.0.0', 'V0.0.0.0', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('9', 'OOMI_Cube_STM8', '1', 'V1.0.0.0', 'V0.0.0.0', '0', 'V#N.#N.#N.#N', '2017-05-25 18:39:20', 'V0.0.0.0', 'V0.0.0.0', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('10', 'OOMI_Cube_APP', '1', 'V1.0.0.0', 'V2.0.6.9', '31', 'V#N.#N.#N.#N', '2018-01-19 19:10:49', 'V2.0.5.8', 'V2.0.6.5', null, '2018-01-19 03:10:49', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('11', 'OOMI_Cube_Firmware', '1', 'V1.0.0.0', 'V0.2.0.4', '6', 'V#N.#N.#N.#N', '2018-01-19 19:11:29', 'V0.0.0.0', 'V0.2.0.2', null, '2018-01-19 03:11:29', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('12', 'OOMI_Touch_APP', '1', 'V1.0.0.0', 'V2.0.6.5', '21', 'V#N.#N.#N.#N', '2018-01-19 19:10:55', 'V2.0.5.12', 'V2.0.6.4', null, '2018-01-19 03:10:54', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('13', 'OOMI_Touch_Firmware', '1', 'V1.0.0.0', 'V1.0.0.19', '2', 'V#N.#N.#N.#N', '2017-05-26 18:45:40', 'V0.0.0.0', 'V0.0.0.0', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('14', 'OOMI_Phone_Android', '1', 'V1.0.0.0', 'V2.0.4.12', '10', 'V#N.#N.#N.#N', '2017-10-29 21:05:36', 'V2.0.2.7', 'V0.0.0.0', null, '2017-10-29 06:05:36', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('15', 'OOMI_Phone_iOS', '1', 'V1.0.0.0', 'V0.0.0.0', '0', 'V#N.#N.#N.#N', '2017-05-25 18:39:20', 'V0.0.0.0', 'V0.0.0.0', null, '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('16', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:01:42', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_01', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('17', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:08:29', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_02', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('18', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:09:23', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_00', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('19', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:10:06', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_03', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('20', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:10:37', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_27', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('21', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:11:16', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_09', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('22', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:12:09', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_10', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('23', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V0.0.0.0', '0', 'V#N.#N.#N.#N', '2017-05-25 18:39:20', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_28', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('24', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V0.0.0.0', '0', 'V#N.#N.#N.#N', '2017-05-25 18:39:20', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_08', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('25', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V0.0.0.0', '0', 'V#N.#N.#N.#N', '2017-05-25 18:39:20', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_26', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('26', 'OOMI_Cube_Zwave', '1', 'V1.0.0.0', 'V1.02.0.0', '1', 'V#N.#N.#N.#N', '2017-07-27 18:15:44', 'V0.0.0.0', 'V0.0.0.0', 'zwave_freq_29', '2017-10-27 03:53:19', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('27', 'OOMI_Kit', '1', 'V1.0.0.0', '2.0.6.3', '266', '#N.#N.#N.#N', '2018-01-19 19:12:20', '2.0.6.3', '2.0.6.3', null, '2018-01-19 03:12:20', '2017-10-27 03:53:19');
+INSERT INTO `ft_product` VALUES ('28', 'OOMI_Pro_Phone_Android', '1', 'V1.0.0.0', null, null, 'V#N.#N.#N.#N', null, null, null, null, '2018-01-26 00:09:24', '2018-01-26 00:09:24');

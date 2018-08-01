@@ -30,7 +30,7 @@
 | message | String\(120\) | 是 | 具体的消息内容。长度由推送平台决定，需要确认 |
 | sendTime | String&lt;E&gt; | 是 | 推送时间类型：马上推送（now），目前只支持now |
 | additionalParam | Map | 否 | 自定义数据。直接发送给接收者。附加参数。 |
-| receiverPlatform | String&lt;E&gt; | 否 | 接收客户端平台类型。1：touch；2：Android；3：ios。多个平台用逗号链接。例如 1,2。 默认全部推送。 |
+| receiverPlatform | String[] | 否 | 接收客户端平台类型。1：touch；2：Android；3：ios。多个平台用逗号链接。例如 ["1"]。 默认全部推送。 |
 
 ##### 2.4.1 详细说明
 
@@ -98,6 +98,6 @@
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
 | 3 | 参数错误 |  |
-
+| 4 | 参数格式错误 |  |
 
 

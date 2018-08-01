@@ -18,8 +18,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| stakId | String | 否 | 任务ID，APP收到推送消息时，会收到stakID,回传过来就可以 |
-| channelId | String | 否 | 产品名，例如prosyst,OOMICUBE |
+| stakId | String | 是 | 任务ID，APP收到推送消息时，会收到stakID,回传过来就可以 |
+| channelId | String | 是 | 百度推送的channelId。 |
 
 * #### HTTP 请求示例
 

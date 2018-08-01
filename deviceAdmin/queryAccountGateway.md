@@ -18,9 +18,9 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-|page | Integer\(10\) | 否 | 第几页，默认1|
-| pageSize | Integer\(10\) | 否 |每页大小，默认10 |
-| accountId| Integer\(10\) | 否 |用户id |
+|pageNum | Integer\(10\) | 是 | 第几页 |
+| pageSize | Integer\(10\) | 是 |每页大小 |
+| auid | String\(32\) | 是 |用户的auid |
 
 
 * #### HTTP 请求示例

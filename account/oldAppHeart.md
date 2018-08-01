@@ -18,25 +18,15 @@ touch和手机调用的心跳包接口
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| accountId | Integer\(11\) | 是 | 用户id |
+| accountId | Integer\(10\) | 是 | 用户id |
 | accountToken | String\(32\) | 是 | 用户登录后的accessToken |
 | uuid | String\(64\) | 是 | touch或者手机的sn |
 
 * #### HTTP 请求示例
 
-```json
-{
-    "username": "598206408@qq.com"
-}
 ```
-
-* #### HTTP 请求示例2
-
-```json
-{
-    "username": "ztx",
-    "language":"zh_TW"
-}
+curl -X GET \
+  'http://opanapi.fantem-gatway.com/accounts/heart?accountId=171&accountToken=AAD&uuid=A01011725020927' \
 ```
 
 * #### 返回参数
@@ -57,11 +47,8 @@ touch和手机调用的心跳包接口
 | 错误码 | 提示信息 | 备注 |
 | --- | --- | --- |
 | 3 | 必填参数为空。 | 必填参数为空，或者参数错误 |
-| 106 | 用户不存在 |  |
-| 4023 | 邮箱不存在 | 用户注册没有邮箱，可能是手机注册 |
-| 2 | 发送邮件失败 | 邮件地址未注册等错误 |
-| 4 | 参数格式错误 | 包括language的值超出范围 |
-| 156 | sn重复 |  |
+| 181 | 设备未注册 |  |
+| 114 | 用户未绑定cube |  |
 
 
 

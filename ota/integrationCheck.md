@@ -1,10 +1,10 @@
-## 手机查询所有版本
+## 手机查询所有最新版本
 
 #### 功能说明
 
-此接口用户手机搜集Cube的版本信息后，发送给服务器查询是否有新版本
+此接口用户手机搜集网关的版本信息后，发送给服务器查询是否有新版本
 
-###### 
+**请求的Cookie中需要设置guid和aat**
 
 #### 调用接口说明
 
@@ -20,21 +20,20 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| guid | String\(32\) | 是 | 手机APP的guid |
-| model | String\(11\) | 否 | 固定为："1" |
-| product | String\(255\) | 否 | 产品名，固定为：OOMI\_CUBE |
-| firmwares | Firmware\[\] | 否 |  |
+| guid | String\(32\) | 否 | 手机APP的guid。如果cookie中有guid，这使用那个guid |
+| model | String | 否 | 保留参数。|
+| product | String | 否 | 保留参数。产品名。例如传OOMI_CUBE |
+| firmwares | Firmware\[\] | 是 | 固件包 |
 
 ##### Firmware
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 | name | String\(255\) | 是 | product名 |
-| model | String\(255\) | 是 | 特征值，没有就为空字符串 |
-| hwVersion | String\(255\) | 是 | 硬件版本号，没有就为硬件版本号 |
-| feature | String\(50\) | 是 | 特征值，没有就为空字符串 |
+| feature | String\(50\) | 否 | 特征值，没有就为空字符串 |
 | swVersion | String\(255\) | 是 | 当前版本号 |
-
+| model | String\(255\) | 否 | 保留参数 |
+| hwVersion | String\(255\) | 否 | 保留参数 |
 * #### HTTP 请求示例
 
 ```json

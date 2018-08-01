@@ -19,9 +19,9 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | product | String\(255\) | 是 | 产品名，例如prosyst,OOMICUBE |
-| model | String\(11\) | 否 | 型号。默认为字符串1。product为touch时传字符串0 |
+| model | String\(255\) | 否 | 型号。默认为字符串1。product为touch时传字符串0 |
 | devToken | String\(255\) | 否 | 当前用户token，如用户未登录则无 |
-| accountId | Integer\(11\) | 否 | 当前用户id，如用户未登录则无 |
+| accountId | Integer\(10\) | 否 | 当前用户id，如用户未登录则无 |
 | currentSwVersion | String\(255\) | 否 | 产品当前版本号。为空时，系统根据格式生成默认的初始版本 |
 
 **由于历史原因，旧版本的Cube和Touch还会传下面参数**
@@ -57,29 +57,31 @@
 
 * #### 返回参数
 
-  | 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
-  | :--- | :--- | :--- | :--- | :--- |
-  | firmwareId | Integer\(11\) | 是 |  | 固件包ID |
-  | product | String\(255\) | 是 |  | 产品名，与参数中产品名相同 |
-  | model | String\(255\) | 是 |  | 型号，值和请求参数相同 |
-  | hwVersion | String\(255\) | 是 |  | 硬件版本号 |
-  | feature | String\(50\) | 否 |  | product的特征，默认为空字符串 |
-  | oldSwVersion | String\(255\) | 是 |  | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
-  | swVersion | String\(255\) | 否 |  | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
-  | isFullPackage | bool | 否 | true | 是否为全量包，true则表示为全量包，false则表示为增量包 |
-  | firmwareUrl | String\(255\) | 否 |  | 下载此包的url，get请求下载 |
-  | protocol | String\(255\) | 否 |  | 下载包的协议，固定为http |
-  | protocolVersion | String\(255\) | 否 |  | 协议，固定为1.1 |
-  | username | String\(255\) | 否 |  | 下载包时需要携带的用户名 |
-  | password | String\(255\) | 否 |  | 下载此包时，需要携带的密码 |
-  | cnDescription | text | 否 |  | 此包的中文说明 |
-  | enDescription | text | 否 |  | 包的英文说明 |
-  | size | Integer\(11\) | 否 |  | 包的大小 |
-  | md5Code | String\(255\) | 否 |  | md5值，供校验包的真伪 |
-  | releaseTime | String&lt;19&gt; | 否 | 2017-05-26,11:59:38 | 发布时间，就是管理员在后台上传包的时间。yyyy-MM-dd,hh:mm:ss格式 |
-  | compel | bool | 否 |  | 是否强制下载，固定为false |
-  | versionRank | Integer\(E\) | 否 |  | 0表示gamma版本，1表示beta版本，2表示alpha版本，这个字段不再使用，为固定0 |
-  | firmwareBinds | Array | 否 |  | 和这个更新包绑定的版本，固定为空队列 |
+
+| 参数名称 | 参数类型 | 是否必选 | 示例 | 描述 |
+| :--- | :--- | :--- | :--- | :--- |
+| firmwareId | Integer\(11\) | 是 |  | 固件包ID |
+| product | String\(255\) | 是 |  | 产品名，与参数中产品名相同 |
+| model | String\(255\) | 是 |  | 型号，值和请求参数相同 |
+| hwVersion | String\(255\) | 是 |  | 硬件版本号 |
+| feature | String\(50\) | 否 |  | product的特征，默认为空字符串 |
+| oldSwVersion | String\(255\) | 是 |  | 旧版本号，当此包为全量包时，此参数无效。如果此包为增量包，则表示增量前版本号 |
+| swVersion | String\(255\) | 否 |  | 此包当前版本号，当此包为增量包时，表示为增量后版本号 |
+| isFullPackage | bool | 否 | true | 是否为全量包，true则表示为全量包，false则表示为增量包 |
+| firmwareUrl | String\(255\) | 否 |  | 下载此包的url，get请求下载 |
+| protocol | String\(255\) | 否 |  | 下载包的协议，固定为http |
+| protocolVersion | String\(255\) | 否 |  | 协议，固定为1.1 |
+| username | String\(255\) | 否 |  | 下载包时需要携带的用户名 |
+| password | String\(255\) | 否 |  | 下载此包时，需要携带的密码 |
+| cnDescription | text | 否 |  | 此包的中文说明 |
+| enDescription | text | 否 |  | 包的英文说明 |
+| size | Integer\(11\) | 否 |  | 包的大小 |
+| md5Code | String\(255\) | 否 |  | md5值，供校验包的真伪 |
+| releaseTime | String&lt;19&gt; | 否 | 2017-05-26,11:59:38 | 发布时间，就是管理员在后台上传包的时间。yyyy-MM-dd,hh:mm:ss格式 |
+| compel | bool | 否 |  | 是否强制下载，固定为false |
+| versionRank | Integer\(E\) | 否 |  | 0表示gamma版本，1表示beta版本，2表示alpha版本，这个字段不再使用，为固定0 |
+| firmwareBinds | Array | 否 |  | 和这个更新包绑定的版本，固定为空队列 |
+
 * #### 响应示例：
 
 ```json

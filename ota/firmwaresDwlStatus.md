@@ -1,8 +1,8 @@
-## 所有的Setting
+# 客户端上报下载状态
 
 #### 功能说明
-
-
+APP或者Cube升级成功后，回调结果。
+现在已经修改，直接返回成功。
 
 #### 调用接口说明
 
@@ -10,32 +10,38 @@
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]/setting/all |
+| URL | \[域名\]/firmwares/dwlStatus |
 | 请求头部 | Content-Type:application/json;charset=utf-8 |
-| HTTP方式 | GET |
+| HTTP方式 | POST |
 
 * #### 输入参数说明
 
-| 参数名称 | 参数类型 | 是否必须 | 参数描述 |
-| :--- | :--- | :--- | :--- |
-| | String\(255\) | 否 | |
-
+无
 
 * #### HTTP 请求示例
 
+  ```json
+  {
+  }
+  ```
 
 * #### 返回参数
 
 无
 
-
 * #### 响应示例：
 
-无
+  ```json
+  {
+      "code": "1",
+      "note": "OPERATE_SUCCESS",
+
+  }
+  ```
 
 * #### 异常返回值
 
-无
+  无
 
 
 

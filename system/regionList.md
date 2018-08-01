@@ -17,7 +17,7 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| languageCode| String | 是         | 语言代码。获取语言代码接口（region/languageCode）返回data中的数组中的一个值 |
+| languageCode| String | 否     | 语言代码。获取语言代码接口（region/languageCode）返回data中的数组中的一个值。默认en-US |
 
 
 * #### HTTP 请求示例

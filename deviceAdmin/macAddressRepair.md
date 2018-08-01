@@ -19,7 +19,7 @@
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | id| Integer\(10\) | 是 | 待修复的设备的id|
-| bluetoothMac| String\(32\) | 是 | |
+| bluetoothMac| String\(32\) | 是 |蓝牙Mac地址 |
 
 
 * #### HTTP 请求示例

@@ -19,7 +19,7 @@
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
 | product | String\(255\) | 是 | 产品名 |
-| feature | String\(255\) | 否 | 目前只有OOMI\_Cube\_Zwave才有 |
+| feature | String\(255\) | 否 | OOMI\_Cube\_Zwave（或者OOMI\_Hub\_Zwave）传值，其他不传 |
 | oldSwVersion | String\(255\) | 是 | 暂时固定为：V0.0.0.0 |
 | currentSwVersion | String\(255\) | 是 | 产品当前版本号 |
 | accountId | Integer\(11\) | 否 | 保留参数。 |
@@ -28,10 +28,10 @@
 
 ```json
 {
-	"product":"OOMI_Cube_Zwave",
-	"oldSwVersion":"V0.0.0.0",
-	"currentSwVersion":""
-	
+    "product":"OOMI_Cube_Zwave",
+    "oldSwVersion":"V0.0.0.0",
+    "currentSwVersion":""
+
 }
 ```
 
@@ -92,7 +92,7 @@
 
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
-| 601 | 出入的product参数不对，就返回这个值 | 传过来的product参数，在服务器找不到，例如把 OOMI\_Cube\_App 写成 OOMI\_Cube\_AAA |
+| 601 | 传入的product参数不对，就返回这个值 | 传过来的product参数，在服务器找不到，例如把 OOMI\_Cube\_App 写成 OOMI\_Cube\_AAA |
 | 630 | 固件包已经是最新了 | 传过来的版本比服务器上要高，就会返回这个值。虽然服务器上的最新的版本比发过来的版本高，但没有对应的包可以更新，例如差分包，还是会返回这个值。 |
 | 602 | 固件不存在 |  |
 

@@ -18,11 +18,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |
-| uuid | String\(64\) | 是 | 设备的sn。 |
+| uuid | String\(64\) | 否 | 设备的sn。**请求cube中有设置了guid，sn可以不传。请求cube中没有设置guid，sn必须传** |
 | channeId | String\(100\) | 是 | 设备的channelId，此id应该是消息推送商分配给设备的唯一id |
 | systemType | String&lt;E&gt; | 是 | 设备的系统类型，touch android 或者 ios |
-| systemVersion | String\(32\) | 是 | 设备当前的系统版本 |
-| productModel | String\(255\) | 是 | 产品类型，此参数需要根据规定的方式赋值.String型参数，必须传 |
+| systemVersion | String\(32\) | 否 | 设备当前的系统版本 |
+| productModel | String\(255\) | 否 | 产品类型，此参数需要根据规定的方式赋值.String型参数，必须传 |
 
 * #### HTTP 请求示例
 

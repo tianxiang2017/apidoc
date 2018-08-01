@@ -12,7 +12,7 @@ Content-Type:multipart/form-data
 
 | 配置项 | 取值 |
 | --- | --- |
-| URL | \[域名\]//firmwares/create|
+| URL | \[域名\]/firmwares/create|
 | 请求头部 | Content-Type:multipart/form-data |
 | HTTP方式 | POST|
 
@@ -20,15 +20,16 @@ Content-Type:multipart/form-data
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| productId | Integer\(10\) | 否 | 固件包所属产品ID |
+| productId | Integer\(10\) | 是 | 固件包所属产品ID |
 | oldSwVersion| String\(255\) | 否 | 差分包的前置版本。差分包从oldSwVersion升级到swVersion版本 |
-| swVersion| String\(255\) | 否 | 当前版本 |
+| swVersion| String\(255\) | 是 | 当前版本 |
 | fullPackage| Boolean | 否 | 是否是完整包 |
 | cnDescription | String\(255\) | 否 | 更新说明（中文） |
 | enDescription | String\(255\) | 否 | 更新说明（英文） |
 | permissionIds| Integer[] | 否 | 访问固件包需要的权限 |
 | publicStatus| Boolean | 否 | 是否发布） |
 | remark| String\(255\) | 否 | 备注 |
+| file | File | 是 | 上传的文件 |
 
 
 * #### HTTP 请求示例

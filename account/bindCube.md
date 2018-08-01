@@ -26,8 +26,8 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| guid | String&lt;32&gt; | 是 | 已注册的cube的guid |
-| accountId | Integer\(11\) | 是 | 用户id。 |
+| guid | String\(32\) | 是 | 已注册的cube的guid |
+| accountId | Integer\(10\) | 是 | 用户id。 |
 | auid | String&lt;32&gt; | 否 | 保留参数，不处理。 |
 
 * #### HTTP 请求示例

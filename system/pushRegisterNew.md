@@ -24,10 +24,10 @@
 | :--- | :--- | :--- | :--- |
 | guid | String\(32\) | 是 | 设备的唯一id。设备注册后获得 |
 | channelId | String\(100\) | 是 | 设备的channelId，此id应是消息推送商分配给设备的唯一id |
-| systemType | String&lt;E&gt; | 是 | 设备的系统类型，  touch或者android或者ios |
-| systemVersion | String\(255\) | 是 | 设备当前的系统版本.保留 |
-| productModel | String\(255\) | 是 | 产品类型，此参数需要根据规定的方式赋值.保留 |
-| packageName | String&lt;E&gt; | 是 | 用包名指定APP的类型，参考 PackageName 表 |
+| systemType | String&lt;E&gt; | 否 | 保留参数。设备的系统类型，  touch或者android或者ios。根据guid可以查询到系统类型 |
+| systemVersion | String\(255\) | 否 | 保留参数。设备当前的系统版本.保留 |
+| productModel | String\(255\) | 否 | 保留参数。产品类型，此参数需要根据规定的方式赋值.保留 |
+| packageName | String&lt;E&gt; | 否 | 用包名指定APP的类型，参考 PackageName 表。默认值default |
 
 Package Name 说明
 
@@ -65,6 +65,7 @@ Package Name 说明
 | 错误码 | 提示信息 | 备注 |
 | :--- | :--- | :--- |
 | 3 | 参数错误 |  |
+| 160 | 设备未注册|  |
 
 
 

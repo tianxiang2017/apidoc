@@ -26,10 +26,10 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 | :--- | :--- | :--- | :--- |
 | product | String\(255\) | 是 | 产品类型名 |
 | model | String\(255\) | 是 | 产品类型型号，固定为1\(字符串\) |
-| hwVersion | String\(255\) | 是 | 产品的硬件版本号，固定为：V1.0.0.0 |
+| hwVersion | String\(255\) | 否 | 产品的硬件版本号，固定为：V1.0.0.0 |
 | feature | String\(11\) | 否 | 产品类型特征值 |
 | swVersion | String\(255\) | 是 | 固件当前版本号 |
-| sn | String\(64\) | 是 | Touch的sn |
+| sn | String\(64\) | 否 | Touch的sn |
 
 * #### HTTP 请求示例
 
@@ -115,23 +115,15 @@ touch没有保存系统版本号时，Touch获取自身的APP和固件版本，C
 
 ```json
 {
-    "code":"1",
-    "note":"OPERATION_SUCCESS"
-    "data":{
-        "id":1,
-        "version":"2.0.7.0",
-        "cnDescription":"2.0.7.0",
-        "enDescription":"2.0.7.0",
-        "firmwarePackage":[{
-            "id":id,
-            "productId":30,
-            "version":"2.0.7.0",
-            "cnDescription":"xxx",
-            "enDescription":"xxx",
-            "upgradeMethod":"",
-            "updateAt":1516081741,
-            "createAt":1516081741,
-        }]
+    "code": "1",
+    "note": "Operate success",
+    "data": {
+        "id": 202,
+        "version": "2.0.10.5",
+        "cnDescription": "测试服务器",
+        "enDescription": null,
+        "releaseDatetime": null,
+        "firmwarePackage": null
     }
 }
 ```

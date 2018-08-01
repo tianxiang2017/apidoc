@@ -24,9 +24,24 @@ touch和手机调用的心跳包接口
 
 * #### HTTP 请求示例
 
+<<<<<<< HEAD
 ```
 curl -X GET \
   'http://opanapi.fantem-gatway.com/accounts/heart?accountId=171&accountToken=AAD&uuid=A01011725020927' \
+=======
+```
+curl -X GET \
+  'http://{{apigateway}}/accounts/heart?accountId=171&accountToken=AAD&uuid=A01011725020927' \
+```
+
+* #### HTTP 请求示例2
+
+```json
+{
+    "username": "ztx",
+    "language":"zh_CN"
+}
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 ```
 
 * #### 返回参数

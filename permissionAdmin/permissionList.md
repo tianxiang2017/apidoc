@@ -20,9 +20,8 @@
 | :--- | :--- | :--- | :--- |
 | page | Integer\(10\) | 否 |  |
 | pageSize | Integer\(10\) | 否 |  |
-| sortBy | String\(255\) | 否 | 按什么排序 |
+| sortBy | Integer\(10\) | 否 | 按什么排序 |
 | order | String&lt;E&gt; | 否 | 升序（ASC）还是降序（DESC） |
-| businessSystemId | Integer\(10\)| 否 | 业务系统ID |
 
 * #### HTTP 请求示例
 
@@ -33,11 +32,10 @@
     "sortBy": "id",
     "order": "desc"
   }
-  ```
-
+ 
  ```
 
- ```
+```
 
 * #### 返回参数
 
@@ -47,7 +45,6 @@
 |data|Permission[]|否|权限列表。permission数组|
 
 permission内容如下：
-
 
 | 参数名称 | 参数类型 | 是否必须 | 描述 |
 | :--- | :--- | :--- | :--- |

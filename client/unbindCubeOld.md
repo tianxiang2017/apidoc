@@ -28,11 +28,15 @@
 | touchToken | String（32） | 是 | 在touch上登录的用户的accessToken |
 | touchUuid | String（64） | 是 | 在touch的sn， 用户在此touch上登录，并发起解绑 |
 
+<<<<<<< HEAD
 * ##### 强制绑定输入参数：
 
   ###### 强制绑定是：
 
 把sn对应的cube和它绑定的用户解绑，把newAccountId对应的用户和它绑定的cube解绑，然后把sn对应的cube和newAccountId对应的用户绑定。最终目的，实现sn和newAccountId绑定
+=======
+* #### 强制解绑输入参数：
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 
 | 名称 | 类型 | 是否必选 | 取值范围 | 描述 |
 | :--- | :---: | :---: | :--- | :--- |
@@ -41,9 +45,15 @@
 | newAccountId | Integer | 必选 |  | 强制绑定的用户的id |
 | newTouchToken | String | 必选 |  | 在touch上登录的用户的accessToken |
 | newTouchUuid | String | 必选 |  | 在touch的sn， 用户在此touch上登录，并发起绑定 |
+<<<<<<< HEAD
 | compelFlag | String | 必选 | yes | 填yes |
 
 
+=======
+| compelFlag | String | 必选 | yes | 只能填yes |
+
+用户已经绑定多个cube返回3
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 
 * #### HTTP 请求示例
 

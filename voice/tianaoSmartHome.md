@@ -18,7 +18,11 @@
 | 请求头部 | Content-Type:application/json;charset=UTF-8 |
 | HTTP方式 | POST |
 
+<<<<<<< HEAD
 * #### 服务器通过发送相应的指令实现相应的功能。请求参数中的header中的namespace的值体现指令。namespace值和对应功能关系：
+=======
+##### 服务器通过发送相应的指令实现相应的功能。请求参数中的header中的namespace的值体现指令。namespace值和对应功能关系：
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 
 |序号| namespace | 功能描述 |
 |-----| --- | --- | 

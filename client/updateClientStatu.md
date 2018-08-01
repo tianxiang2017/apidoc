@@ -25,8 +25,13 @@ cube上报cube的状态， 上报p2p连接方式和cube是否绑定了用户。�
 | :--- | :---: | :---: | :--- |
 | guid | String\(32\) | 是 | 已注册的cube的guid |
 | ptopConnectMethod | String&lt;E&gt; | 是 | p2p连接方式，没有绑定用户的cube是一种连接方式，绑定用户是后另一种连接方式。固定范围 v1或者v2 |
+<<<<<<< HEAD
 | reset | String&lt;E&gt; | 否 | 是否是重置。 |
 | bound | String&lt;E&gt; | 否 | 是否绑定了用户，只能取固定值 字符串true或者字符串false |
+=======
+| reset | String\(10\) | 否 | 是否是重置。 reset或者空 |
+| bound | String&lt;E&gt; | 是 | 是否绑定了用户，只能取固定值 字符串true或者字符串false |
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 
 * #### HTTP 请求示例
 

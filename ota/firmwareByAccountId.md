@@ -17,15 +17,18 @@
 | HTTP方式 | GET |
 
 * #### 输入参数说明
-输入参数是一个数组。
-数组内的元素属性如下：
+| 参数名称 | 参数类型 | 是否必须 | 参数描述 |
+| :--- | :--- | :--- | :--- |
+| firmwareCondForms | Firmware[]| 是 | 内容参考下面说明 |
+
+Firmware内容如下：
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
-| accountId | Integer\(10\) | 是 | 用户ID。所有accountId要一样，值看第一个accountId判断权限。现在还没有检查accountId是否一样|
+| accountId | Integer\(10\) | 否 | 用户ID。所有accountId要一样，值看第一个accountId判断权限。现在还没有检查accountId是否一样|
 | product| String\(255\) | 否 | 产品名|
 | model | String\(255\) | 否 | 型号 |
-| feature | Integer\(11\) | 否 | zwave区分不同频率 |
+| feature | String\(50\) | 否 | zwave区分不同频率 |
 | currentSwVersion | String\(255\) | 否 | 产品当前版本号。 |
 
 

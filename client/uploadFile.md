@@ -19,8 +19,13 @@
 | 参数**名称** | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
 | type | String\(E\) | 是 | 类型。取值：log或者db |
+<<<<<<< HEAD
 | guid | String&lt;32&gt; | 否 | 注册成功后获得的guid。guid和sn要传一个 |
 | sn| String&lt;64&gt; | 否 | 没有guid传sn。guid和sn要传一个 |
+=======
+| guid | String&lt;32&gt; | 否 | cube注册成功后获得的guid。guid和sn要传一个 |
+| sn| String&lt;64&gt; | 否 | cube没有guid传sn。guid和sn要传一个 |
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 | accountId | Integer\(10\) | 否 | 用户的ID |
 | version | String\(255\) | 否 | 所属版本 |
 | remark | String\(1024\) | 否 | 描述 |

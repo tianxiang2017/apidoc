@@ -26,7 +26,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
+<<<<<<< HEAD
 | guid | String\(32\) | 是 | 已注册的cube的guid |
+=======
+| guid | String&lt;32&gt; | 是 | 已注册的cube的guid |
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 | accountId | Integer\(10\) | 是 | 用户id。 |
 | auid | String&lt;32&gt; | 否 | 保留参数，不处理。 |
 

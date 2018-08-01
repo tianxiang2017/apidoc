@@ -18,7 +18,11 @@
 
 | 参数名称 | 参数类型 | 是否必须 | 参数描述 |
 | :--- | :--- | :--- | :--- |
+<<<<<<< HEAD
 | key| String\(255\) | 否 | 搜索关键字 可以是SN、P2P Id、Wifi Mac、BT Mac和PSN|
+=======
+| key| String\(255\) | 否 | 搜索关键字 |
+>>>>>>> 40adc281e6922c027ef6c669a8619a9a8182730d
 | status| String\(64\) | 否 | 设备的状态 |
 | registerDate| String\(64\) | 否 | 注册时间，时间戳 |
 
